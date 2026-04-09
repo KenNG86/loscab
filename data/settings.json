@@ -1,10 +1,52 @@
 {
   "site_title_part1": "Los Cab",
   "site_title_part2": "Sports Club",
+  "nav_links": [
+    { "label": "Home", "url": "index.html" },
+    { 
+      "label": "Sports ▾", 
+      "url": "sports.html",
+      "dropdown": [
+        { "label": "Tennis", "url": "tennis.html" },
+        { "label": "Pickleball", "url": "pickleball.html" },
+        { "label": "Fitness", "url": "fitness.html" },
+        { "label": "All Sports", "url": "sports.html" }
+      ]
+    },
+    { "label": "Membership", "url": "membership.html" },
+    { "label": "Services", "url": "services.html" },
+    { "label": "Events", "url": "events.html" },
+    { "label": "News", "url": "blog.html" },
+    { "label": "Contact", "url": "contact.html" }
+  ],
+  "footer_sports_links": [
+    { "label": "Tennis", "url": "tennis.html" },
+    { "label": "Pickleball", "url": "pickleball.html" },
+    { "label": "Fitness", "url": "fitness.html" },
+    { "label": "All Sports", "url": "sports.html" }
+  ],
+  "footer_club_links": [
+    { "label": "Membership", "url": "membership.html" },
+    { "label": "Services", "url": "services.html" },
+    { "label": "Events", "url": "events.html" },
+    { "label": "News", "url": "blog.html" },
+    { "label": "Contact", "url": "contact.html" }
+  ],
+  "club_hours": [
+    { "day": "Monday – Friday", "open": "6:00 AM – 9:30 PM", "last": "9:00 PM" },
+    { "day": "Saturday – Sunday", "open": "7:00 AM – 8:00 PM", "last": "7:40 PM" }
+  ],
+  "court_hours": [
+    { "day": "Monday – Friday", "open": "6:00 AM – 11:00 PM", "last": "9:00 PM" },
+    { "day": "Saturday", "open": "7:00 AM – 10:00 PM", "last": "7:40 PM" },
+    { "day": "Sunday", "open": "7:00 AM – 8:00 PM", "last": "7:40 PM" }
+  ],
   "footer_address": "17272 Newhope St.\nFountain Valley, CA 92708",
   "footer_phone": "(714) 546-8560",
-  "footer_email": "info@loscab.com",
-  "facebook_link": "https://www.facebook.com/loscab",
-  "instagram_link": "https://www.instagram.com/loscab",
+  "tel_phone": "tel:+17145468560",
+  "footer_email": "susan@loscab.com",
+  "mailto_email": "mailto:susan@loscab.com",
+  "facebook_link": "#",
+  "instagram_link": "#",
   "copyright_text": "© 2026 Los Cab Sports Club. All Rights Reserved."
 }

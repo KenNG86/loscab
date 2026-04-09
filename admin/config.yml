@@ -15,9 +15,50 @@ collections:
         fields:
           - { label: "Site Title (Part 1)", name: "site_title_part1", widget: "string" }
           - { label: "Site Title (Part 2)", name: "site_title_part2", widget: "string" }
+          - label: "Navigation Links"
+            name: "nav_links"
+            widget: "list"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Link URL", name: "url", widget: "string" }
+              - label: "Dropdown Links (Optional)"
+                name: "dropdown"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Link URL", name: "url", widget: "string" }
+          - label: "Footer Links (Sports)"
+            name: "footer_sports_links"
+            widget: "list"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Link URL", name: "url", widget: "string" }
+          - label: "Footer Links (Club)"
+            name: "footer_club_links"
+            widget: "list"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Link URL", name: "url", widget: "string" }
+          - label: "Club Hours (Table)"
+            name: "club_hours"
+            widget: "list"
+            fields:
+              - { label: "Day", name: "day", widget: "string" }
+              - { label: "Open Hours", name: "open", widget: "string" }
+              - { label: "Last Entry", name: "last", widget: "string", required: false }
+          - label: "Court Hours (Table)"
+            name: "court_hours"
+            widget: "list"
+            fields:
+              - { label: "Day", name: "day", widget: "string" }
+              - { label: "Open Hours", name: "open", widget: "string" }
+              - { label: "Last Entry", name: "last", widget: "string", required: false }
           - { label: "Footer Address", name: "footer_address", widget: "text" }
           - { label: "Footer Phone", name: "footer_phone", widget: "string" }
+          - { label: "Footer Phone (Link Format)", name: "tel_phone", widget: "string" }
           - { label: "Footer Email", name: "footer_email", widget: "string" }
+          - { label: "Footer Email (Link Format)", name: "mailto_email", widget: "string" }
           - { label: "Facebook Page", name: "facebook_link", widget: "string" }
           - { label: "Instagram Page", name: "instagram_link", widget: "string" }
           - { label: "Copyright Text", name: "copyright_text", widget: "string" }
@@ -31,33 +72,331 @@ collections:
         fields:
           - { label: "SEO Title", name: "seo_title", widget: "string" }
           - { label: "SEO Description", name: "seo_description", widget: "text" }
+          - { label: "Hero Label", name: "hero_label", widget: "string" }
           - { label: "Hero Title", name: "hero_title", widget: "string" }
           - { label: "Hero Subtitle", name: "hero_subtitle", widget: "text" }
           - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - label: "Hero Stats"
+            name: "stats"
+            widget: "list"
+            fields:
+              - { label: "Number", name: "number", widget: "string" }
+              - { label: "Label", name: "label", widget: "string" }
+          - label: "Amenities Strip"
+            name: "amenities"
+            widget: "list"
+            fields:
+              - { label: "Icon (Emoji)", name: "icon", widget: "string" }
+              - { label: "Text", name: "text", widget: "string" }
+          - { label: "Sports Section Title", name: "sports_title", widget: "string" }
+          - { label: "Sports Section Subtitle", name: "sports_subtitle", widget: "text" }
+          - label: "Sports Tiles"
+            name: "sports_tiles"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Tag/Note", name: "tag", widget: "string" }
+              - { label: "Description", name: "desc", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Link", name: "link", widget: "string" }
           - { label: "Welcome Title", name: "welcome_title", widget: "string" }
           - { label: "Welcome Text", name: "welcome_text", widget: "markdown" }
+          - label: "Features List"
+            name: "features"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+          - label: "Testimonials"
+            name: "testimonials"
+            widget: "list"
+            fields:
+              - { label: "Stars", name: "stars", widget: "string" }
+              - { label: "Quote", name: "quote", widget: "text" }
+              - { label: "Author Name", name: "name", widget: "string" }
+              - { label: "Author Role", name: "role", widget: "string" }
+              - { label: "Author Initials", name: "initials", widget: "string" }
 
       - label: "Tennis Page"
         name: "tennis"
         file: "data/pages/tennis.json"
-        fields: &page_fields
+        fields:
           - { label: "SEO Title", name: "seo_title", widget: "string" }
           - { label: "SEO Description", name: "seo_description", widget: "text" }
           - { label: "Hero Title", name: "hero_title", widget: "string" }
           - { label: "Hero Subtitle", name: "hero_subtitle", widget: "text" }
           - { label: "Hero Image", name: "hero_image", widget: "image" }
-          - { label: "Intro Title", name: "intro_title", widget: "string" }
-          - { label: "Intro Subtitle", name: "intro_subtitle", widget: "text" }
+          - label: "Stats"
+            name: "stats"
+            widget: "list"
+            fields:
+              - { label: "Number/Icon", name: "number", widget: "string" }
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Subtext", name: "sub", widget: "string" }
+          - label: "Programs"
+            name: "programs"
+            widget: "list"
+            fields:
+              - { label: "Icon", name: "icon", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "desc", widget: "text" }
+              - { label: "Link", name: "link", widget: "string" }
+          - { label: "Courts Title", name: "courts_title", widget: "string" }
+          - { label: "Courts Subtitle", name: "courts_subtitle", widget: "text" }
+          - label: "Court Features"
+            name: "court_features"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+          - { label: "Membership Price", name: "membership_price", widget: "string" }
+          - { label: "Membership Details", name: "membership_details", widget: "text" }
 
       - label: "Pickleball Page"
         name: "pickleball"
         file: "data/pages/pickleball.json"
-        fields: *page_fields
+        fields:
+          - { label: "SEO Title", name: "seo_title", widget: "string" }
+          - { label: "SEO Description", name: "seo_description", widget: "text" }
+          - { label: "Hero Title", name: "hero_title", widget: "string" }
+          - { label: "Hero Subtitle", name: "hero_subtitle", widget: "text" }
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - label: "Stats"
+            name: "stats"
+            widget: "list"
+            fields:
+              - { label: "Number/Icon", name: "number", widget: "string" }
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Subtext", name: "sub", widget: "string" }
+          - label: "Programs"
+            name: "programs"
+            widget: "list"
+            fields:
+              - { label: "Level", name: "level", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "desc", widget: "text" }
+              - { label: "Card Color (CSS)", name: "color", widget: "string" }
+              - { label: "Link", name: "link", widget: "string" }
+          - { label: "Courts Title", name: "courts_title", widget: "string" }
+          - { label: "Courts Subtitle", name: "courts_subtitle", widget: "text" }
+          - label: "Court Features"
+            name: "court_features"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+          - { label: "Membership Price", name: "membership_price", widget: "string" }
+          - { label: "Membership Details", name: "membership_details", widget: "text" }
 
       - label: "Fitness Page"
         name: "fitness"
         file: "data/pages/fitness.json"
-        fields: *page_fields
+        fields:
+          - { label: "SEO Title", name: "seo_title", widget: "string" }
+          - { label: "SEO Description", name: "seo_description", widget: "text" }
+          - { label: "Hero Title", name: "hero_title", widget: "string" }
+          - { label: "Hero Subtitle", name: "hero_subtitle", widget: "text" }
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - label: "Gym Features"
+            name: "gym_features"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "text", widget: "text" }
+          - label: "Class Groups"
+            name: "class_groups"
+            widget: "list"
+            fields:
+              - { label: "Group Icon/Emoji", name: "group_icon", widget: "string" }
+              - { label: "Group Title", name: "group_title", widget: "string" }
+              - label: "Classes"
+                name: "classes"
+                widget: "list"
+                fields:
+                  - { label: "Class Name", name: "name", widget: "string" }
+                  - { label: "Badge Text", name: "badge", widget: "string" }
+                  - { label: "Badge Color (CSS class)", name: "badge_class", widget: "string" }
+                  - { label: "Description", name: "desc", widget: "text" }
+          - { label: "Director Section Title", name: "director_title", widget: "string" }
+          - { label: "Director Bio", name: "director_bio", widget: "markdown" }
+          - { label: "Director Email", name: "director_email", widget: "string" }
+
+      - label: "Membership Page"
+        name: "membership"
+        file: "data/pages/membership.json"
+        fields:
+          - { label: "SEO Title", name: "seo_title", widget: "string" }
+          - { label: "SEO Description", name: "seo_description", widget: "text" }
+          - { label: "Hero Title", name: "hero_title", widget: "string" }
+          - { label: "Hero Subtitle", name: "hero_subtitle", widget: "text" }
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - label: "Included Features"
+            name: "included_features"
+            widget: "list"
+            fields:
+              - { label: "Icon/Emoji", name: "icon", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "desc", widget: "text" }
+          - label: "FAQ Items"
+            name: "faq"
+            widget: "list"
+            fields:
+              - { label: "Question", name: "question", widget: "string" }
+              - { label: "Answer", name: "answer", widget: "markdown" }
+
+      - label: "Services Page"
+        name: "services"
+        file: "data/pages/services.json"
+        fields:
+          - { label: "SEO Title", name: "seo_title", widget: "string" }
+          - { label: "SEO Description", name: "seo_description", widget: "text" }
+          - { label: "Hero Title", name: "hero_title", widget: "string" }
+          - { label: "Hero Subtitle", name: "hero_subtitle", widget: "text" }
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - label: "Featured Services"
+            name: "featured_services"
+            widget: "list"
+            fields:
+              - { label: "Tag", name: "tag", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "desc", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
+              - label: "Features"
+                name: "features"
+                widget: "list"
+                fields:
+                  - { label: "Feature Text", name: "text", widget: "string" }
+              - { label: "Action Text", name: "action_text", widget: "string" }
+              - { label: "Action Link", name: "action_link", widget: "string" }
+              - { label: "Special Note", name: "note", widget: "string" }
+          - label: "Facility Amenities"
+            name: "amenities"
+            widget: "list"
+            fields:
+              - { label: "Icon", name: "icon", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "desc", widget: "text" }
+
+      - label: "Events Page"
+        name: "events"
+        file: "data/pages/events.json"
+        fields:
+          - { label: "SEO Title", name: "seo_title", widget: "string" }
+          - { label: "SEO Description", name: "seo_description", widget: "text" }
+          - { label: "Hero Title", name: "hero_title", widget: "string" }
+          - { label: "Hero Subtitle", name: "hero_subtitle", widget: "text" }
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - { label: "Events Section Title", name: "events_title", widget: "string" }
+          - label: "Upcoming Events"
+            name: "upcoming_events"
+            widget: "list"
+            fields:
+              - { label: "Month (Short)", name: "month", widget: "string" }
+              - { label: "Day", name: "day", widget: "string" }
+              - { label: "Year", name: "year", widget: "string" }
+              - { label: "Date Block Color", name: "color", widget: "string" }
+              - { label: "Type", name: "type", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "desc", widget: "text" }
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "Time", name: "time", widget: "string" }
+              - { label: "Ticket/Access", name: "access", widget: "string" }
+              - { label: "Action Text", name: "action_text", widget: "string" }
+              - { label: "Action Link", name: "action_link", widget: "string" }
+          - { label: "Venue Title", name: "venue_title", widget: "string" }
+          - { label: "Venue Subtitle", name: "venue_subtitle", widget: "text" }
+          - label: "Venue Features"
+            name: "venue_features"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "text", widget: "text" }
+
+      - label: "Sports Page"
+        name: "sports"
+        file: "data/pages/sports.json"
+        fields:
+          - { label: "SEO Title", name: "seo_title", widget: "string" }
+          - { label: "SEO Description", name: "seo_description", widget: "text" }
+          - { label: "Hero Title", name: "hero_title", widget: "string" }
+          - { label: "Hero Subtitle", name: "hero_subtitle", widget: "text" }
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - label: "Featured Sports"
+            name: "featured_sports"
+            widget: "list"
+            fields:
+              - { label: "ID (anchor)", name: "id", widget: "string" }
+              - { label: "Icon", name: "icon", widget: "string" }
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
+              - label: "Features"
+                name: "features"
+                widget: "list"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "text", widget: "text" }
+          - label: "Other Court Sports"
+            name: "other_sports"
+            widget: "list"
+            fields:
+              - { label: "ID (anchor)", name: "id", widget: "string" }
+              - { label: "Icon", name: "icon", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "desc", widget: "text" }
+              - { label: "Link/Action Text", name: "link_text", widget: "string" }
+              - { label: "Note Style", name: "note", widget: "string" }
+
+      - label: "Contact Page"
+        name: "contact"
+        file: "data/pages/contact.json"
+        fields:
+          - { label: "SEO Title", name: "seo_title", widget: "string" }
+          - { label: "SEO Description", name: "seo_description", widget: "text" }
+          - { label: "Hero Label", name: "hero_label", widget: "string" }
+          - { label: "Hero Title", name: "hero_title", widget: "string" }
+          - { label: "Hero Subtitle", name: "hero_subtitle", widget: "text" }
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - { label: "Address", name: "address", widget: "text" }
+          - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Club Hours", name: "club_hours", widget: "text" }
+          - { label: "Court Hours", name: "court_hours", widget: "text" }
+          - label: "Key Contacts"
+            name: "staff"
+            widget: "list"
+            fields:
+              - { label: "Initial (Avatar)", name: "initial", widget: "string" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Role", name: "role", widget: "string" }
+              - { label: "Email/Contact", name: "contact", widget: "string" }
+              - { label: "Email Link (optional)", name: "email_link", widget: "string" }
+
+      - label: "Blog Page"
+        name: "blog"
+        file: "data/pages/blog.json"
+        fields:
+          - { label: "SEO Title", name: "seo_title", widget: "string" }
+          - { label: "SEO Description", name: "seo_description", widget: "text" }
+          - { label: "Hero Title", name: "hero_title", widget: "string" }
+          - { label: "Hero Subtitle", name: "hero_subtitle", widget: "text" }
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - label: "Featured Post"
+            name: "featured_post"
+            widget: "object"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Date & Info", name: "date_info", widget: "string" }
+              - { label: "Category", name: "category", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "desc", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
+              - label: "Highlights"
+                name: "highlights"
+                widget: "list"
+                fields:
+                  - { label: "Text", name: "text", widget: "string" }
 
   - name: "content"
     label: "Site Content"
@@ -71,12 +410,13 @@ collections:
             widget: "list"
             fields:
               - { label: "Title", name: "title", widget: "string" }
-              - { label: "Date", name: "date", widget: "datetime" }
+              - { label: "Category", name: "category", widget: "string" }
+              - { label: "Date", name: "date", widget: "string" }
               - { label: "Summary", name: "summary", widget: "text" }
               - { label: "Image", name: "image", widget: "image" }
               - { label: "Link", name: "link", widget: "string" }
 
-  - name: "membership"
+  - name: "pricing"
     label: "Membership Status"
     folder: "data/membership"
     create: true

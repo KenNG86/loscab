@@ -1,0 +1,55 @@
+{
+  "seo_title": "Membership Plans | Los Cab Sports Club — Fountain Valley, CA",
+  "seo_description": "Join Los Cab Sports Club. Tennis, Pickleball, and Sports memberships starting at $115/month. Family plans available. Fountain Valley, CA.",
+  "hero_image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1800&q=80",
+  "hero_title": "Membership at Los Cab",
+  "hero_subtitle": "Simple, transparent pricing — no hidden fees. Choose the plan that fits your sport and budget. Monthly billing available.",
+  "included_features": [
+    {
+      "icon": "💪",
+      "title": "Gym Access",
+      "desc": "Full access to our multi-level fitness center — cardio, free weights, and resistance machines."
+    },
+    {
+      "icon": "🏊",
+      "title": "Pool Access",
+      "desc": "Use of the heated 50-meter Olympic pool at any time during facility hours."
+    },
+    {
+      "icon": "🧘",
+      "title": "Group Classes",
+      "desc": "Unlimited group fitness classes — yoga, Pilates, HIIT, Barre, cycling, Fitdanz, and more."
+    },
+    {
+      "icon": "🚿",
+      "title": "Locker Rooms",
+      "desc": "Full locker room access with showers, steam rooms, saunas, and the co-ed jacuzzi."
+    }
+  ],
+  "faq": [
+    {
+      "question": "How do I sign up?",
+      "answer": "Memberships are processed through Club Automation, our online membership management system. You can also visit us in person at 17272 Newhope St., Fountain Valley or call (714) 546-8560."
+    },
+    {
+      "question": "Are there long-term contracts?",
+      "answer": "All memberships are billed monthly. There are no long-term contract requirements. An initiation fee applies when you first join. Contact us for cancellation terms."
+    },
+    {
+      "question": "Can I try the club before joining?",
+      "answer": "Yes! Contact us at (714) 546-8560 or visit the club to arrange a tour and trial visit. Our membership team will walk you through all the facilities and programs available."
+    },
+    {
+      "question": "Are group fitness classes included?",
+      "answer": "Yes — all group fitness classes (yoga, Pilates, HIIT, Barre, cycling, Fitdanz, line dancing, and more) are included with every Sports, Pickleball, and Tennis membership at no extra charge."
+    },
+    {
+      "question": "Is personal training extra?",
+      "answer": "Personal training sessions with our certified trainers are available for an additional fee beyond your monthly membership. Contact the fitness team at fitness@loscab.com to schedule a session."
+    },
+    {
+      "question": "Can children join?",
+      "answer": "Absolutely. We offer junior programs for tennis, pickleball, swimming (Nova Swim School), water polo, and more. Family add-on rates allow you to include dependents on your primary membership."
+    }
+  ]
+}

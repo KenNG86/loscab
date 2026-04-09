@@ -1,11 +1,63 @@
 {
-  "seo_title": "Fitness & Gym | Los Cab Sports Club — Multi-Level Fitness Center",
-  "seo_description": "Train at Los Cab — multi-level fitness center, group classes, yoga, Pilates, and state-of-the-art equipment in Fountain Valley, CA.",
+  "seo_title": "Fitness & Group Classes | Los Cab Sports Club — Fountain Valley, CA",
+  "seo_description": "Los Cab fitness center offers a multi-level gym, group classes, yoga, Pilates, Barre, HIIT, cycling, TRX and more in Fountain Valley, CA.",
   "hero_image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1800&q=80",
-  "hero_title": "Fitness at Los Cab",
-  "hero_subtitle": "A multi-level fitness experience designed for performance, recovery, and community. Everything you need to reach your goals.",
-  "intro_title": "Elevate Your Workout",
-  "intro_subtitle": "From high-energy HIIT to restorative Yoga, our fitness center provides the space, equipment, and expertise for your journey.",
-  "membership_price": "$115",
-  "membership_details": "$150 Initiation Fee · Standard Sports Membership"
+  "hero_title": "Fitness & Group Classes",
+  "hero_subtitle": "A full-featured gym with cardio, free weights, resistance machines, and an expansive group fitness studio for yoga, Pilates, HIIT, and more.",
+  "gym_features": [
+    {
+      "title": "Cardio Floor",
+      "text": "Treadmills, ellipticals, bikes, rowing machines, and stair climbers for every cardio preference."
+    },
+    {
+      "title": "Free Weights & Resistance Machines",
+      "text": "A full range of dumbbells, barbells, cable machines, benches, and resistance equipment for strength training."
+    },
+    {
+      "title": "Dedicated Group Fitness Studio",
+      "text": "A spacious studio for yoga, Pilates, Barre, TRX, and all group classes — with specialized flooring and mirrors."
+    },
+    {
+      "title": "New Pilates Room",
+      "text": "A brand-new dedicated Pilates room added in Winter 2026 — featuring reformers and specialized Pilates equipment."
+    },
+    {
+      "title": "Personal Training",
+      "text": "Relaunched personal training program with certified trainers. One-on-one sessions available for all fitness levels."
+    }
+  ],
+  "class_groups": [
+    {
+      "group_icon": "🏃",
+      "group_title": "Cardio & High-Intensity",
+      "classes": [
+        { "name": "Cardio/Core", "badge": "Cardio", "badge_class": "badge-cardio", "desc": "High-energy cardio combined with core strengthening for a total-body workout." },
+        { "name": "HIIT", "badge": "High Intensity", "badge_class": "badge-cardio", "desc": "High-Intensity Interval Training — short bursts of intense work followed by recovery." },
+        { "name": "Cycling", "badge": "Indoor Cycling", "badge_class": "badge-cardio", "desc": "Instructor-led indoor cycling classes for all levels. Great cardio workout." },
+        { "name": "Bodyworks", "badge": "Strength", "badge_class": "badge-strength", "desc": "Full-body strength and conditioning using bodyweight and light equipment." }
+      ]
+    },
+    {
+      "group_icon": "🧘",
+      "group_title": "Mind & Body",
+      "classes": [
+        { "name": "Yoga", "badge": "Mind & Body", "badge_class": "badge-mind", "desc": "Multiple yoga styles from restorative flow to power yoga. All levels welcome." },
+        { "name": "Pilates Mat", "badge": "Core Training", "badge_class": "badge-mind", "desc": "Classical and contemporary Pilates mat work for core strength and posture." },
+        { "name": "Barre", "badge": "Ballet-Inspired", "badge_class": "badge-mind", "desc": "Ballet-inspired class targeting legs, glutes, and core for lean muscle development." },
+        { "name": "TRX", "badge": "Suspension", "badge_class": "badge-strength", "desc": "Suspension training using your bodyweight for full-body functional fitness." },
+        { "name": "Balance", "badge": "Stability", "badge_class": "badge-mind", "desc": "Focus on core stability, proprioception, and balance for all fitness levels." }
+      ]
+    },
+    {
+      "group_icon": "💃",
+      "group_title": "Dance Fitness",
+      "classes": [
+        { "name": "Fitdanz", "badge": "Dance", "badge_class": "badge-dance", "desc": "High-energy dance fitness class with Latin, pop, and world music rhythms. Fun for all!" },
+        { "name": "Line Dancing", "badge": "Social Dance", "badge_class": "badge-dance", "desc": "Classic and contemporary line dancing — a fun social activity that's also great exercise." }
+      ]
+    }
+  ],
+  "director_title": "Peggy Pocher",
+  "director_bio": "Our Fitness Director Peggy Pocher oversees all group fitness programming, personal training, and gym operations. With years of experience in sports club management, she ensures every member gets the most from their fitness journey.",
+  "director_email": "fitness@loscab.com"
 }

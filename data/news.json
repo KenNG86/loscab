@@ -1,18 +1,12 @@
 {
   "articles": [
     {
-      "title": "Summer Tennis Tournament 2026",
-      "date": "2026-06-15",
-      "summary": "Join us for our annual summer tournament. All levels welcome!",
-      "image": "https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?w=800&q=80",
-      "link": "events.html"
-    },
-    {
-      "title": "New Pickleball Courts Now Open",
-      "date": "2026-04-01",
-      "summary": "We've added 4 new dedicated pickleball courts to our facility.",
-      "image": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?w=800&q=80",
-      "link": "pickleball.html"
+      "title": "New Stadium Lighting Installed on All 59 Pickleball Courts",
+      "category": "Pickleball",
+      "date": "February 2026",
+      "summary": "All 59 pickleball courts at Los Cab now feature brand-new stadium lighting systems, dramatically improving evening play visibility and extending your court time well into the night.",
+      "image": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?w=700&q=80",
+      "link": "contact.html"
     }
   ]
 }

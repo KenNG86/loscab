@@ -1,0 +1,101 @@
+{
+  "seo_title": "Services & Amenities | Los Cab Sports Club — Fountain Valley, CA",
+  "seo_description": "Explore the premium amenities at Los Cab — Olympic-sized pool, steam rooms, saunas, pro shop, and courtyard cabanas in Fountain Valley, CA.",
+  "hero_image": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1800&q=80",
+  "hero_title": "Services & Amenities",
+  "hero_subtitle": "Beyond the courts and the gym, Los Cab offers a suite of premium amenities designed for relaxation and convenience.",
+  "featured_services": [
+    {
+      "tag": "Wellness",
+      "title": "Gem Day Spa",
+      "desc": "Our boutique on-site spa offers a curated menu of non-invasive facial and body procedures in an elegant, relaxing environment. From rejuvenating facials to body treatments — Gem Day Spa is your escape after a great workout.",
+      "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&q=80",
+      "features": [
+        { "text": "✦ Non-invasive facial treatments" },
+        { "text": "✦ Body procedures & skin care" },
+        { "text": "✦ Relaxing spa atmosphere" },
+        { "text": "✦ Member discounts available" }
+      ],
+      "action_text": "Book an Appointment →",
+      "action_link": "contact.html",
+      "note": ""
+    },
+    {
+      "tag": "Dining",
+      "title": "Sol Vida OC — Los Cab Café",
+      "desc": "Our on-site café \"Sol Vida OC\" is now open for a soft opening. Grab a coffee, smoothie, salad, sandwich, bagel, or snack before or after your workout. Fresh, delicious fuel to power your day.",
+      "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80",
+      "features": [
+        { "text": "☕ Coffee & specialty drinks" },
+        { "text": "🥤 Smoothies & protein shakes" },
+        { "text": "🥗 Salads, sandwiches & bagels" },
+        { "text": "🍪 Snacks & baked goods" }
+      ],
+      "action_text": "",
+      "action_link": "",
+      "note": "🎉 NOW OPEN — Soft Opening Phase"
+    },
+    {
+      "tag": "Catering",
+      "title": "Teak Catering",
+      "desc": "Full-service event catering led by Chef Pierre. Whether you're hosting a corporate event, wedding reception, club tournament, or private party — Teak Catering delivers exceptional culinary experiences.",
+      "image": "https://images.unsplash.com/photo-1555244162-803834f70033?w=800&q=80",
+      "features": [
+        { "text": "🍽️ Full event catering services" },
+        { "text": "👨‍🍳 Led by Chef Pierre" },
+        { "text": "🎉 Corporate & private events" },
+        { "text": "🏆 Sports tournaments & banquets" }
+      ],
+      "action_text": "Request a Quote →",
+      "action_link": "contact.html",
+      "note": ""
+    },
+    {
+      "tag": "Events",
+      "title": "Timeless Venues",
+      "desc": "Our 4,000 sq. ft. versatile event space \"Timeless Venues\" is perfect for weddings, corporate meetings, galas, tournaments, and private celebrations. A stunning backdrop for any occasion.",
+      "image": "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&q=80",
+      "features": [
+        { "text": "🏛️ 4,000 sq ft event space" },
+        { "text": "💍 Weddings & receptions" },
+        { "text": "🏢 Corporate meetings & conferences" },
+        { "text": "🎊 Galas, parties & celebrations" }
+      ],
+      "action_text": "Inquire About Availability →",
+      "action_link": "contact.html",
+      "note": ""
+    }
+  ],
+  "amenities": [
+    {
+      "icon": "🚿",
+      "title": "Premium Locker Rooms",
+      "desc": "Spacious, well-maintained locker rooms with premium shower facilities for all members — men's and women's."
+    },
+    {
+      "icon": "🧖",
+      "title": "Steam & Sauna Rooms",
+      "desc": "Brand-new steam rooms and sauna rooms added in Winter 2026. Perfect for post-workout recovery."
+    },
+    {
+      "icon": "♨️",
+      "title": "Co-Ed Jacuzzi",
+      "desc": "A relaxing co-ed jacuzzi available to all members. Great for unwinding after a game or workout."
+    },
+    {
+      "icon": "🏖️",
+      "title": "Cabanas",
+      "desc": "Semi-private courtyard cabanas with showers, lockers, fridge, and TV. Located in the tennis courtyard."
+    },
+    {
+      "icon": "📍",
+      "title": "Lockers",
+      "desc": "Monthly locker rentals available in both the men's and women's locker rooms. Stop by the front desk to inquire."
+    },
+    {
+      "icon": "📷",
+      "title": "Live Webcams",
+      "desc": "Live webcam feeds of the Pickleball Stadium, Tennis Center, Gym, and facility entrances — viewable anytime."
+    }
+  ]
+}

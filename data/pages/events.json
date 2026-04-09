@@ -1,0 +1,110 @@
+{
+  "seo_title": "Events & Tournaments | Los Cab Sports Club — Fountain Valley, CA",
+  "seo_description": "Check out upcoming events at Los Cab Sports Club — pickleball tournaments, tennis clinics, fitness challenges, and social events in Fountain Valley, CA.",
+  "hero_image": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1800&q=80",
+  "hero_title": "Events at Los Cab",
+  "hero_subtitle": "Tournaments, clinics, fitness challenges, socials, and special events — there's always something exciting at Los Cab.",
+  "events_title": "April – July 2026",
+  "upcoming_events": [
+    {
+      "month": "APR",
+      "day": "12",
+      "year": "2026",
+      "color": "var(--teal)",
+      "type": "Pickleball Tournament",
+      "title": "OC Open Pickleball Classic — Spring Edition",
+      "desc": "Annual open-level pickleball tournament welcoming players from across Orange County. Divisions for 3.0, 3.5, 4.0, and 4.5+ skill levels. Registration via Team Reach.",
+      "location": "Los Cab Pickleball Courts",
+      "time": "8:00 AM – 6:00 PM",
+      "access": "Open to Members & Public",
+      "action_text": "Register",
+      "action_link": "contact.html"
+    },
+    {
+      "month": "APR",
+      "day": "19",
+      "year": "2026",
+      "color": "var(--navy)",
+      "type": "Fitness Challenge",
+      "title": "Spring HIIT Challenge — 4-Week Program",
+      "desc": "Kick off spring fitness with a 4-week HIIT challenge. Includes weekly group sessions, nutrition tips, and a leaderboard. All fitness levels welcome.",
+      "location": "Group Fitness Studio",
+      "time": "6:30 AM & 7:00 PM classes",
+      "access": "Members Only",
+      "action_text": "Sign Up",
+      "action_link": "contact.html"
+    },
+    {
+      "month": "MAY",
+      "day": "3",
+      "year": "2026",
+      "color": "var(--gold)",
+      "type": "Social Event",
+      "title": "Member Mixer — Cinco de Mayo Celebration",
+      "desc": "Join us for our annual member mixer with live music, catering by Teak, and community fun. A great way to meet fellow members across all sports programs.",
+      "location": "Timeless Venues / Courtyard",
+      "time": "5:00 PM – 9:00 PM",
+      "access": "Members + 1 Guest Free",
+      "action_text": "RSVP",
+      "action_link": "contact.html"
+    },
+    {
+      "month": "MAY",
+      "day": "17",
+      "year": "2026",
+      "color": "var(--teal-dark)",
+      "type": "Tennis",
+      "title": "Los Cab Junior Tennis Championship",
+      "desc": "Annual junior tennis tournament for our youth academy players. Divisions by age group and skill level, with a celebration and awards ceremony following.",
+      "location": "Los Cab Tennis Courts",
+      "time": "9:00 AM – 4:00 PM",
+      "access": "Junior Members",
+      "action_text": "Register",
+      "action_link": "contact.html"
+    },
+    {
+      "month": "JUN",
+      "day": "7",
+      "year": "2026",
+      "color": "#5C35A0",
+      "type": "National Tournament",
+      "title": "SoCal Handball National Invitational",
+      "desc": "Los Cab hosts its annual handball invitational, welcoming national-level players to compete on our premier concrete and glass-wall handball courts.",
+      "location": "Los Cab Handball Courts (8)",
+      "time": "All Day",
+      "access": "Open to Public",
+      "action_text": "Learn More",
+      "action_link": "contact.html"
+    },
+    {
+      "month": "JUL",
+      "day": "1",
+      "year": "2026",
+      "color": "var(--teal)",
+      "type": "Program Launch",
+      "title": "🏸 Badminton Program Relaunch — Grand Opening",
+      "desc": "The Los Cab Badminton program officially relaunches under the direction of Michael Do. Join us for the grand opening day — orientation, open play, and introductory clinics.",
+      "location": "Los Cab Sports Club",
+      "time": "10:00 AM – 6:00 PM",
+      "access": "Free for Members",
+      "action_text": "Get Notified",
+      "action_link": "contact.html"
+    }
+  ],
+  "venue_title": "Book Timeless Venues for Your Next Event",
+  "venue_subtitle": "Los Cab's 4,000 sq. ft. event space is available for private bookings — from corporate meetings and conferences to weddings, receptions, and birthday celebrations.",
+  "venue_features": [
+    {
+      "title": "4,000 Sq. Ft. Versatile Space",
+      "text": "Configurable for any event size — roundtables, theatre-style, cocktail, or banquet setup."
+    },
+    {
+      "title": "Teak Catering On-Site",
+      "text": "Full catering services available through our in-house team led by Chef Pierre."
+    },
+    {
+      "title": "Beautiful Courtyard Setting",
+      "text": "Access to the tennis courtyard with cabanas as an outdoor extension of your event space."
+    }
+  ]
+}
