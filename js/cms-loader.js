@@ -1,6 +1,6 @@
 /**
  * CMS Loader for Los Cab Website
- * Fetches dynamic content from JSON files managed by Decap CMS.
+ * Dynamically loads content from JSON files managed by Decap CMS.
  */
 document.addEventListener('DOMContentLoaded', () => {
   // 1. Handle Netlify Identity Redirect
@@ -14,66 +14,87 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 2. Load Dynamic Content
-  const cmsElements = document.querySelectorAll('[data-cms-id]');
-  const cmsLists = document.querySelectorAll('[data-cms-list]');
-  
-  // Combine unique file names to fetch
-  const filesToFetch = new Set();
-  cmsElements.forEach(el => filesToFetch.add(el.getAttribute('data-cms-file')));
-  cmsLists.forEach(el => filesToFetch.add(el.getAttribute('data-cms-list')));
+  // 2. Load Global Settings (Footer, Contact, etc.)
+  loadCMSFile('settings');
 
-  filesToFetch.forEach(async (fileName) => {
-    if (!fileName) return;
+  // 3. Load Page-Specific Content
+  // Get current page name (e.g., "tennis" from "tennis.html")
+  let path = window.location.pathname.split("/").pop();
+  if (path === "" || path === "index.html") path = "index";
+  else path = path.replace(".html", "");
+  
+  loadCMSFile(`pages/${path}`);
+
+  /**
+   * Helper to fetch and apply a CMS JSON file
+   */
+  async function loadCMSFile(fileName) {
     try {
       const response = await fetch(`/data/${fileName}.json`);
       if (!response.ok) return;
       const data = await response.json();
 
-      // Handle individual elements
-      cmsElements.forEach(el => {
-        if (el.getAttribute('data-cms-file') === fileName) {
-          const key = el.getAttribute('data-cms-id');
-          if (data[key]) {
-            if (key.includes('image')) {
-              el.src = data[key];
-            } else if (key.includes('welcome') || key.includes('body')) {
-              el.innerHTML = data[key];
-            } else {
-              el.textContent = data[key];
-            }
-          }
+      // Apply individual elements
+      document.querySelectorAll(`[data-cms-file="${fileName.split('/').pop()}"]`).forEach(el => {
+        const id = el.getAttribute('data-cms-id');
+        if (data[id]) {
+          applyContent(el, data[id]);
+        }
+      });
+      
+      // Also check for elements without data-cms-file (fallback for global settings or nested files)
+      document.querySelectorAll(`[data-cms-id]`).forEach(el => {
+        const fileAttr = el.getAttribute('data-cms-file');
+        const id = el.getAttribute('data-cms-id');
+        if (!fileAttr || fileAttr === fileName.split('/').pop()) {
+           if (data[id]) applyContent(el, data[id]);
         }
       });
 
-      // Handle lists (e.g., news articles)
-      cmsLists.forEach(listEl => {
-        if (listEl.getAttribute('data-cms-list') === fileName) {
-          const property = listEl.getAttribute('data-cms-property') || 'articles';
-          const items = data[property];
-          if (Array.isArray(items)) {
-            listEl.innerHTML = ''; // Clear static items
-            items.forEach(item => {
-              const card = document.createElement('div');
-              card.className = 'blog-card';
-              card.innerHTML = `
-                <div class="blog-card-img-wrap">
-                  <img src="${item.image}" alt="${item.title}" loading="lazy">
-                </div>
-                <div class="blog-card-body">
-                  <div class="blog-date">${item.date}</div>
-                  <div class="blog-title">${item.title}</div>
-                  <p class="blog-excerpt">${item.summary}</p>
-                  <a href="${item.link}" class="card-link">Read More →</a>
-                </div>
-              `;
-              listEl.appendChild(card);
-            });
-          }
-        }
-      });
     } catch (error) {
-      console.error(`Error loading CMS content for ${fileName}:`, error);
+      console.warn(`CMS: Could not load data for ${fileName}`);
     }
-  });
+  }
+
+  /**
+   * Apply content based on element type
+   */
+  function applyContent(el, content) {
+    if (!content) return;
+
+    // Handle Background Images
+    if (el.getAttribute('data-cms-type') === 'bg') {
+      el.style.backgroundImage = `url('${content}')`;
+      return;
+    }
+
+    // Handle Meta Tags
+    if (el.tagName === 'META') {
+      if (el.getAttribute('name') === 'description') el.content = content;
+      return;
+    }
+    if (el.tagName === 'TITLE') {
+      document.title = content;
+      return;
+    }
+
+    // Handle Images
+    if (el.tagName === 'IMG') {
+      el.src = content;
+      return;
+    }
+
+    // Handle Inputs
+    if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+      el.value = content;
+      return;
+    }
+
+    // Handle HTML/Markdown vs Plain Text
+    if (el.classList.contains('cms-rich-text') || el.innerHTML.includes('<p>') || el.getAttribute('data-cms-type') === 'html') {
+      el.innerHTML = content;
+    } else {
+      el.textContent = content;
+    }
+  }
 });

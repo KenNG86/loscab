@@ -1,11 +1,64 @@
 backend:
   name: git-gateway
-  branch: main # Match your default branch
+  branch: main
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
 collections:
+  - name: "settings"
+    label: "Global Settings"
+    files:
+      - label: "Site Info & Footer"
+        name: "site_info"
+        file: "data/settings.json"
+        fields:
+          - { label: "Site Title (Part 1)", name: "site_title_part1", widget: "string" }
+          - { label: "Site Title (Part 2)", name: "site_title_part2", widget: "string" }
+          - { label: "Footer Address", name: "footer_address", widget: "text" }
+          - { label: "Footer Phone", name: "footer_phone", widget: "string" }
+          - { label: "Footer Email", name: "footer_email", widget: "string" }
+          - { label: "Facebook Page", name: "facebook_link", widget: "string" }
+          - { label: "Instagram Page", name: "instagram_link", widget: "string" }
+          - { label: "Copyright Text", name: "copyright_text", widget: "string" }
+
+  - name: "pages"
+    label: "Page Content"
+    files:
+      - label: "Home Page"
+        name: "index"
+        file: "data/pages/index.json"
+        fields:
+          - { label: "SEO Title", name: "seo_title", widget: "string" }
+          - { label: "SEO Description", name: "seo_description", widget: "text" }
+          - { label: "Hero Title", name: "hero_title", widget: "string" }
+          - { label: "Hero Subtitle", name: "hero_subtitle", widget: "text" }
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - { label: "Welcome Title", name: "welcome_title", widget: "string" }
+          - { label: "Welcome Text", name: "welcome_text", widget: "markdown" }
+
+      - label: "Tennis Page"
+        name: "tennis"
+        file: "data/pages/tennis.json"
+        fields: &page_fields
+          - { label: "SEO Title", name: "seo_title", widget: "string" }
+          - { label: "SEO Description", name: "seo_description", widget: "text" }
+          - { label: "Hero Title", name: "hero_title", widget: "string" }
+          - { label: "Hero Subtitle", name: "hero_subtitle", widget: "text" }
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - { label: "Intro Title", name: "intro_title", widget: "string" }
+          - { label: "Intro Subtitle", name: "intro_subtitle", widget: "text" }
+
+      - label: "Pickleball Page"
+        name: "pickleball"
+        file: "data/pages/pickleball.json"
+        fields: *page_fields
+
+      - label: "Fitness Page"
+        name: "fitness"
+        file: "data/pages/fitness.json"
+        fields: *page_fields
+
   - name: "content"
     label: "Site Content"
     files:
@@ -24,23 +77,9 @@ collections:
               - { label: "Link", name: "link", widget: "string" }
 
   - name: "membership"
-    label: "Membership Plans"
+    label: "Membership Status"
     folder: "data/membership"
     create: true
     fields:
-      - { label: "Plan Name", name: "title", widget: "string" }
       - { label: "Price", name: "price", widget: "string" }
-      - { label: "Initiation Fee", name: "initiation", widget: "string" }
-      - { label: "Description", name: "description", widget: "text" }
-      - { label: "Benefits", name: "benefits", widget: "list" }
-
-  - name: "home"
-    label: "Home Page Content"
-    files:
-      - label: "Hero & Intro"
-        name: "hero"
-        file: "data/home.json"
-        fields:
-          - { label: "Hero Title", name: "hero_title", widget: "string" }
-          - { label: "Hero Subtitle", name: "hero_subtitle", widget: "text" }
-          - { label: "Welcome Text", name: "welcome_text", widget: "markdown" }
+      - { label: "Initiation Details", name: "initiation", widget: "string" }
