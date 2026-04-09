@@ -1,0 +1,18 @@
+{
+  "articles": [
+    {
+      "title": "Summer Tennis Tournament 2026",
+      "date": "2026-06-15",
+      "summary": "Join us for our annual summer tournament. All levels welcome!",
+      "image": "https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?w=800&q=80",
+      "link": "events.html"
+    },
+    {
+      "title": "New Pickleball Courts Now Open",
+      "date": "2026-04-01",
+      "summary": "We've added 4 new dedicated pickleball courts to our facility.",
+      "image": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?w=800&q=80",
+      "link": "pickleball.html"
+    }
+  ]
+}

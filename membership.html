@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membership Plans | Los Cab Sports Club — Fountain Valley, CA</title>
+  <meta name="description" content="Join Los Cab Sports Club. Tennis, Pickleball, and Sports memberships starting at $115/month. Family plans available. Fountain Valley, CA.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <style>
+    .page-hero-bg { background-image: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1800&q=80'); }
+    .faq-item { border-bottom: 1px solid var(--light-gray); }
+    .faq-question {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.5rem 0; cursor: pointer;
+      font-weight: 700; color: var(--navy); font-size: 1rem;
+      gap: 1rem;
+    }
+    .faq-answer { padding-bottom: 1.5rem; color: var(--body-text); line-height: 1.8; display: none; }
+    .faq-answer.open { display: block; }
+    .faq-arrow { font-size: 1.2rem; flex-shrink: 0; transition: var(--transition); }
+    .faq-item.open .faq-arrow { transform: rotate(180deg); }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar--scrolled" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo" aria-label="Los Cab Sports Club Home">
+        <div class="logo-icon" aria-hidden="true">LC</div>
+        <div class="logo-text">
+          <span class="text-teal">Los Cab</span>
+          <span class="text-navy">Sports Club</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item has-dropdown"><a href="sports.html" class="nav-link">Sports ▾</a><ul class="dropdown"><li><a href="tennis.html">Tennis</a></li><li><a href="pickleball.html">Pickleball</a></li><li><a href="fitness.html">Fitness</a></li><li><a href="sports.html">All Sports</a></li></ul></li>
+        <li class="nav-item"><a href="membership.html" class="nav-link active">Membership</a></li>
+        <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+        <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
+        <li class="nav-item"><a href="blog.html" class="nav-link">News</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-cta"><a href="#plans" class="btn btn-primary">See Plans</a><button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button></div>
+    </div>
+  </nav>
+  <nav class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Home</a><a href="tennis.html">Tennis</a><a href="pickleball.html">Pickleball</a><a href="fitness.html">Fitness</a><a href="sports.html">All Sports</a><a href="membership.html">Membership</a><a href="services.html">Services</a><a href="events.html">Events</a><a href="blog.html">News</a><a href="contact.html">Contact</a>
+    <a href="#plans" class="btn btn-primary" style="margin-top:1rem;text-align:center;">See Plans</a>
+  </nav>
+
+  <header class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="container">
+      <div class="page-hero-content">
+        <nav class="breadcrumb"><a href="index.html">Home</a><span>›</span><span>Membership</span></nav>
+        <span class="section-label" style="color:var(--teal-light);">Join Us</span>
+        <h1>Membership at Los Cab</h1>
+        <p>Simple, transparent pricing — no hidden fees. Choose the plan that fits your sport and budget. Monthly billing available.</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- What's Included -->
+  <section class="section section--gray">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <span class="section-label fade-in">All Plans Include</span>
+        <h2 class="section-title fade-in fade-in-delay-1">Every Membership Includes</h2>
+      </div>
+      <div class="grid grid-4 fade-in fade-in-delay-2">
+        <div class="icon-card"><div class="icon-wrap">💪</div><h3 class="card-title">Gym Access</h3><p class="card-text">Full access to our multi-level fitness center — cardio, free weights, and resistance machines.</p></div>
+        <div class="icon-card"><div class="icon-wrap">🏊</div><h3 class="card-title">Pool Access</h3><p class="card-text">Use of the heated 50-meter Olympic pool at any time during facility hours.</p></div>
+        <div class="icon-card"><div class="icon-wrap">🧘</div><h3 class="card-title">Group Classes</h3><p class="card-text">Unlimited group fitness classes — yoga, Pilates, HIIT, Barre, cycling, Fitdanz, and more.</p></div>
+        <div class="icon-card"><div class="icon-wrap">🚿</div><h3 class="card-title">Locker Rooms</h3><p class="card-text">Full locker room access with showers, steam rooms, saunas, and the co-ed jacuzzi.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Plans -->
+  <section class="section" id="plans">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <span class="section-label fade-in">Individual Plans</span>
+        <h2 class="section-title fade-in fade-in-delay-1">Choose Your Membership</h2>
+        <p class="section-subtitle fade-in fade-in-delay-2" style="margin:0 auto;">All plans are billed monthly. Sign-up processed through Club Automation.</p>
+      </div>
+
+      <div class="grid grid-3 fade-in fade-in-delay-2">
+        <!-- Sports -->
+        <div class="pricing-card">
+          <div class="pricing-type">Individual Membership</div>
+          <div class="pricing-name">Sports Membership</div>
+          <div class="pricing-price" data-cms-file="membership/sports" data-cms-id="price"><span class="price-amount">$115</span><span class="price-period">/month</span></div>
+          <div class="pricing-initiation" data-cms-file="membership/sports" data-cms-id="initiation">One-time $150 Initiation Fee</div>
+          <ul class="pricing-features">
+            <li>Multi-level gym & cardio floor</li>
+            <li>Olympic 50m heated pool</li>
+            <li>All group fitness classes</li>
+            <li>Basketball & indoor volleyball</li>
+            <li>Handball (8 courts)</li>
+            <li>Squash & racquetball (7 courts)</li>
+            <li>Locker rooms, steam & sauna</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline" style="width:100%;text-align:center;" id="mem-sports-btn">Get Started</a>
+        </div>
+
+        <!-- Pickleball -->
+        <div class="pricing-card featured">
+          <div class="pricing-type">Individual Membership</div>
+          <div class="pricing-name">Pickleball Membership</div>
+          <div class="pricing-price" data-cms-file="membership/pickleball" data-cms-id="price"><span class="price-amount">$135</span><span class="price-period">/month</span></div>
+          <div class="pricing-initiation" data-cms-file="membership/pickleball" data-cms-id="initiation">One-time $200 Initiation Fee</div>
+          <ul class="pricing-features">
+            <li>Everything in Sports</li>
+            <li>59 pickleball courts (43 dedicated)</li>
+            <li>Open play — unlimited access</li>
+            <li>Discounted clinics & programs</li>
+            <li>League & ladder participation</li>
+            <li>Team Reach group access</li>
+            <li>Stadium-lit evening courts</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary" style="width:100%;text-align:center;" id="mem-pickleball-btn">Join Now — Best Value</a>
+        </div>
+
+        <!-- Tennis -->
+        <div class="pricing-card">
+          <div class="pricing-type">Individual Membership</div>
+          <div class="pricing-name">Tennis Membership</div>
+          <div class="pricing-price" data-cms-file="membership/tennis" data-cms-id="price"><span class="price-amount">$155</span><span class="price-period">/month</span></div>
+          <div class="pricing-initiation" data-cms-file="membership/tennis" data-cms-id="initiation">One-time $500 Initiation Fee</div>
+          <ul class="pricing-features">
+            <li>Everything in Pickleball</li>
+            <li>17 tennis courts — full access</li>
+            <li>Junior Tennis Academy</li>
+            <li>After-school programs</li>
+            <li>Adult clinics & drilling</li>
+            <li>Priority court reservations</li>
+            <li>Cabana access (courtyard)</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline" style="width:100%;text-align:center;" id="mem-tennis-btn">Get Started</a>
+        </div>
+      </div>
+
+      <!-- Badminton note -->
+      <div class="highlight-box" style="margin-top:2rem;text-align:center;">
+        <p style="color:var(--body-text);font-size:0.95rem;">🏸 <strong>Badminton Program — Relaunching July 2026.</strong> Contact us to get on the interest list and be notified when the program opens.</p>
+        <a href="contact.html" class="btn btn-outline" style="margin-top:1rem;" id="mem-badminton-btn">Notify Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Family Plans -->
+  <section class="section section--navy">
+    <div class="container">
+      <div class="features-split">
+        <div class="fade-in">
+          <span class="section-label" style="color:var(--teal-light);">Family Plans</span>
+          <div class="section-divider"></div>
+          <h2 class="section-title section-title--white">Bring the Whole Family</h2>
+          <p class="section-subtitle section-subtitle--white" style="margin-bottom:2rem;">Los Cab offers family membership options so every member of your household can enjoy all club amenities at a discounted rate.</p>
+          <div class="features-list">
+            <div class="feature-item"><div class="feature-dot"></div><div><strong style="color:white;">Family Memberships Available</strong><p style="color:rgba(255,255,255,0.7);">Add spouse, partner, and children to your membership at reduced monthly rates.</p></div></div>
+            <div class="feature-item"><div class="feature-dot"></div><div><strong style="color:white;">Junior Programs Included</strong><p style="color:rgba(255,255,255,0.7);">Kids gain access to Junior Tennis Academy, Youth Pickleball, Swim School, and Water Polo programs.</p></div></div>
+            <div class="feature-item"><div class="feature-dot"></div><div><strong style="color:white;">Flexible Add-Ons</strong><p style="color:rgba(255,255,255,0.7);">Mix and match membership types for different family members based on their preferred sports.</p></div></div>
+          </div>
+          <a href="contact.html" class="btn btn-gold btn-lg" style="margin-top:2rem;" id="mem-family-btn">Inquire About Family Plans</a>
+        </div>
+        <div class="features-img fade-in fade-in-delay-1">
+          <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=900&q=80" alt="Family enjoying sports at Los Cab" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--gray">
+    <div class="container" style="max-width:760px;">
+      <div class="section-head section-head--center">
+        <span class="section-label fade-in">FAQ</span>
+        <h2 class="section-title fade-in fade-in-delay-1">Common Questions</h2>
+      </div>
+      <div class="fade-in">
+        <div class="faq-item">
+          <div class="faq-question" role="button" tabindex="0" onclick="toggleFaq(this)">How do I sign up? <span class="faq-arrow">▾</span></div>
+          <div class="faq-answer">Memberships are processed through Club Automation, our online membership management system. You can also visit us in person at 17272 Newhope St., Fountain Valley or call (714) 546-8560.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" role="button" tabindex="0" onclick="toggleFaq(this)">Are there long-term contracts? <span class="faq-arrow">▾</span></div>
+          <div class="faq-answer">All memberships are billed monthly. There are no long-term contract requirements. An initiation fee applies when you first join. Contact us for cancellation terms.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" role="button" tabindex="0" onclick="toggleFaq(this)">Can I try the club before joining? <span class="faq-arrow">▾</span></div>
+          <div class="faq-answer">Yes! Contact us at (714) 546-8560 or visit the club to arrange a tour and trial visit. Our membership team will walk you through all the facilities and programs available.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" role="button" tabindex="0" onclick="toggleFaq(this)">Are group fitness classes included? <span class="faq-arrow">▾</span></div>
+          <div class="faq-answer">Yes — all group fitness classes (yoga, Pilates, HIIT, Barre, cycling, Fitdanz, line dancing, and more) are included with every Sports, Pickleball, and Tennis membership at no extra charge.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" role="button" tabindex="0" onclick="toggleFaq(this)">Is personal training extra? <span class="faq-arrow">▾</span></div>
+          <div class="faq-answer">Personal training sessions with our certified trainers are available for an additional fee beyond your monthly membership. Contact the fitness team at fitness@loscab.com to schedule a session.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" role="button" tabindex="0" onclick="toggleFaq(this)">Can children join? <span class="faq-arrow">▾</span></div>
+          <div class="faq-answer">Absolutely. We offer junior programs for tennis, pickleball, swimming (Nova Swim School), water polo, and more. Family add-on rates allow you to include dependents on your primary membership.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-banner-inner">
+        <div><h2>Ready to Start?</h2><p>Contact us today and our membership team will help you find the perfect plan.</p></div>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+          <a href="contact.html" class="btn btn-primary btn-lg" id="mem-contact-cta">Contact Us</a>
+          <a href="tel:+17145468560" class="btn btn-secondary btn-lg" id="mem-call-cta">Call (714) 546-8560</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about"><div class="footer-logo"><a href="index.html" class="logo"><div class="logo-icon">LC</div><div class="logo-text"><span class="text-teal">Los Cab</span><span class="text-navy">Sports Club</span></div></a></div><p>Southern California's premier multi-sport athletic club in Fountain Valley.</p><div class="footer-socials"><a href="https://www.facebook.com/loscab" class="footer-social-link" target="_blank" rel="noopener">f</a><a href="https://www.instagram.com/loscab" class="footer-social-link" target="_blank" rel="noopener">📷</a></div></div>
+        <div class="footer-col"><h4>Sports</h4><ul class="footer-links"><li><a href="tennis.html">Tennis</a></li><li><a href="pickleball.html">Pickleball</a></li><li><a href="fitness.html">Fitness</a></li><li><a href="sports.html">All Sports</a></li></ul></div>
+        <div class="footer-col"><h4>Club</h4><ul class="footer-links"><li><a href="membership.html">Membership</a></li><li><a href="services.html">Services</a></li><li><a href="events.html">Events</a></li><li><a href="blog.html">News</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h4>Contact</h4><div class="footer-contact-items"><div class="footer-contact-item"><span class="icon">📍</span><span>17272 Newhope St.<br>Fountain Valley, CA 92708</span></div><div class="footer-contact-item"><span class="icon">📞</span><a href="tel:+17145468560">(714) 546-8560</a></div></div></div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 Los Cab Sports Club. All Rights Reserved.</p><p>17272 Newhope St., Fountain Valley, CA 92708</p></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/cms-loader.js"></script>
+  <script>
+    function toggleFaq(el) {
+      const item = el.closest('.faq-item');
+      const answer = item.querySelector('.faq-answer');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-answer').classList.remove('open');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        answer.classList.add('open');
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+backend:
+  name: git-gateway
+  branch: main # Match your default branch
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "content"
+    label: "Site Content"
+    files:
+      - label: "Club News & Updates"
+        name: "news"
+        file: "data/news.json"
+        fields:
+          - label: "News Articles"
+            name: "articles"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Date", name: "date", widget: "datetime" }
+              - { label: "Summary", name: "summary", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Link", name: "link", widget: "string" }
+
+  - name: "membership"
+    label: "Membership Plans"
+    folder: "data/membership"
+    create: true
+    fields:
+      - { label: "Plan Name", name: "title", widget: "string" }
+      - { label: "Price", name: "price", widget: "string" }
+      - { label: "Initiation Fee", name: "initiation", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Benefits", name: "benefits", widget: "list" }
+
+  - name: "home"
+    label: "Home Page Content"
+    files:
+      - label: "Hero & Intro"
+        name: "hero"
+        file: "data/home.json"
+        fields:
+          - { label: "Hero Title", name: "hero_title", widget: "string" }
+          - { label: "Hero Subtitle", name: "hero_subtitle", widget: "text" }
+          - { label: "Welcome Text", name: "welcome_text", widget: "markdown" }

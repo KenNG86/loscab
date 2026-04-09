@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Los Cab Sports Club — Southern California's Premier Athletic Club</title>
+  <meta name="description"
+    content="Welcome to Los Cab Sports Club in Fountain Valley, CA. Featuring 17 tennis courts, 59 pickleball courts, Olympic pool, fitness center, and premium club amenities.">
+  <meta name="keywords"
+    content="Los Cab, sports club, Fountain Valley, tennis, pickleball, fitness, swimming, gym, membership">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <style>
+    /* Home-page specific */
+    .hero {
+      min-height: 100vh;
+      background: var(--navy);
+    }
+
+    .hero-bg {
+      background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1800&q=80');
+    }
+
+    /* Sport Tiles */
+    .sport-tile {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      aspect-ratio: 3/4;
+      cursor: pointer;
+      display: block;
+      text-decoration: none;
+    }
+
+    .sport-tile img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .sport-tile:hover img {
+      transform: scale(1.08);
+    }
+
+    .sport-tile-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(13, 27, 42, 0.92) 0%, rgba(13, 27, 42, 0.2) 60%, transparent 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 2rem;
+      transition: var(--transition);
+    }
+
+    .sport-tile:hover .sport-tile-overlay {
+      background: linear-gradient(to top, rgba(0, 97, 107, 0.92) 0%, rgba(0, 97, 107, 0.3) 60%, transparent 100%);
+    }
+
+    .sport-tile-tag {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--teal-light);
+      margin-bottom: 0.4rem;
+    }
+
+    .sport-tile h3 {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 0.4rem;
+    }
+
+    .sport-tile p {
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.75);
+    }
+
+    .sport-tile-arrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-top: 1rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--teal-light);
+      opacity: 0;
+      transform: translateY(6px);
+      transition: var(--transition);
+    }
+
+    .sport-tile:hover .sport-tile-arrow {
+      opacity: 1;
+      transform: none;
+    }
+
+    /* Sports grid tilted layout */
+    .sports-tiles {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.25rem;
+    }
+
+    .sports-tiles .sport-tile:first-child {
+      grid-row: span 2;
+      aspect-ratio: unset;
+    }
+
+    /* Amenities strip */
+    .amenities-strip {
+      background: var(--navy);
+      padding: 3.5rem 0;
+    }
+
+    .amenities-strip-inner {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .amenity-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .amenity-item .icon {
+      font-size: 1.5rem;
+    }
+
+    .amenity-item span {
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    /* Testimonials */
+    .testimonial-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 2.25rem;
+      border: 1px solid var(--light-gray);
+      box-shadow: var(--shadow-card);
+    }
+
+    .testimonial-stars {
+      color: var(--gold);
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .testimonial-text {
+      font-size: 1rem;
+      color: var(--body-text);
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+      font-style: italic;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+
+    .testimonial-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--teal);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      color: var(--white);
+      font-size: 1.1rem;
+    }
+
+    .testimonial-name {
+      font-weight: 700;
+      color: var(--navy);
+    }
+
+    .testimonial-role {
+      font-size: 0.85rem;
+      color: var(--body-text);
+    }
+
+    @media (max-width: 900px) {
+      .sports-tiles {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .sports-tiles .sport-tile:first-child {
+        grid-row: span 1;
+        aspect-ratio: 3/4;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .sports-tiles {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body class="has-hero">
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="logo" aria-label="Los Cab Sports Club Home">
+        <div class="logo-icon" aria-hidden="true">LC</div>
+        <div class="logo-text">
+          <span class="text-teal">Los Cab</span>
+          <span class="text-navy">Sports Club</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item has-dropdown">
+          <a href="sports.html" class="nav-link">Sports ▾</a>
+          <ul class="dropdown" role="list">
+            <li><a href="tennis.html">Tennis</a></li>
+            <li><a href="pickleball.html">Pickleball</a></li>
+            <li><a href="fitness.html">Fitness</a></li>
+            <li><a href="sports.html">All Sports</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="membership.html" class="nav-link">Membership</a></li>
+        <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+        <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
+        <li class="nav-item"><a href="blog.html" class="nav-link">News</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="membership.html" class="btn btn-primary" id="navbar-cta">Join Today</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="tennis.html">Tennis</a>
+    <a href="pickleball.html">Pickleball</a>
+    <a href="fitness.html">Fitness</a>
+    <a href="sports.html">All Sports</a>
+    <a href="membership.html">Membership</a>
+    <a href="services.html">Services</a>
+    <a href="events.html">Events</a>
+    <a href="blog.html">News</a>
+    <a href="contact.html">Contact</a>
+    <a href="membership.html" class="btn btn-primary" style="margin-top:1rem; text-align:center;">Join Today</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="container" style="position:relative;z-index:2;width:100%;">
+      <div class="hero-content">
+        <div class="hero-label">Fountain Valley, CA</div>
+        <h1 class="hero-title fade-in" data-cms-file="home" data-cms-id="hero_title">Your Home <span>Away</span><br>From Home</h1>
+        <p class="hero-desc" data-cms-file="home" data-cms-id="hero_subtitle">Southern California's premier multi-sport athletic club — tennis, pickleball, fitness,
+          swimming, and more. All under one roof.</p>
+        <div class="hero-buttons">
+          <a href="membership.html" class="btn btn-primary btn-lg" id="hero-join-btn">Explore Membership</a>
+          <a href="sports.html" class="btn btn-secondary btn-lg" id="hero-explore-btn">Our Sports</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-number" data-count="59">0</div>
+            <div class="hero-stat-label">Pickleball Courts</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number" data-count="17">0</div>
+            <div class="hero-stat-label">Tennis Courts</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number" data-count="50">0</div>
+            <div class="hero-stat-label">Meter Pool</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number" data-count="30">0</div>
+            <div class="hero-stat-label">+ Years of Excellence</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Amenities Strip -->
+  <div class="amenities-strip">
+    <div class="container">
+      <div class="amenities-strip-inner">
+        <div class="amenity-item"><span class="icon">🏊</span><span>Olympic Pool</span></div>
+        <div class="amenity-item"><span class="icon">💪</span><span>Multi-level Gym</span></div>
+        <div class="amenity-item"><span class="icon">🧘</span><span>Yoga & Pilates</span></div>
+        <div class="amenity-item"><span class="icon">☕</span><span>Sol Vida Café</span></div>
+        <div class="amenity-item"><span class="icon">💆</span><span>Gem Day Spa</span></div>
+        <div class="amenity-item"><span class="icon">🎉</span><span>Event Venues</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sports Grid -->
+  <section class="section" id="sports">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label fade-in">Our Sports</span>
+        <h2 class="section-title fade-in fade-in-delay-1">Play What You Love.<br>All in One Place.</h2>
+        <p class="section-subtitle fade-in fade-in-delay-2">From competitive tennis to casual pickleball, intensive
+          fitness to serene swimming — Los Cab has every sport covered.</p>
+      </div>
+
+      <div class="sports-tiles">
+        <!-- Pickleball – tall -->
+        <a href="pickleball.html" class="sport-tile fade-in" id="sport-pickleball">
+          <img src="https://images.unsplash.com/photo-1554068865-24cecd4e34b8?w=800&q=80"
+            alt="Pickleball courts at Los Cab" loading="lazy">
+          <div class="sport-tile-overlay">
+            <div class="sport-tile-tag">59 Courts</div>
+            <h3>Pickleball</h3>
+            <p>43 dedicated + 16 hybrid lighted courts. Clinics, leagues & more.</p>
+            <div class="sport-tile-arrow">Explore →</div>
+          </div>
+        </a>
+
+        <!-- Tennis -->
+        <a href="tennis.html" class="sport-tile fade-in fade-in-delay-1" id="sport-tennis">
+          <img src="https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?w=800&q=80"
+            alt="Tennis courts at Los Cab" loading="lazy">
+          <div class="sport-tile-overlay">
+            <div class="sport-tile-tag">17 Courts</div>
+            <h3>Tennis</h3>
+            <p>Junior academies, adult programs & competitive leagues.</p>
+            <div class="sport-tile-arrow">Explore →</div>
+          </div>
+        </a>
+
+        <!-- Fitness -->
+        <a href="fitness.html" class="sport-tile fade-in fade-in-delay-2" id="sport-fitness">
+          <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&q=80"
+            alt="Fitness center at Los Cab" loading="lazy">
+          <div class="sport-tile-overlay">
+            <div class="sport-tile-tag">Full Gym</div>
+            <h3>Fitness</h3>
+            <p>Cardio, weights, group classes, yoga, Pilates, HIIT & Barre.</p>
+            <div class="sport-tile-arrow">Explore →</div>
+          </div>
+        </a>
+
+        <!-- Swimming -->
+        <a href="sports.html#swimming" class="sport-tile fade-in fade-in-delay-1" id="sport-swimming">
+          <img src="https://images.unsplash.com/photo-1560090995-01632a28895b?w=800&q=80" alt="Olympic pool at Los Cab"
+            loading="lazy">
+          <div class="sport-tile-overlay">
+            <div class="sport-tile-tag">50M Pool</div>
+            <h3>Swimming</h3>
+            <p>Olympic heated pool, aqua fitness & Nova Swim School.</p>
+            <div class="sport-tile-arrow">Explore →</div>
+          </div>
+        </a>
+
+        <!-- More Sports -->
+        <a href="sports.html" class="sport-tile fade-in fade-in-delay-2" id="sport-more">
+          <img src="https://images.unsplash.com/photo-1504450758481-7338eba7524a?w=800&q=80"
+            alt="Basketball court at Los Cab" loading="lazy">
+          <div class="sport-tile-overlay">
+            <div class="sport-tile-tag">+ More</div>
+            <h3>All Sports</h3>
+            <p>Basketball, volleyball, handball, squash, racquetball & badminton.</p>
+            <div class="sport-tile-arrow">View All →</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Club Info Strip -->
+  <section class="section section--gray">
+    <div class="container">
+      <div class="features-split">
+        <div class="features-img fade-in">
+          <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=900&q=80"
+            alt="Los Cab Sports Club facilities" loading="lazy">
+        </div>
+        <div class="fade-in fade-in-delay-1">
+          <span class="section-label">Happy, Healthy & Active</span>
+          <div class="section-divider"></div>
+          <h2 class="section-title">World-Class Facilities, Community Feel</h2>
+          <div class="section-subtitle" data-cms-file="home" data-cms-id="welcome_text">
+            <p>More than a gym — Los Cab is a community where athletes, families, and weekend warriors all feel at home.</p>
+          </div>
+          <div class="features-list">
+            <div class="feature-item">
+              <div class="feature-dot"></div>
+              <div>
+                <strong>The Pool</strong>
+                <p>Olympic-size 50-meter heated pool. Perfect for lap swimming, cross-training, swim lessons, or a
+                  refreshing dip.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-dot"></div>
+              <div>
+                <strong>Premium Locker Rooms</strong>
+                <p>Each locker room is equipped with spacious showers, steam & sauna rooms, and a co-ed jacuzzi.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-dot"></div>
+              <div>
+                <strong>Cabanas & Lounge</strong>
+                <p>Semi-private cabanas with showers, lockers, fridge, and TV nestled in the tennis courtyard.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-dot"></div>
+              <div>
+                <strong>Sol Vida Café</strong>
+                <p>Full-service café offering coffee, smoothies, salads, sandwiches, bagels, and more.</p>
+              </div>
+            </div>
+          </div>
+          <a href="services.html" class="btn btn-outline" style="margin-top:2rem;" id="club-services-btn">View All
+            Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hours -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <span class="section-label fade-in">We're Open</span>
+        <h2 class="section-title section-title fade-in fade-in-delay-1">Club Hours</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;" class="fade-in">
+        <div>
+          <h3 style="font-weight:700;color:var(--navy);margin-bottom:1rem;font-size:1.1rem;">🏛️ Club Hours</h3>
+          <table class="hours-table">
+            <thead>
+              <tr>
+                <th>Day</th>
+                <th>Open</th>
+                <th>Last Entry</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Monday – Friday</td>
+                <td>6:00 AM – 9:30 PM</td>
+                <td>9:00 PM</td>
+              </tr>
+              <tr>
+                <td>Saturday – Sunday</td>
+                <td>7:00 AM – 8:00 PM</td>
+                <td>7:40 PM</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h3 style="font-weight:700;color:var(--navy);margin-bottom:1rem;font-size:1.1rem;">🎾 Court Hours</h3>
+          <table class="hours-table">
+            <thead>
+              <tr>
+                <th>Day</th>
+                <th>Open</th>
+                <th>Last Entry</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Monday – Friday</td>
+                <td>6:00 AM – 11:00 PM</td>
+                <td>9:00 PM</td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td>7:00 AM – 10:00 PM</td>
+                <td>7:40 PM</td>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td>7:00 AM – 8:00 PM</td>
+                <td>7:40 PM</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Membership Preview -->
+  <section class="section section--navy">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <span class="section-label" style="color:var(--teal-light);">Membership Plans</span>
+        <h2 class="section-title section-title--white fade-in">Choose Your Membership</h2>
+        <p class="section-subtitle section-subtitle--white fade-in fade-in-delay-1" style="margin:0 auto;">Simple,
+          transparent pricing. Join monthly — no long-term contracts required.</p>
+      </div>
+      <div class="grid grid-3 fade-in fade-in-delay-2">
+        <div class="pricing-card">
+          <div class="pricing-type">Individual</div>
+          <div class="pricing-name">Sports Membership</div>
+          <div class="pricing-price">
+            <span class="price-amount">$115</span>
+            <span class="price-period">/month</span>
+          </div>
+          <div class="pricing-initiation">+ $150 Initiation Fee</div>
+          <ul class="pricing-features">
+            <li>Gym & Fitness access</li>
+            <li>Swimming pool</li>
+            <li>Basketball & volleyball</li>
+            <li>Handball, squash</li>
+            <li>Group fitness classes</li>
+          </ul>
+          <a href="membership.html" class="btn btn-outline" id="pricing-sports-btn">Learn More</a>
+        </div>
+        <div class="pricing-card featured">
+          <div class="pricing-type">Individual</div>
+          <div class="pricing-name">Pickleball Membership</div>
+          <div class="pricing-price">
+            <span class="price-amount">$135</span>
+            <span class="price-period">/month</span>
+          </div>
+          <div class="pricing-initiation">+ $200 Initiation Fee</div>
+          <ul class="pricing-features">
+            <li>All Sports benefits</li>
+            <li>59 pickleball courts</li>
+            <li>Clinics & leagues</li>
+            <li>Team Reach access</li>
+            <li>Open play sessions</li>
+          </ul>
+          <a href="membership.html" class="btn btn-primary" id="pricing-pickleball-btn">Join Now</a>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-type">Individual</div>
+          <div class="pricing-name">Tennis Membership</div>
+          <div class="pricing-price">
+            <span class="price-amount">$155</span>
+            <span class="price-period">/month</span>
+          </div>
+          <div class="pricing-initiation">+ $500 Initiation Fee</div>
+          <ul class="pricing-features">
+            <li>All Sports + Pickleball benefits</li>
+            <li>17 tennis courts</li>
+            <li>Junior academies</li>
+            <li>After-school programs</li>
+            <li>Priority court booking</li>
+          </ul>
+          <a href="membership.html" class="btn btn-outline" id="pricing-tennis-btn">Learn More</a>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:2.5rem;">
+        <a href="membership.html" class="btn btn-gold btn-lg" id="all-plans-btn">View All Plans & Family Options</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section section--gray">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <span class="section-label fade-in">Member Stories</span>
+        <h2 class="section-title fade-in fade-in-delay-1">What Our Members Say</h2>
+      </div>
+      <div class="grid grid-3 fade-in fade-in-delay-2">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Los Cab has been our family's second home for years. The pickleball courts are
+            incredible, and the staff truly cares about the community here."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">MR</div>
+            <div>
+              <div class="testimonial-name">Maria R.</div>
+              <div class="testimonial-role">Pickleball Member</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"The tennis program here is top-notch. My kids have improved so much since joining
+            the junior academy. Can't recommend it enough!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">JK</div>
+            <div>
+              <div class="testimonial-name">Jason K.</div>
+              <div class="testimonial-role">Tennis Member</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"The gym and group fitness classes are world-class. I've tried many clubs in
+            Orange County and nothing compares to the value and quality at Los Cab."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">AL</div>
+            <div>
+              <div class="testimonial-name">Amanda L.</div>
+              <div class="testimonial-role">Sports Member</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-banner-inner">
+        <div>
+          <h2>Ready to Join Los Cab?</h2>
+          <p>Become part of Fountain Valley's most vibrant athletic community. Flexible memberships available for
+            individuals and families.</p>
+        </div>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;flex-shrink:0;">
+          <a href="membership.html" class="btn btn-primary btn-lg" id="cta-join-btn">Join Today</a>
+          <a href="contact.html" class="btn btn-secondary btn-lg" id="cta-contact-btn">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <div class="footer-logo">
+            <a href="index.html" class="logo">
+              <div class="logo-icon">LC</div>
+              <div class="logo-text">
+                <span class="text-teal">Los Cab</span>
+                <span class="text-navy">Sports Club</span>
+              </div>
+            </a>
+          </div>
+          <p>Southern California's premier multi-sport athletic club in Fountain Valley. Happy, Healthy & Active since
+            we opened our doors.</p>
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/loscab" class="footer-social-link" aria-label="Facebook" target="_blank"
+              rel="noopener">f</a>
+            <a href="https://www.instagram.com/loscab" class="footer-social-link" aria-label="Instagram" target="_blank"
+              rel="noopener">📷</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Sports</h4>
+          <ul class="footer-links">
+            <li><a href="tennis.html">Tennis</a></li>
+            <li><a href="pickleball.html">Pickleball</a></li>
+            <li><a href="fitness.html">Fitness & Classes</a></li>
+            <li><a href="sports.html">Swimming</a></li>
+            <li><a href="sports.html">All Sports</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Club</h4>
+          <ul class="footer-links">
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="blog.html">News & Updates</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-contact-items">
+            <div class="footer-contact-item">
+              <span class="icon">📍</span>
+              <span>17272 Newhope St.<br>Fountain Valley, CA 92708</span>
+            </div>
+            <div class="footer-contact-item">
+              <span class="icon">📞</span>
+              <a href="tel:+17145468560">(714) 546-8560</a>
+            </div>
+            <div class="footer-contact-item">
+              <span class="icon">✉️</span>
+              <a href="mailto:susan@loscab.com">susan@loscab.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Los Cab Sports Club. All Rights Reserved.</p>
+        <p>17272 Newhope St., Fountain Valley, CA 92708 · (714) 546-8560</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/cms-loader.js"></script>
+</body>
+
+</html>
+<nav-link>
+  <<nav /nav-link>
