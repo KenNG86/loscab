@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title data-cms-file="tennis" data-cms-id="seo_title">Tennis | Los Cab Sports Club — 17 Premier Courts in Fountain Valley</title>
-  <meta name="description" data-cms-file="tennis" data-cms-id="seo_description" content="Play tennis at Los Cab — 17 courts, junior academies, after-school programs, and adult leagues in Fountain Valley, CA.">
+  <title>Tennis | Los Cab Sports Club — 17 Premier Courts in Fountain Valley</title>
+  <meta name="description" content="Play tennis at Los Cab — 17 courts, junior academies, after-school programs, and adult leagues in Fountain Valley, CA.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-  <style data-cms-file="tennis" data-cms-id="hero_image" data-cms-type="bg-css">
+  <style>
     .page-hero-bg { background-image: url('https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?w=1800&q=80'); }
   </style>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
@@ -21,18 +21,13 @@
       <a href="index.html" class="logo" aria-label="Los Cab Sports Club Home">
         <div class="logo-icon" aria-hidden="true">LC</div>
         <div class="logo-text">
-          <span class="text-teal" data-cms-file="settings" data-cms-id="site_title_part1">Los Cab</span>
-          <span class="text-navy" data-cms-file="settings" data-cms-id="site_title_part2">Sports Club</span>
+          <span class="text-teal">Los Cab</span>
+          <span class="text-navy">Sports Club</span>
         </div>
       </a>
-      <ul class="nav-links" data-cms-list="settings" data-cms-property="nav_links">
-        <li class="nav-item has-dropdown">
-          <a href="" class="nav-link" data-cms-bind="href:url|textContent:label"></a>
-          <ul class="dropdown" data-cms-list="" data-cms-property="dropdown">
-            <li><a href="" data-cms-bind="href:url|textContent:label"></a></li>
-          </ul>
-        </li>
-      </ul></li>
+      <ul class="nav-links">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item has-dropdown"><a href="sports.html" class="nav-link">Sports ▾</a><ul class="dropdown"><li><a href="tennis.html">Tennis</a></li><li><a href="pickleball.html">Pickleball</a></li><li><a href="fitness.html">Fitness</a></li><li><a href="sports.html">All Sports</a></li></ul></li>
         <li class="nav-item"><a href="membership.html" class="nav-link">Membership</a></li>
         <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
         <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
@@ -54,8 +49,8 @@
       <div class="page-hero-content">
         <nav class="breadcrumb"><a href="index.html">Home</a><span>›</span><span>Tennis</span></nav>
         <span class="section-label" style="color:var(--teal-light);">17 Courts</span>
-        <h1 data-cms-file="tennis" data-cms-id="hero_title">Tennis at Los Cab</h1>
-        <p data-cms-file="tennis" data-cms-id="hero_subtitle">From junior academies to competitive adult leagues — Los Cab offers a complete tennis experience for every age and level.</p>
+        <h1>Tennis at Los Cab</h1>
+        <p>From junior academies to competitive adult leagues — Los Cab offers a complete tennis experience for every age and level.</p>
       </div>
     </div>
   </header>
@@ -63,8 +58,11 @@
   <!-- Stats -->
   <section class="section section--gray">
     <div class="container">
-      <div class="stat-row fade-in" data-cms-list="tennis" data-cms-property="stats">
-        <div class="stat-box"><div class="stat-number" data-count="17" data-cms-bind="number">0</div><div class="stat-label" data-cms-bind="label">Tennis Courts</div><div class="stat-sub" data-cms-bind="sub"></div></div>
+      <div class="stat-row fade-in">
+        <div class="stat-box"><div class="stat-number" data-count="17">0</div><div class="stat-label">Tennis Courts</div></div>
+        <div class="stat-box"><div class="stat-number" style="font-size:1.8rem;line-height:1.2;">Junior</div><div class="stat-label">Academy</div><div class="stat-sub">After-school programs</div></div>
+        <div class="stat-box"><div class="stat-number" style="font-size:1.8rem;line-height:1.2;">Adult</div><div class="stat-label">Programs</div><div class="stat-sub">All skill levels</div></div>
+        <div class="stat-box"><div class="stat-number" style="font-size:1.8rem;line-height:1.2;">Year</div><div class="stat-label">Round</div><div class="stat-sub">Leagues & clinics</div></div>
       </div>
     </div>
   </section>
@@ -77,12 +75,42 @@
         <h2 class="section-title fade-in fade-in-delay-1">Tennis for All Ages & Levels</h2>
         <p class="section-subtitle fade-in fade-in-delay-2">Whether you're picking up a racquet for the first time or training competitively, our expert coaches have a program for you.</p>
       </div>
-      <div class="grid grid-2 fade-in fade-in-delay-2" data-cms-list="tennis" data-cms-property="programs">
+      <div class="grid grid-2 fade-in fade-in-delay-2">
         <div class="icon-card">
-          <div class="icon-wrap" data-cms-bind="icon">🎾</div>
-          <h3 class="card-title" data-cms-bind="title">Junior Tennis Academy</h3>
-          <p class="card-text" data-cms-bind="desc">A structured development pathway for young players. Age-appropriate training covering technique, match play, sportsmanship, and competitive tournament preparation.</p>
-          <a href="contact.html" class="card-link" id="tennis-junior-btn" data-cms-bind="href:link">Learn More →</a>
+          <div class="icon-wrap">🎾</div>
+          <h3 class="card-title">Junior Tennis Academy</h3>
+          <p class="card-text">A structured development pathway for young players. Age-appropriate training covering technique, match play, sportsmanship, and competitive tournament preparation.</p>
+          <a href="contact.html" class="card-link" id="tennis-junior-btn">Learn More →</a>
+        </div>
+        <div class="icon-card">
+          <div class="icon-wrap">🏫</div>
+          <h3 class="card-title">After School Academy</h3>
+          <p class="card-text">Afternoon programs that blend tennis instruction with fun activity after a school day. Designed to keep kids active, engaged, and developing their game.</p>
+          <a href="contact.html" class="card-link" id="tennis-afterschool-btn">Learn More →</a>
+        </div>
+        <div class="icon-card">
+          <div class="icon-wrap">🧑</div>
+          <h3 class="card-title">Adult Beginner & Intermediate</h3>
+          <p class="card-text">New to tennis or want to build a stronger foundation? Group clinics and private lessons are available for adult beginners through intermediate players.</p>
+          <a href="contact.html" class="card-link" id="tennis-adult-btn">Learn More →</a>
+        </div>
+        <div class="icon-card">
+          <div class="icon-wrap">🏆</div>
+          <h3 class="card-title">Competitive Leagues & Drilling</h3>
+          <p class="card-text">Year-round league play, round-robins, and advanced drilling clinics for competitive adults. Challenge your game and meet other serious players.</p>
+          <a href="contact.html" class="card-link" id="tennis-league-btn">Learn More →</a>
+        </div>
+        <div class="icon-card">
+          <div class="icon-wrap">👤</div>
+          <h3 class="card-title">Private Lessons</h3>
+          <p class="card-text">One-on-one sessions with our certified teaching professionals. Personalized attention accelerates improvement at any age or level.</p>
+          <a href="contact.html" class="card-link" id="tennis-private-btn">Book a Lesson →</a>
+        </div>
+        <div class="icon-card">
+          <div class="icon-wrap">🔄</div>
+          <h3 class="card-title">Open Court Play</h3>
+          <p class="card-text">Members can reserve courts online and enjoy open play throughout the day and evening. 17 courts mean you'll almost always find availability.</p>
+          <a href="contact.html" class="card-link" id="tennis-open-btn">View Schedule →</a>
         </div>
       </div>
     </div>
@@ -98,10 +126,13 @@
         <div class="fade-in fade-in-delay-1">
           <span class="section-label">The Courts</span>
           <div class="section-divider"></div>
-          <h2 class="section-title" data-cms-id="courts_title">17 Courts Built for Serious Play</h2>
-          <p class="section-subtitle" data-cms-id="courts_subtitle">Our tennis facility features premium court surfaces, lighting for evening play, and a welcoming atmosphere for players of every level.</p>
-          <div class="features-list" data-cms-list="tennis" data-cms-property="court_features">
-            <div class="feature-item"><div class="feature-dot"></div><div><strong data-cms-bind="title">17 Total Courts</strong><p data-cms-bind="text">Multiple court surfaces with excellent drainage and maintenance, ensuring great play conditions year-round.</p></div></div>
+          <h2 class="section-title">17 Courts Built for Serious Play</h2>
+          <p class="section-subtitle">Our tennis facility features premium court surfaces, lighting for evening play, and a welcoming atmosphere for players of every level.</p>
+          <div class="features-list">
+            <div class="feature-item"><div class="feature-dot"></div><div><strong>17 Total Courts</strong><p>Multiple court surfaces with excellent drainage and maintenance, ensuring great play conditions year-round.</p></div></div>
+            <div class="feature-item"><div class="feature-dot"></div><div><strong>Night Lighting</strong><p>Illuminated courts mean you can play before work, after work, or on weekends after sunset.</p></div></div>
+            <div class="feature-item"><div class="feature-dot"></div><div><strong>Pro Shop</strong><p>On-site pro shop for racquet stringing, equipment, and accessories.</p></div></div>
+            <div class="feature-item"><div class="feature-dot"></div><div><strong>Cabana Access</strong><p>Private courtyard cabanas available to tennis members for a premium relaxation after play.</p></div></div>
           </div>
           <a href="membership.html" class="btn btn-primary" style="margin-top:2rem;" id="tennis-membership-btn">View Tennis Membership</a>
         </div>
@@ -114,8 +145,8 @@
     <div class="container">
       <div class="highlight-box" style="text-align:center;padding:4rem 3rem;">
         <span class="section-label">Tennis Membership</span>
-        <h2 class="section-title" style="margin-bottom:0.5rem;"><span data-cms-id="membership_price">$155</span> <span style="font-size:1.2rem;font-family:var(--font-sans);font-weight:400;color:var(--body-text);">/month</span></h2>
-        <p style="color:var(--body-text);margin-bottom:0.5rem;" data-cms-id="membership_details">$500 Initiation Fee · Includes all Pickleball & Sports benefits</p>
+        <h2 class="section-title" style="margin-bottom:0.5rem;">$155 <span style="font-size:1.2rem;font-family:var(--font-sans);font-weight:400;color:var(--body-text);">/month</span></h2>
+        <p style="color:var(--body-text);margin-bottom:0.5rem;">$500 Initiation Fee · Includes all Pickleball & Sports benefits</p>
         <p style="color:var(--body-text);max-width:480px;margin:0 auto 2rem;line-height:1.8;">Full access to all 17 tennis courts, junior academies, adult programs, and every other club amenity.</p>
         <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
           <a href="membership.html" class="btn btn-primary btn-lg" id="tennis-join-btn">Join Now</a>
@@ -135,53 +166,15 @@
     </div>
   </section>
 
-  
-  <section class="section section--gray">
-    <div class="container">
-      <div class="section-head section-head--center">
-        <span class="section-label fade-in">We're Open</span>
-        <h2 class="section-title section-title fade-in fade-in-delay-1">Hours</h2>
-      </div>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:2rem;" class="fade-in">
-        <div>
-          <h3 style="font-weight:700;color:var(--navy);margin-bottom:1rem;font-size:1.1rem;">🏛️ Club Hours</h3>
-          <table class="hours-table">
-            <thead><tr><th>Day</th><th>Open</th><th>Last Entry</th></tr></thead>
-            <tbody data-cms-list="settings" data-cms-property="club_hours">
-              <tr>
-                <td data-cms-bind="day"></td>
-                <td data-cms-bind="open"></td>
-                <td data-cms-bind="textContent:last"></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div>
-          <h3 style="font-weight:700;color:var(--navy);margin-bottom:1rem;font-size:1.1rem;">🎾 Court Hours</h3>
-          <table class="hours-table">
-            <thead><tr><th>Day</th><th>Open</th><th>Last Entry</th></tr></thead>
-            <tbody data-cms-list="settings" data-cms-property="court_hours">
-              <tr>
-                <td data-cms-bind="day"></td>
-                <td data-cms-bind="open"></td>
-                <td data-cms-bind="textContent:last"></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-about"><div class="footer-logo"><a href="index.html" class="logo"><div class="logo-icon">LC</div><div class="logo-text"><span class="text-teal" data-cms-file="settings" data-cms-id="site_title_part1">Los Cab</span><span class="text-navy" data-cms-file="settings" data-cms-id="site_title_part2">Sports Club</span></div></a></div><p>Southern California's premier multi-sport athletic club in Fountain Valley.</p><div class="footer-socials"><a href="#" class="footer-social-link" target="_blank" rel="noopener" data-cms-file="settings" data-cms-id="facebook_link">f</a><a href="#" class="footer-social-link" target="_blank" rel="noopener" data-cms-file="settings" data-cms-id="instagram_link">📷</a></div></div>
-        <div class="footer-col"><h4>Sports</h4><ul class="footer-links" data-cms-list="settings" data-cms-property="footer_sports_links"><li><a href="" data-cms-bind="href:url|textContent:label"></a></li></ul></div>
-        <div class="footer-col"><h4>Club</h4><ul class="footer-links" data-cms-list="settings" data-cms-property="footer_club_links"><li><a href="" data-cms-bind="href:url|textContent:label"></a></li></ul></div>
-        <div class="footer-col"><h4>Contact</h4><div class="footer-contact-items"><div class="footer-contact-item"><span class="icon">📍</span><span data-cms-file="settings" data-cms-id="footer_address">17272 Newhope St.<br>Fountain Valley, CA 92708</span></div><div class="footer-contact-item"><span class="icon">📞</span><a href="tel:+17145468560" data-cms-file="settings" data-cms-id="footer_phone">(714) 546-8560</a></div></div></div>
+        <div class="footer-about"><div class="footer-logo"><a href="index.html" class="logo"><div class="logo-icon">LC</div><div class="logo-text"><span class="text-teal">Los Cab</span><span class="text-navy">Sports Club</span></div></a></div><p>Southern California's premier multi-sport athletic club in Fountain Valley.</p><div class="footer-socials"><a href="https://www.facebook.com/loscab" class="footer-social-link" target="_blank" rel="noopener">f</a><a href="https://www.instagram.com/loscab" class="footer-social-link" target="_blank" rel="noopener">📷</a></div></div>
+        <div class="footer-col"><h4>Sports</h4><ul class="footer-links"><li><a href="tennis.html">Tennis</a></li><li><a href="pickleball.html">Pickleball</a></li><li><a href="fitness.html">Fitness</a></li><li><a href="sports.html">All Sports</a></li></ul></div>
+        <div class="footer-col"><h4>Club</h4><ul class="footer-links"><li><a href="membership.html">Membership</a></li><li><a href="services.html">Services</a></li><li><a href="events.html">Events</a></li><li><a href="blog.html">News</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h4>Contact</h4><div class="footer-contact-items"><div class="footer-contact-item"><span class="icon">📍</span><span>17272 Newhope St.<br>Fountain Valley, CA 92708</span></div><div class="footer-contact-item"><span class="icon">📞</span><a href="tel:+17145468560">(714) 546-8560</a></div></div></div>
       </div>
-      <div class="footer-bottom"><p data-cms-file="settings" data-cms-id="copyright_text">© 2026 Los Cab Sports Club. All Rights Reserved.</p><p>17272 Newhope St., Fountain Valley, CA 92708</p></div>
+      <div class="footer-bottom"><p>© 2026 Los Cab Sports Club. All Rights Reserved.</p><p>17272 Newhope St., Fountain Valley, CA 92708</p></div>
     </div>
   </footer>
   <script src="js/main.js"></script>

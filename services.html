@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title data-cms-file="services" data-cms-id="seo_title">Services & Amenities | Los Cab Sports Club — Fountain Valley, CA</title>
-  <meta name="description" data-cms-file="services" data-cms-id="seo_description" content="Explore the premium amenities at Los Cab — Olympic-sized pool, steam rooms, saunas, pro shop, and courtyard cabanas in Fountain Valley, CA.">
+  <title>Services | Los Cab Sports Club — Spa, Café, Catering & Event Venues</title>
+  <meta name="description" content="Los Cab Sports Club offers the Gem Day Spa, Sol Vida Café, Teak Catering, and Timeless Venues — premium services in Fountain Valley, CA.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-  <style data-cms-file="services" data-cms-id="hero_image" data-cms-type="bg-css">
-    .page-hero-bg { background-image: url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1800&q=80'); }
+  <style>
+    .page-hero-bg { background-image: url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1800&q=80'); }
     .service-hero-card {
       border-radius: var(--radius-xl);
       overflow: hidden;
@@ -41,18 +41,13 @@
       <a href="index.html" class="logo" aria-label="Los Cab Sports Club Home">
         <div class="logo-icon" aria-hidden="true">LC</div>
         <div class="logo-text">
-          <span class="text-teal" data-cms-file="settings" data-cms-id="site_title_part1">Los Cab</span>
-          <span class="text-navy" data-cms-file="settings" data-cms-id="site_title_part2">Sports Club</span>
+          <span class="text-teal">Los Cab</span>
+          <span class="text-navy">Sports Club</span>
         </div>
       </a>
-      <ul class="nav-links" data-cms-list="settings" data-cms-property="nav_links">
-        <li class="nav-item has-dropdown">
-          <a href="" class="nav-link" data-cms-bind="href:url|textContent:label"></a>
-          <ul class="dropdown" data-cms-list="" data-cms-property="dropdown">
-            <li><a href="" data-cms-bind="href:url|textContent:label"></a></li>
-          </ul>
-        </li>
-      </ul></li>
+      <ul class="nav-links">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item has-dropdown"><a href="sports.html" class="nav-link">Sports ▾</a><ul class="dropdown"><li><a href="tennis.html">Tennis</a></li><li><a href="pickleball.html">Pickleball</a></li><li><a href="fitness.html">Fitness</a></li><li><a href="sports.html">All Sports</a></li></ul></li>
         <li class="nav-item"><a href="membership.html" class="nav-link">Membership</a></li>
         <li class="nav-item"><a href="services.html" class="nav-link active">Services</a></li>
         <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
@@ -73,9 +68,9 @@
     <div class="container">
       <div class="page-hero-content">
         <nav class="breadcrumb"><a href="index.html">Home</a><span>›</span><span>Services</span></nav>
-        <span class="section-label" style="color:var(--teal-light);">Club Amenities</span>
-        <h1 data-cms-file="services" data-cms-id="hero_title">Services & Amenities</h1>
-        <p data-cms-file="services" data-cms-id="hero_subtitle">Beyond the courts and the gym, Los Cab offers a suite of premium amenities designed for relaxation and convenience.</p>
+        <span class="section-label" style="color:var(--teal-light);">Premium Club Services</span>
+        <h1>Club Services & Amenities</h1>
+        <p>Beyond sports — Los Cab offers a boutique spa, full-service café, event catering, and stunning event venues all on-site.</p>
       </div>
     </div>
   </header>
@@ -87,18 +82,73 @@
         <span class="section-label fade-in">What We Offer</span>
         <h2 class="section-title fade-in fade-in-delay-1">Everything You Need, All in One Place</h2>
       </div>
-      <div class="grid grid-2 fade-in fade-in-delay-2" data-cms-list="services" data-cms-property="featured_services">
+      <div class="grid grid-2 fade-in fade-in-delay-2">
+
+        <!-- Gem Day Spa -->
         <div class="card">
-          <div class="card-img-wrap"><img class="card-img" src="" alt="" loading="lazy" data-cms-bind="src:image|alt:title"></div>
+          <div class="card-img-wrap"><img class="card-img" src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&q=80" alt="Gem Day Spa at Los Cab" loading="lazy"></div>
           <div class="card-body">
-            <div class="card-tag" data-cms-bind="tag">Wellness</div>
-            <h2 class="card-title" style="font-size:1.5rem;" data-cms-bind="title">Gem Day Spa</h2>
-            <div class="card-text" data-cms-bind="desc">Our boutique on-site spa offers a curated menu of non-invasive facial and body procedures in an elegant, relaxing environment. From rejuvenating facials to body treatments — Gem Day Spa is your escape after a great workout.</div>
-            <ul style="margin-top:1rem;color:var(--body-text);font-size:0.95rem;display:flex;flex-direction:column;gap:0.4rem;" data-cms-list="" data-cms-property="features">
-              <li data-cms-bind="text">✦ Feature Item</li>
+            <div class="card-tag">Wellness</div>
+            <h2 class="card-title" style="font-size:1.5rem;">Gem Day Spa</h2>
+            <p class="card-text">Our boutique on-site spa offers a curated menu of non-invasive facial and body procedures in an elegant, relaxing environment. From rejuvenating facials to body treatments — Gem Day Spa is your escape after a great workout.</p>
+            <ul style="margin-top:1rem;color:var(--body-text);font-size:0.95rem;display:flex;flex-direction:column;gap:0.4rem;">
+              <li>✦ Non-invasive facial treatments</li>
+              <li>✦ Body procedures & skin care</li>
+              <li>✦ Relaxing spa atmosphere</li>
+              <li>✦ Member discounts available</li>
             </ul>
-            <p style="margin-top:1rem;font-size:0.85rem;color:var(--teal);font-weight:700;" data-cms-bind="textContent:note"></p>
-            <a href="contact.html" class="card-link" data-cms-bind="href:action_link|textContent:action_text">Book an Appointment →</a>
+            <a href="contact.html" class="card-link" id="spa-inquiry-btn">Book an Appointment →</a>
+          </div>
+        </div>
+
+        <!-- Sol Vida Café -->
+        <div class="card">
+          <div class="card-img-wrap"><img class="card-img" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80" alt="Sol Vida Café at Los Cab" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-tag">Dining</div>
+            <h2 class="card-title" style="font-size:1.5rem;">Sol Vida OC — Los Cab Café</h2>
+            <p class="card-text">Our on-site café "Sol Vida OC" is now open for a soft opening. Grab a coffee, smoothie, salad, sandwich, bagel, or snack before or after your workout. Fresh, delicious fuel to power your day.</p>
+            <ul style="margin-top:1rem;color:var(--body-text);font-size:0.95rem;display:flex;flex-direction:column;gap:0.4rem;">
+              <li>☕ Coffee & specialty drinks</li>
+              <li>🥤 Smoothies & protein shakes</li>
+              <li>🥗 Salads, sandwiches & bagels</li>
+              <li>🍪 Snacks & baked goods</li>
+            </ul>
+            <p style="margin-top:1rem;font-size:0.85rem;color:var(--teal);font-weight:700;">🎉 NOW OPEN — Soft Opening Phase</p>
+          </div>
+        </div>
+
+        <!-- Teak Catering -->
+        <div class="card">
+          <div class="card-img-wrap"><img class="card-img" src="https://images.unsplash.com/photo-1555244162-803834f70033?w=800&q=80" alt="Teak Catering at Los Cab" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-tag">Catering</div>
+            <h2 class="card-title" style="font-size:1.5rem;">Teak Catering</h2>
+            <p class="card-text">Full-service event catering led by Chef Pierre. Whether you're hosting a corporate event, wedding reception, club tournament, or private party — Teak Catering delivers exceptional culinary experiences.</p>
+            <ul style="margin-top:1rem;color:var(--body-text);font-size:0.95rem;display:flex;flex-direction:column;gap:0.4rem;">
+              <li>🍽️ Full event catering services</li>
+              <li>👨‍🍳 Led by Chef Pierre</li>
+              <li>🎉 Corporate & private events</li>
+              <li>🏆 Sports tournaments & banquets</li>
+            </ul>
+            <a href="contact.html" class="card-link" id="catering-inquiry-btn">Request a Quote →</a>
+          </div>
+        </div>
+
+        <!-- Timeless Venues -->
+        <div class="card">
+          <div class="card-img-wrap"><img class="card-img" src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&q=80" alt="Timeless Venues at Los Cab" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-tag">Events</div>
+            <h2 class="card-title" style="font-size:1.5rem;">Timeless Venues</h2>
+            <p class="card-text">Our 4,000 sq. ft. versatile event space "Timeless Venues" is perfect for weddings, corporate meetings, galas, tournaments, and private celebrations. A stunning backdrop for any occasion.</p>
+            <ul style="margin-top:1rem;color:var(--body-text);font-size:0.95rem;display:flex;flex-direction:column;gap:0.4rem;">
+              <li>🏛️ 4,000 sq ft event space</li>
+              <li>💍 Weddings & receptions</li>
+              <li>🏢 Corporate meetings & conferences</li>
+              <li>🎊 Galas, parties & celebrations</li>
+            </ul>
+            <a href="contact.html" class="card-link" id="venue-inquiry-btn">Inquire About Availability →</a>
           </div>
         </div>
       </div>
@@ -113,8 +163,13 @@
         <h2 class="section-title fade-in fade-in-delay-1">Premium Facility Amenities</h2>
         <p class="section-subtitle fade-in fade-in-delay-2" style="margin:0 auto;">Included with every membership — because a great workout deserves great facilities.</p>
       </div>
-      <div class="grid grid-3 fade-in fade-in-delay-2" data-cms-list="services" data-cms-property="amenities">
-        <div class="icon-card"><div class="icon-wrap" data-cms-bind="icon">🚿</div><h3 class="card-title" data-cms-bind="title">Premium Locker Rooms</h3><p class="card-text" data-cms-bind="desc">Spacious, well-maintained locker rooms with premium shower facilities for all members — men's and women's.</p></div>
+      <div class="grid grid-3 fade-in fade-in-delay-2">
+        <div class="icon-card"><div class="icon-wrap">🚿</div><h3 class="card-title">Premium Locker Rooms</h3><p class="card-text">Spacious, well-maintained locker rooms with premium shower facilities for all members — men's and women's.</p></div>
+        <div class="icon-card"><div class="icon-wrap">🧖</div><h3 class="card-title">Steam & Sauna Rooms</h3><p class="card-text">Brand-new steam rooms and sauna rooms added in Winter 2026. Perfect for post-workout recovery.</p></div>
+        <div class="icon-card"><div class="icon-wrap">♨️</div><h3 class="card-title">Co-Ed Jacuzzi</h3><p class="card-text">A relaxing co-ed jacuzzi available to all members. Great for unwinding after a game or workout.</p></div>
+        <div class="icon-card"><div class="icon-wrap">🏖️</div><h3 class="card-title">Cabanas</h3><p class="card-text">Semi-private courtyard cabanas with showers, lockers, fridge, and TV. Located in the tennis courtyard.</p></div>
+        <div class="icon-card"><div class="icon-wrap">📍</div><h3 class="card-title">Lockers</h3><p class="card-text">Monthly locker rentals available in both the men's and women's locker rooms. Stop by the front desk to inquire.</p></div>
+        <div class="icon-card"><div class="icon-wrap">📷</div><h3 class="card-title">Live Webcams</h3><p class="card-text">Live webcam feeds of the Pickleball Stadium, Tennis Center, Gym, and facility entrances — viewable anytime.</p></div>
       </div>
     </div>
   </section>
@@ -128,53 +183,15 @@
     </div>
   </section>
 
-  
-  <section class="section section--gray">
-    <div class="container">
-      <div class="section-head section-head--center">
-        <span class="section-label fade-in">We're Open</span>
-        <h2 class="section-title section-title fade-in fade-in-delay-1">Hours</h2>
-      </div>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:2rem;" class="fade-in">
-        <div>
-          <h3 style="font-weight:700;color:var(--navy);margin-bottom:1rem;font-size:1.1rem;">🏛️ Club Hours</h3>
-          <table class="hours-table">
-            <thead><tr><th>Day</th><th>Open</th><th>Last Entry</th></tr></thead>
-            <tbody data-cms-list="settings" data-cms-property="club_hours">
-              <tr>
-                <td data-cms-bind="day"></td>
-                <td data-cms-bind="open"></td>
-                <td data-cms-bind="textContent:last"></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div>
-          <h3 style="font-weight:700;color:var(--navy);margin-bottom:1rem;font-size:1.1rem;">🎾 Court Hours</h3>
-          <table class="hours-table">
-            <thead><tr><th>Day</th><th>Open</th><th>Last Entry</th></tr></thead>
-            <tbody data-cms-list="settings" data-cms-property="court_hours">
-              <tr>
-                <td data-cms-bind="day"></td>
-                <td data-cms-bind="open"></td>
-                <td data-cms-bind="textContent:last"></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-about"><div class="footer-logo"><a href="index.html" class="logo"><div class="logo-icon">LC</div><div class="logo-text"><span class="text-teal" data-cms-file="settings" data-cms-id="site_title_part1">Los Cab</span><span class="text-navy" data-cms-file="settings" data-cms-id="site_title_part2">Sports Club</span></div></a></div><p>Southern California's premier multi-sport athletic club in Fountain Valley.</p><div class="footer-socials"><a href="#" class="footer-social-link" target="_blank" rel="noopener" data-cms-file="settings" data-cms-id="facebook_link">f</a><a href="#" class="footer-social-link" target="_blank" rel="noopener" data-cms-file="settings" data-cms-id="instagram_link">📷</a></div></div>
-        <div class="footer-col"><h4>Sports</h4><ul class="footer-links" data-cms-list="settings" data-cms-property="footer_sports_links"><li><a href="" data-cms-bind="href:url|textContent:label"></a></li></ul></div>
-        <div class="footer-col"><h4>Club</h4><ul class="footer-links" data-cms-list="settings" data-cms-property="footer_club_links"><li><a href="" data-cms-bind="href:url|textContent:label"></a></li></ul></div>
-        <div class="footer-col"><h4>Contact</h4><div class="footer-contact-items"><div class="footer-contact-item"><span class="icon">📍</span><span data-cms-file="settings" data-cms-id="footer_address">17272 Newhope St.<br>Fountain Valley, CA 92708</span></div><div class="footer-contact-item"><span class="icon">📞</span><a href="tel:+17145468560" data-cms-file="settings" data-cms-id="footer_phone">(714) 546-8560</a></div></div></div>
+        <div class="footer-about"><div class="footer-logo"><a href="index.html" class="logo"><div class="logo-icon">LC</div><div class="logo-text"><span class="text-teal">Los Cab</span><span class="text-navy">Sports Club</span></div></a></div><p>Southern California's premier multi-sport athletic club in Fountain Valley.</p><div class="footer-socials"><a href="https://www.facebook.com/loscab" class="footer-social-link" target="_blank" rel="noopener">f</a><a href="https://www.instagram.com/loscab" class="footer-social-link" target="_blank" rel="noopener">📷</a></div></div>
+        <div class="footer-col"><h4>Sports</h4><ul class="footer-links"><li><a href="tennis.html">Tennis</a></li><li><a href="pickleball.html">Pickleball</a></li><li><a href="fitness.html">Fitness</a></li><li><a href="sports.html">All Sports</a></li></ul></div>
+        <div class="footer-col"><h4>Club</h4><ul class="footer-links"><li><a href="membership.html">Membership</a></li><li><a href="services.html">Services</a></li><li><a href="events.html">Events</a></li><li><a href="blog.html">News</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h4>Contact</h4><div class="footer-contact-items"><div class="footer-contact-item"><span class="icon">📍</span><span>17272 Newhope St.<br>Fountain Valley, CA 92708</span></div><div class="footer-contact-item"><span class="icon">📞</span><a href="tel:+17145468560">(714) 546-8560</a></div></div></div>
       </div>
-      <div class="footer-bottom"><p data-cms-file="settings" data-cms-id="copyright_text">© 2026 Los Cab Sports Club. All Rights Reserved.</p><p>17272 Newhope St., Fountain Valley, CA 92708</p></div>
+      <div class="footer-bottom"><p>© 2026 Los Cab Sports Club. All Rights Reserved.</p><p>17272 Newhope St., Fountain Valley, CA 92708</p></div>
     </div>
   </footer>
   <script src="js/main.js"></script>

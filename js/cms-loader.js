@@ -1,211 +1,79 @@
 /**
- * LOS CAB SPORTS CLUB — CMS Loader
- * Connects HTML elements to JSON data sources via specific attributes.
- * Attributes: 
- * - data-cms-id: The key in the JSON
- * - data-cms-file: The JSON file name (e.g. settings, index, tennis)
- * - data-cms-type: bg, bg-css, etc.
+ * CMS Loader for Los Cab Website
+ * Fetches dynamic content from JSON files managed by Decap CMS.
  */
-
-const CMS = {
-    cache: {},
-
-    async init() {
-        console.log('CMS: Core initializing...');
-        const elements = document.querySelectorAll('[data-cms-id]');
-        
-        // 1. Group elements by file to minimize fetch calls
-        const filesToLoad = new Set();
-        elements.forEach(el => {
-            const fileName = el.getAttribute('data-cms-file') || this.getCurrentPageName();
-            filesToLoad.add(fileName);
+document.addEventListener('DOMContentLoaded', () => {
+  // 1. Handle Netlify Identity Redirect
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
         });
+      }
+    });
+  }
 
-        // 2. Fetch all required data files
-        for (const file of filesToLoad) {
-            if (file === 'settings') {
-                this.cache[file] = await this.fetchJSON(`data/${file}.json`);
+  // 2. Load Dynamic Content
+  const cmsElements = document.querySelectorAll('[data-cms-id]');
+  const cmsLists = document.querySelectorAll('[data-cms-list]');
+  
+  // Combine unique file names to fetch
+  const filesToFetch = new Set();
+  cmsElements.forEach(el => filesToFetch.add(el.getAttribute('data-cms-file')));
+  cmsLists.forEach(el => filesToFetch.add(el.getAttribute('data-cms-list')));
+
+  filesToFetch.forEach(async (fileName) => {
+    if (!fileName) return;
+    try {
+      const response = await fetch(`/data/${fileName}.json`);
+      if (!response.ok) return;
+      const data = await response.json();
+
+      // Handle individual elements
+      cmsElements.forEach(el => {
+        if (el.getAttribute('data-cms-file') === fileName) {
+          const key = el.getAttribute('data-cms-id');
+          if (data[key]) {
+            if (key.includes('image')) {
+              el.src = data[key];
+            } else if (key.includes('welcome') || key.includes('body')) {
+              el.innerHTML = data[key];
             } else {
-                this.cache[file] = await this.fetchJSON(`data/pages/${file}.json`) || 
-                                   await this.fetchJSON(`data/${file}.json`);
+              el.textContent = data[key];
             }
+          }
         }
+      });
 
-        // 3. Apply data to elements
-        elements.forEach(el => this.applyElementData(el));
-
-        // 4. Handle dynamic lists (News, etc.)
-        const lists = document.querySelectorAll('[data-cms-list]');
-        lists.forEach(list => this.renderList(list));
-
-        console.log('CMS: Initialization complete.');
-    },
-
-    getCurrentPageName() {
-        const path = window.location.pathname.split('/').pop() || 'index.html';
-        return path.replace('.html', '');
-    },
-
-    async fetchJSON(url) {
-        try {
-            const response = await fetch(url);
-            if (!response.ok) return null;
-            return await response.json();
-        } catch (e) {
-            return null;
-        }
-    },
-
-    applyElementData(el) {
-        const id = el.getAttribute('data-cms-id');
-        const file = el.getAttribute('data-cms-file') || this.getCurrentPageName();
-        const type = el.getAttribute('data-cms-type');
-        
-        const data = this.cache[file];
-        if (!data || !data[id]) return;
-
-        const value = data[id];
-
-        // Handle specific types
-        if (type === 'bg') {
-            el.style.backgroundImage = `url('${value}')`;
-            return;
-        }
-
-        if (type === 'bg-css') {
-            // Some pages use a <style> tag for the hero background
-            el.textContent = `.hero-bg { background-image: url('${value}'); }`;
-            return;
-        }
-
-        // Handle standard HTML tags
-        const tagName = el.tagName.toLowerCase();
-
-        if (tagName === 'meta') {
-            el.content = value;
-        } else if (tagName === 'img') {
-            el.src = value;
-        } else if (tagName === 'a') {
-            el.href = value;
-        } else {
-            // For other elements, check if it contains HTML tags
-            if (value.includes('<') && value.includes('>')) {
-                el.innerHTML = value;
-            } else {
-                el.textContent = value;
-            }
-        }
-    },
-
-    renderList(container, contextData = null) {
-        const fileName = container.getAttribute('data-cms-list');
-        const listProperty = container.getAttribute('data-cms-property');
-        
-        let items = [];
-        if (fileName) {
-            const fileData = this.cache[fileName];
-            items = (fileData && fileData[listProperty]) ? fileData[listProperty] : [];
-        } else if (contextData && listProperty) {
-            items = contextData[listProperty] || [];
-        }
-
-        if (!Array.isArray(items) || items.length === 0) {
-            container.innerHTML = '';
-            container.style.display = 'none';
-            if (!Array.isArray(items)) {
-                console.warn(`CMS: List data not found or not an array for ${fileName || 'context'}.${listProperty}`);
-            }
-            return;
-        } else {
-            container.style.display = '';
-        }
-
-        // 1. Get template
-        let template = container.querySelector('template');
-        let templateContent;
-
-        if (template) {
-            templateContent = template.content;
-        } else {
-            const firstChild = container.firstElementChild;
-            if (!firstChild) return;
-            templateContent = firstChild.cloneNode(true);
-            container.innerHTML = ''; 
-        }
-
-        // 2. Render items
-        items.forEach((item, index) => {
-            const clone = templateContent.cloneNode(true);
-            const fragment = template ? clone : document.createDocumentFragment();
-            if (!template) fragment.appendChild(clone);
-
-            // Handle alternating layouts by adding index-based classes if needed 
-            // Any element with data-cms-index-class="even:class1;odd:class2" 
-            const indexEls = (template ? clone : fragment).querySelectorAll('[data-cms-index-class]');
-            indexEls.forEach(el => {
-                const config = el.getAttribute('data-cms-index-class');
-                const classes = config.split(';');
-                classes.forEach(c => {
-                    const [type, className] = c.split(':');
-                    if ((type === 'even' && index % 2 === 0) || (type === 'odd' && index % 2 !== 0)) {
-                        el.classList.add(className);
-                    }
-                });
+      // Handle lists (e.g., news articles)
+      cmsLists.forEach(listEl => {
+        if (listEl.getAttribute('data-cms-list') === fileName) {
+          const property = listEl.getAttribute('data-cms-property') || 'articles';
+          const items = data[property];
+          if (Array.isArray(items)) {
+            listEl.innerHTML = ''; // Clear static items
+            items.forEach(item => {
+              const card = document.createElement('div');
+              card.className = 'blog-card';
+              card.innerHTML = `
+                <div class="blog-card-img-wrap">
+                  <img src="${item.image}" alt="${item.title}" loading="lazy">
+                </div>
+                <div class="blog-card-body">
+                  <div class="blog-date">${item.date}</div>
+                  <div class="blog-title">${item.title}</div>
+                  <p class="blog-excerpt">${item.summary}</p>
+                  <a href="${item.link}" class="card-link">Read More →</a>
+                </div>
+              `;
+              listEl.appendChild(card);
             });
-
-            this.bindData(template ? clone : fragment, item, fileName);
-            container.appendChild(template ? clone : fragment);
-        });
-    },
-
-    bindData(root, item, fileName) {
-        // 1. Handle simple bindings
-        const bindables = root.querySelectorAll('[data-cms-bind]');
-        bindables.forEach(el => {
-            const fullBinding = el.getAttribute('data-cms-bind');
-            const bindings = fullBinding.split(/[;|]/); // Support both ; and | separators
-
-            bindings.forEach(binding => {
-                if (!binding.trim()) return;
-                let [target, prop] = binding.includes(':') ? binding.split(':') : [null, binding];
-                
-                // Handle nested properties (e.g. style:background:color)
-                let subTarget = null;
-                const parts = binding.split(':');
-                if (parts.length > 2) {
-                    target = parts[0];
-                    subTarget = parts[1];
-                    prop = parts[2];
-                }
-
-                const value = item[prop];
-                if (value === undefined) return;
-
-                if (target === 'style' && subTarget) {
-                    el.style[subTarget] = value;
-                } else if (target === 'bg') {
-                    el.style.backgroundImage = `url('${value}')`;
-                } else if (target === 'className') {
-                    el.classList.add(value);
-                } else if (target) {
-                    el.setAttribute(target, value);
-                } else {
-                    const tagName = el.tagName.toLowerCase();
-                    if (tagName === 'img') el.src = value;
-                    else if (tagName === 'a') el.href = value;
-                    else if (typeof value === 'string' && value.includes('<') && value.includes('>')) {
-                        el.innerHTML = value;
-                    } else {
-                        el.textContent = value;
-                    }
-                }
-            });
-        });
-
-        // 2. Handle nested lists
-        const nestedLists = root.querySelectorAll('[data-cms-list=""]');
-        nestedLists.forEach(list => this.renderList(list, item));
+          }
+        }
+      });
+    } catch (error) {
+      console.error(`Error loading CMS content for ${fileName}:`, error);
     }
-};
-
-document.addEventListener('DOMContentLoaded', () => CMS.init());
+  });
+});

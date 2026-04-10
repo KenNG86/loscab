@@ -3,16 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title data-cms-file="sports" data-cms-id="seo_title">All Sports | Los Cab Sports Club — Basketball, Swimming, Volleyball & More</title>
-  <meta name="description" data-cms-file="sports" data-cms-id="seo_description" content="Los Cab Sports Club offers swimming, basketball, volleyball, handball, squash, racquetball, badminton, and water polo programs in Fountain Valley, CA.">
+  <title>All Sports | Los Cab Sports Club — Basketball, Swimming, Volleyball & More</title>
+  <meta name="description" content="Los Cab Sports Club offers swimming, basketball, volleyball, handball, squash, racquetball, badminton, and water polo programs in Fountain Valley, CA.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <style>
-  <style data-cms-file="sports" data-cms-id="hero_image" data-cms-type="bg-css">
     .page-hero-bg { background-image: url('https://images.unsplash.com/photo-1546519638778-9ee6ebca99bd?w=1800&q=80'); }
-  </style>
     .sport-section { padding: 3.5rem 0; border-top: 1px solid var(--light-gray); }
     .sport-section:first-of-type { border-top: none; }
     .sport-icon-large { font-size: 3rem; margin-bottom: 1rem; }
@@ -26,18 +24,13 @@
       <a href="index.html" class="logo" aria-label="Los Cab Sports Club Home">
         <div class="logo-icon" aria-hidden="true">LC</div>
         <div class="logo-text">
-          <span class="text-teal" data-cms-file="settings" data-cms-id="site_title_part1">Los Cab</span>
-          <span class="text-navy" data-cms-file="settings" data-cms-id="site_title_part2">Sports Club</span>
+          <span class="text-teal">Los Cab</span>
+          <span class="text-navy">Sports Club</span>
         </div>
       </a>
-      <ul class="nav-links" data-cms-list="settings" data-cms-property="nav_links">
-        <li class="nav-item has-dropdown">
-          <a href="" class="nav-link" data-cms-bind="href:url|textContent:label"></a>
-          <ul class="dropdown" data-cms-list="" data-cms-property="dropdown">
-            <li><a href="" data-cms-bind="href:url|textContent:label"></a></li>
-          </ul>
-        </li>
-      </ul></li>
+      <ul class="nav-links">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item has-dropdown"><a href="sports.html" class="nav-link">Sports ▾</a><ul class="dropdown"><li><a href="tennis.html">Tennis</a></li><li><a href="pickleball.html">Pickleball</a></li><li><a href="fitness.html">Fitness</a></li><li><a href="sports.html">All Sports</a></li></ul></li>
         <li class="nav-item"><a href="membership.html" class="nav-link">Membership</a></li>
         <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
         <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
@@ -59,8 +52,8 @@
       <div class="page-hero-content">
         <nav class="breadcrumb"><a href="index.html">Home</a><span>›</span><span>All Sports</span></nav>
         <span class="section-label" style="color:var(--teal-light);">8 Sports & More</span>
-        <h1 data-cms-file="sports" data-cms-id="hero_title">All Sports at Los Cab</h1>
-        <p data-cms-file="sports" data-cms-id="hero_subtitle">One membership — unlimited sport options. Explore every sport and activity we offer at Los Cab Sports Club.</p>
+        <h1>All Sports at Los Cab</h1>
+        <p>One membership — unlimited sport options. Explore every sport and activity we offer at Los Cab Sports Club.</p>
       </div>
     </div>
   </header>
@@ -90,27 +83,76 @@
     </div>
   </div>
 
-      <div data-cms-list="sports" data-cms-property="featured_sports">
-        <section class="section" data-cms-bind="id:id">
-          <div class="container">
-            <div class="features-split" data-cms-index-class="odd:reverse">
-              <div class="features-img fade-in">
-                <img src="" alt="" loading="lazy" data-cms-bind="src:image|alt:title">
-              </div>
-              <div class="fade-in fade-in-delay-1">
-                <div class="sport-icon-large" data-cms-bind="icon">🏊</div>
-                <span class="section-label" data-cms-bind="label">Aquatic Center</span>
-                <div class="section-divider"></div>
-                <h2 class="section-title" data-cms-bind="title">Swimming</h2>
-                <div style="color:var(--body-text);line-height:1.8;margin-bottom:1.5rem;" data-cms-bind="subtitle">Our heated 50-meter Olympic-size pool is among the finest in Orange County. Ideal for lap swimming, cross-training, lessons, or a refreshing workout in the sun.</div>
-                <div class="features-list" data-cms-list="" data-cms-property="features">
-                  <div class="feature-item"><div class="feature-dot"></div><div><strong data-cms-bind="title">50-Meter Olympic Pool</strong><p data-cms-bind="text">Heated year-round for comfortable swimming in any season.</p></div></div>
-                </div>
-              </div>
-            </div>
+  <!-- Swimming -->
+  <section class="section" id="swimming">
+    <div class="container">
+      <div class="features-split">
+        <div class="features-img fade-in">
+          <img src="https://images.unsplash.com/photo-1519315901367-f34ff9154487?w=900&q=80" alt="Olympic pool at Los Cab" loading="lazy">
+        </div>
+        <div class="fade-in fade-in-delay-1">
+          <div class="sport-icon-large">🏊</div>
+          <span class="section-label">Aquatic Center</span>
+          <div class="section-divider"></div>
+          <h2 class="section-title">Swimming</h2>
+          <p style="color:var(--body-text);line-height:1.8;margin-bottom:1.5rem;">Our heated 50-meter Olympic-size pool is among the finest in Orange County. Ideal for lap swimming, cross-training, lessons, or a refreshing workout in the sun.</p>
+          <div class="features-list">
+            <div class="feature-item"><div class="feature-dot"></div><div><strong>50-Meter Olympic Pool</strong><p>Heated year-round for comfortable swimming in any season.</p></div></div>
+            <div class="feature-item"><div class="feature-dot"></div><div><strong>Nova Swim School</strong><p>Professional swim lessons for children and adults at all skill levels.</p></div></div>
+            <div class="feature-item"><div class="feature-dot"></div><div><strong>Aqua Fitness Classes</strong><p>Low-impact water-based fitness classes included with membership.</p></div></div>
+            <div class="feature-item"><div class="feature-dot"></div><div><strong>6-8 Water Polo Academy</strong><p>Structured youth water polo development for players ages 6–8.</p></div></div>
+            <div class="feature-item"><div class="feature-dot"></div><div><strong>Wading & Specialty Pools</strong><p>Separate pools for younger swimmers and specialized aquatic activities.</p></div></div>
           </div>
-        </section>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Basketball -->
+  <section class="section section--gray" id="basketball">
+    <div class="container">
+      <div class="features-split reverse">
+        <div class="features-img fade-in">
+          <img src="https://images.unsplash.com/photo-1546519638778-9ee6ebca99bd?w=900&q=80" alt="Basketball at Los Cab" loading="lazy">
+        </div>
+        <div class="fade-in fade-in-delay-1">
+          <div class="sport-icon-large">🏀</div>
+          <span class="section-label">Indoor Court</span>
+          <div class="section-divider"></div>
+          <h2 class="section-title">Basketball</h2>
+          <p style="color:var(--body-text);line-height:1.8;margin-bottom:1.5rem;">Los Cab features a full-size indoor basketball court that converts to two half-courts. Open gym is available daily, with organized programs led by Coach Beez.</p>
+          <div class="features-list">
+            <div class="feature-item"><div class="feature-dot"></div><div><strong>Full-Size Indoor Court</strong><p>Converts to 2 half-courts for simultaneous games. Climate-controlled facility.</p></div></div>
+            <div class="feature-item"><div class="feature-dot"></div><div><strong>Daily Open Gym</strong><p>Open gym available each morning and evening. Note: closed Mon–Fri 3–9 PM for volleyball.</p></div></div>
+            <div class="feature-item"><div class="feature-dot"></div><div><strong>Coached by Coach Beez</strong><p>Organized basketball programs, drills, and skills sessions with experienced coaching.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Volleyball -->
+  <section class="section" id="volleyball">
+    <div class="container">
+      <div class="features-split">
+        <div class="features-img fade-in">
+          <img src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?w=900&q=80" alt="Volleyball at Los Cab" loading="lazy">
+        </div>
+        <div class="fade-in fade-in-delay-1">
+          <div class="sport-icon-large">🏐</div>
+          <span class="section-label">Indoor & Outdoor</span>
+          <div class="section-divider"></div>
+          <h2 class="section-title">Volleyball</h2>
+          <p style="color:var(--body-text);line-height:1.8;margin-bottom:1.5rem;">Los Cab is home to United Volleyball Club and offers both indoor and outdoor play. The indoor basketball court is converted for volleyball Mon–Fri evenings.</p>
+          <div class="features-list">
+            <div class="feature-item"><div class="feature-dot"></div><div><strong>United Volleyball Club</strong><p>Home club to United Volleyball — organized competitive volleyball programming.</p></div></div>
+            <div class="feature-item"><div class="feature-dot"></div><div><strong>Indoor Volleyball</strong><p>Mon–Fri 3–9 PM on the converted basketball/volleyball court.</p></div></div>
+            <div class="feature-item"><div class="feature-dot"></div><div><strong>Outdoor Play</strong><p>Outdoor volleyball courts available for open play and organized events.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Handball, Squash, Racquetball, Badminton – card grid -->
   <section class="section section--gray" id="handball">
@@ -120,13 +162,32 @@
         <h2 class="section-title fade-in fade-in-delay-1">Handball, Squash, Racquetball & Badminton</h2>
         <p class="section-subtitle fade-in fade-in-delay-2" style="margin:0 auto;">Los Cab offers one of the most complete court sport offerings on the West Coast.</p>
       </div>
-      <div class="grid grid-2 fade-in fade-in-delay-2" data-cms-list="sports" data-cms-property="other_sports">
-        <div class="icon-card" data-cms-bind="id:id">
-          <div class="icon-wrap" style="font-size:1.8rem;" data-cms-bind="icon">🤜</div>
-          <h3 class="card-title" data-cms-bind="title">Handball — 8 Courts</h3>
-          <div class="card-text" data-cms-bind="desc">Los Cab features 8 handball courts with both concrete and glass walls — one of the premier handball facilities in Southern California. We regularly host national-level handball tournaments.</div>
-          <p style="font-size:0.9rem;color:var(--teal);font-weight:600;margin-top:0.75rem;" data-cms-bind="textContent:note"></p>
-          <a href="contact.html" class="card-link" data-cms-bind="textContent:link_text">Learn More →</a>
+      <div class="grid grid-2 fade-in fade-in-delay-2">
+        <div class="icon-card" id="handball">
+          <div class="icon-wrap" style="font-size:1.8rem;">🤜</div>
+          <h3 class="card-title">Handball — 8 Courts</h3>
+          <p class="card-text">Los Cab features 8 handball courts with both concrete and glass walls — one of the premier handball facilities in Southern California. We regularly host national-level handball tournaments.</p>
+          <a href="contact.html" class="card-link" id="handball-btn">Learn More →</a>
+        </div>
+        <div class="icon-card" id="squash">
+          <div class="icon-wrap" style="font-size:1.8rem;">🏸</div>
+          <h3 class="card-title">Squash</h3>
+          <p class="card-text">High-intensity squash play available at Los Cab. Orientation lessons available from our squash professional Sam Daye — perfect for newcomers and experienced players alike.</p>
+          <p style="font-size:0.9rem;color:var(--teal);font-weight:600;margin-top:0.75rem;">Contact: Sam Daye</p>
+          <a href="contact.html" class="card-link" id="squash-btn">Learn More →</a>
+        </div>
+        <div class="icon-card" id="racquetball">
+          <div class="icon-wrap" style="font-size:1.8rem;">🎾</div>
+          <h3 class="card-title">Racquetball — 7 Courts</h3>
+          <p class="card-text">Seven glass-back walled racquetball courts provide excellent visibility and play. Open play available throughout the day for all skill levels.</p>
+          <a href="contact.html" class="card-link" id="racquetball-btn">Learn More →</a>
+        </div>
+        <div class="icon-card" id="badminton">
+          <div class="icon-wrap" style="font-size:1.8rem;">🏸</div>
+          <h3 class="card-title">Badminton — Relaunching July 2026</h3>
+          <p class="card-text">The Los Cab badminton program is relaunching in July 2026 under the direction of Michael Do. Stay tuned for clinic schedules, leagues, and open play sessions.</p>
+          <p style="font-size:0.9rem;color:var(--gold);font-weight:600;margin-top:0.75rem;">📅 Coming July 2026</p>
+          <a href="contact.html" class="card-link" id="badminton-btn">Get Notified →</a>
         </div>
       </div>
     </div>
@@ -141,53 +202,15 @@
     </div>
   </section>
 
-  
-  <section class="section section--gray">
-    <div class="container">
-      <div class="section-head section-head--center">
-        <span class="section-label fade-in">We're Open</span>
-        <h2 class="section-title section-title fade-in fade-in-delay-1">Hours</h2>
-      </div>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:2rem;" class="fade-in">
-        <div>
-          <h3 style="font-weight:700;color:var(--navy);margin-bottom:1rem;font-size:1.1rem;">🏛️ Club Hours</h3>
-          <table class="hours-table">
-            <thead><tr><th>Day</th><th>Open</th><th>Last Entry</th></tr></thead>
-            <tbody data-cms-list="settings" data-cms-property="club_hours">
-              <tr>
-                <td data-cms-bind="day"></td>
-                <td data-cms-bind="open"></td>
-                <td data-cms-bind="textContent:last"></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div>
-          <h3 style="font-weight:700;color:var(--navy);margin-bottom:1rem;font-size:1.1rem;">🎾 Court Hours</h3>
-          <table class="hours-table">
-            <thead><tr><th>Day</th><th>Open</th><th>Last Entry</th></tr></thead>
-            <tbody data-cms-list="settings" data-cms-property="court_hours">
-              <tr>
-                <td data-cms-bind="day"></td>
-                <td data-cms-bind="open"></td>
-                <td data-cms-bind="textContent:last"></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-about"><div class="footer-logo"><a href="index.html" class="logo"><div class="logo-icon">LC</div><div class="logo-text"><span class="text-teal" data-cms-file="settings" data-cms-id="site_title_part1">Los Cab</span><span class="text-navy" data-cms-file="settings" data-cms-id="site_title_part2">Sports Club</span></div></a></div><p>Southern California's premier multi-sport athletic club in Fountain Valley.</p><div class="footer-socials"><a href="#" class="footer-social-link" target="_blank" rel="noopener" data-cms-file="settings" data-cms-id="facebook_link">f</a><a href="#" class="footer-social-link" target="_blank" rel="noopener" data-cms-file="settings" data-cms-id="instagram_link">📷</a></div></div>
-        <div class="footer-col"><h4>Sports</h4><ul class="footer-links" data-cms-list="settings" data-cms-property="footer_sports_links"><li><a href="" data-cms-bind="href:url|textContent:label"></a></li></ul></div>
-        <div class="footer-col"><h4>Club</h4><ul class="footer-links" data-cms-list="settings" data-cms-property="footer_club_links"><li><a href="" data-cms-bind="href:url|textContent:label"></a></li></ul></div>
-        <div class="footer-col"><h4>Contact</h4><div class="footer-contact-items"><div class="footer-contact-item"><span class="icon">📍</span><span data-cms-file="settings" data-cms-id="footer_address">17272 Newhope St.<br>Fountain Valley, CA 92708</span></div><div class="footer-contact-item"><span class="icon">📞</span><a href="tel:+17145468560" data-cms-file="settings" data-cms-id="footer_phone">(714) 546-8560</a></div></div></div>
+        <div class="footer-about"><div class="footer-logo"><a href="index.html" class="logo"><div class="logo-icon">LC</div><div class="logo-text"><span class="text-teal">Los Cab</span><span class="text-navy">Sports Club</span></div></a></div><p>Southern California's premier multi-sport athletic club in Fountain Valley.</p><div class="footer-socials"><a href="https://www.facebook.com/loscab" class="footer-social-link" target="_blank" rel="noopener">f</a><a href="https://www.instagram.com/loscab" class="footer-social-link" target="_blank" rel="noopener">📷</a></div></div>
+        <div class="footer-col"><h4>Sports</h4><ul class="footer-links"><li><a href="tennis.html">Tennis</a></li><li><a href="pickleball.html">Pickleball</a></li><li><a href="fitness.html">Fitness</a></li><li><a href="sports.html">All Sports</a></li></ul></div>
+        <div class="footer-col"><h4>Club</h4><ul class="footer-links"><li><a href="membership.html">Membership</a></li><li><a href="services.html">Services</a></li><li><a href="events.html">Events</a></li><li><a href="blog.html">News</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h4>Contact</h4><div class="footer-contact-items"><div class="footer-contact-item"><span class="icon">📍</span><span>17272 Newhope St.<br>Fountain Valley, CA 92708</span></div><div class="footer-contact-item"><span class="icon">📞</span><a href="tel:+17145468560">(714) 546-8560</a></div></div></div>
       </div>
-      <div class="footer-bottom"><p data-cms-file="settings" data-cms-id="copyright_text">© 2026 Los Cab Sports Club. All Rights Reserved.</p><p>17272 Newhope St., Fountain Valley, CA 92708</p></div>
+      <div class="footer-bottom"><p>© 2026 Los Cab Sports Club. All Rights Reserved.</p><p>17272 Newhope St., Fountain Valley, CA 92708</p></div>
     </div>
   </footer>
   <script src="js/main.js"></script>

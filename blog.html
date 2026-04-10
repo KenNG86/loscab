@@ -3,18 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title data-cms-file="blog" data-cms-id="seo_title">News & Updates | Los Cab Sports Club — Fountain Valley, CA</title>
-  <meta name="description" data-cms-file="blog" data-cms-id="seo_description" content="Latest news, club updates, and sport highlights from Los Cab Sports Club in Fountain Valley, CA.">
+  <title>News & Updates | Los Cab Sports Club — Fountain Valley, CA</title>
+  <meta name="description" content="Latest news, club updates, and sport highlights from Los Cab Sports Club in Fountain Valley, CA.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <script src="js/cms-loader.js"></script>
-  <style data-cms-file="blog" data-cms-id="hero_image" data-cms-type="bg-css">
-    .page-hero-bg { background-image: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1800&q=80'); }
-  </style>
   <style>
+    .page-hero-bg { background-image: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1800&q=80'); }
     .blog-card {
       background: var(--white);
       border-radius: var(--radius-lg);
@@ -58,18 +55,13 @@
       <a href="index.html" class="logo" aria-label="Los Cab Sports Club Home">
         <div class="logo-icon" aria-hidden="true">LC</div>
         <div class="logo-text">
-          <span class="text-teal" data-cms-file="settings" data-cms-id="site_title_part1">Los Cab</span>
-          <span class="text-navy" data-cms-file="settings" data-cms-id="site_title_part2">Sports Club</span>
+          <span class="text-teal">Los Cab</span>
+          <span class="text-navy">Sports Club</span>
         </div>
       </a>
-      <ul class="nav-links" data-cms-list="settings" data-cms-property="nav_links">
-        <li class="nav-item has-dropdown">
-          <a href="" class="nav-link" data-cms-bind="href:url|textContent:label"></a>
-          <ul class="dropdown" data-cms-list="" data-cms-property="dropdown">
-            <li><a href="" data-cms-bind="href:url|textContent:label"></a></li>
-          </ul>
-        </li>
-      </ul></li>
+      <ul class="nav-links">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item has-dropdown"><a href="sports.html" class="nav-link">Sports ▾</a><ul class="dropdown"><li><a href="tennis.html">Tennis</a></li><li><a href="pickleball.html">Pickleball</a></li><li><a href="fitness.html">Fitness</a></li><li><a href="sports.html">All Sports</a></li></ul></li>
         <li class="nav-item"><a href="membership.html" class="nav-link">Membership</a></li>
         <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
         <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
@@ -91,26 +83,32 @@
       <div class="page-hero-content">
         <nav class="breadcrumb"><a href="index.html">Home</a><span>›</span><span>News</span></nav>
         <span class="section-label" style="color:var(--teal-light);">Club Updates</span>
-        <h1 data-cms-file="blog" data-cms-id="hero_title">News & Updates</h1>
-        <p data-cms-file="blog" data-cms-id="hero_subtitle">Stay current with the latest happenings, program launches, facility improvements, and community highlights at Los Cab.</p>
+        <h1>News & Updates</h1>
+        <p>Stay current with the latest happenings, program launches, facility improvements, and community highlights at Los Cab.</p>
       </div>
     </div>
   </header>
 
+  <!-- Featured Post -->
   <section class="section section--gray">
     <div class="container">
-      <span class="section-label fade-in" data-cms-file="blog" data-cms-id="featured_post.label">Featured Update</span>
-      <div class="featured-post fade-in fade-in-delay-1" style="margin-top:1.5rem;" data-cms-file="blog" data-cms-id="featured_post">
-        <img src="" alt="" loading="lazy" data-cms-bind="src:image|alt:title">
+      <span class="section-label fade-in">Featured Update</span>
+      <div class="featured-post fade-in fade-in-delay-1" style="margin-top:1.5rem;">
+        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=900&q=80" alt="Winter 2026 Updates at Los Cab" loading="lazy">
         <div class="featured-post-body">
-          <div class="blog-date" data-cms-bind="date_info">March 2026 · Club News</div>
-          <div class="blog-cat" data-cms-bind="category">Winter 2026 Updates</div>
-          <h2 style="font-family:var(--font-serif);font-size:1.8rem;font-weight:800;color:var(--navy);line-height:1.25;margin-bottom:1rem;" data-cms-bind="title">What's New at Los Cab — Winter 2026 Facility Upgrades</h2>
-          <p style="color:var(--body-text);line-height:1.8;margin-bottom:1.5rem;" data-cms-bind="desc">We're excited to share several major upgrades to your Los Cab experience this winter. From brand-new steam and sauna rooms to a dedicated Pilates studio, we've invested in making your club even better.</p>
-          <ul style="color:var(--body-text);font-size:0.95rem;line-height:1.8;display:flex;flex-direction:column;gap:0.3rem;margin-bottom:2rem;" data-cms-list="blog" data-cms-property="featured_post.highlights">
-            <li data-cms-bind="text">✦ Highlight Item</li>
+          <div class="blog-date">March 2026 · Club News</div>
+          <div class="blog-cat">Winter 2026 Updates</div>
+          <h2 style="font-family:var(--font-serif);font-size:1.8rem;font-weight:800;color:var(--navy);line-height:1.25;margin-bottom:1rem;">What's New at Los Cab — Winter 2026 Facility Upgrades</h2>
+          <p style="color:var(--body-text);line-height:1.8;margin-bottom:1.5rem;">We're excited to share several major upgrades to your Los Cab experience this winter. From brand-new steam and sauna rooms to a dedicated Pilates studio, we've invested in making your club even better.</p>
+          <ul style="color:var(--body-text);font-size:0.95rem;line-height:1.8;display:flex;flex-direction:column;gap:0.3rem;margin-bottom:2rem;">
+            <li>✦ New Steam & Sauna rooms in both locker rooms</li>
+            <li>✦ New Co-Ed Jacuzzi — now open!</li>
+            <li>✦ The "Cool" Pool — new specialty pool added</li>
+            <li>✦ New dedicated Pilates Room with reformers</li>
+            <li>✦ Personal Training program relaunched</li>
+            <li>✦ Sol Vida OC Café — now open (soft launch)</li>
           </ul>
-          <a href="contact.html" class="btn btn-primary">Ask Us About Updates</a>
+          <a href="contact.html" class="btn btn-primary" id="blog-featured-btn">Ask Us About Updates</a>
         </div>
       </div>
     </div>
@@ -123,20 +121,85 @@
         <span class="section-label fade-in">Recent Posts</span>
         <h2 class="section-title fade-in fade-in-delay-1">Latest News & Highlights</h2>
       </div>
-      <div class="grid grid-3 fade-in fade-in-delay-2" id="news-container" data-cms-list="news" data-cms-property="articles">
+      <div class="grid grid-3 fade-in fade-in-delay-2" data-cms-list="news" data-cms-property="articles">
+
         <div class="blog-card">
           <div class="blog-card-img-wrap">
-            <img src="" alt="" loading="lazy" data-cms-bind="src:image|alt:title">
+            <img src="https://images.unsplash.com/photo-1554068865-24cecd4e34b8?w=700&q=80" alt="Pickleball Courts Update" loading="lazy">
           </div>
           <div class="blog-card-body">
-            <div class="blog-date" data-cms-bind="date">February 2026</div>
-            <div class="blog-cat" data-cms-bind="category">Pickleball</div>
-            <div class="blog-title" data-cms-bind="title">New Stadium Lighting Installed on All 59 Pickleball Courts</div>
-            <p class="blog-excerpt" data-cms-bind="summary">All 59 pickleball courts at Los Cab now feature brand-new stadium lighting systems, dramatically improving evening play visibility and extending your court time well into the night.</p>
-            <a href="contact.html" class="card-link" data-cms-bind="href:link">Read More →</a>
+            <div class="blog-date">February 2026</div>
+            <div class="blog-cat">Pickleball</div>
+            <div class="blog-title">New Stadium Lighting Installed on All 59 Pickleball Courts</div>
+            <p class="blog-excerpt">All 59 pickleball courts at Los Cab now feature brand-new stadium lighting systems, dramatically improving evening play visibility and extending your court time well into the night.</p>
+            <a href="contact.html" class="card-link" id="blog-pb-lights-btn">Read More →</a>
           </div>
         </div>
-      </div>
+
+        <div class="blog-card">
+          <div class="blog-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=700&q=80" alt="Sol Vida Café Opening" loading="lazy">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-date">January 2026</div>
+            <div class="blog-cat">Club News</div>
+            <div class="blog-title">Sol Vida OC Café Is Now Open at Los Cab</div>
+            <p class="blog-excerpt">We're thrilled to announce the soft opening of our on-site café, Sol Vida OC. Stop by before or after your workout for coffee, smoothies, fresh salads, and more.</p>
+            <a href="contact.html" class="card-link" id="blog-cafe-btn">Read More →</a>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <div class="blog-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=700&q=80" alt="Personal Training Relaunch" loading="lazy">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-date">January 2026</div>
+            <div class="blog-cat">Fitness</div>
+            <div class="blog-title">Personal Training Program Relaunches with New Trainers</div>
+            <p class="blog-excerpt">Our fully relaunched personal training program pairs you with certified coaches for personalized fitness plans. One-on-one sessions now available to all members.</p>
+            <a href="contact.html" class="card-link" id="blog-pt-btn">Read More →</a>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <div class="blog-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=700&q=80" alt="Gem Day Spa" loading="lazy">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-date">December 2025</div>
+            <div class="blog-cat">Services</div>
+            <div class="blog-title">Gem Day Spa Expands Service Menu for 2026</div>
+            <p class="blog-excerpt">Our boutique on-site spa, Gem Day Spa, is expanding its menu of non-invasive facial and body treatments. New services are now available — book your appointment today.</p>
+            <a href="contact.html" class="card-link" id="blog-spa-btn">Read More →</a>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <div class="blog-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?w=700&q=80" alt="Junior Tennis Academy" loading="lazy">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-date">November 2025</div>
+            <div class="blog-cat">Tennis</div>
+            <div class="blog-title">Junior Tennis Academy Sees Record Enrollment for Fall Season</div>
+            <p class="blog-excerpt">Our Junior Tennis Academy welcomed its largest cohort ever this fall. With structured programs for all age groups, young players are developing exceptional skills and a love of the game.</p>
+            <a href="tennis.html" class="card-link" id="blog-junior-btn">Learn About Our Programs →</a>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <div class="blog-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1519315901367-f34ff9154487?w=700&q=80" alt="Water Polo Academy" loading="lazy">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-date">October 2025</div>
+            <div class="blog-cat">Swimming</div>
+            <div class="blog-title">6-8 Water Polo Academy Now Enrolling</div>
+            <p class="blog-excerpt">The Los Cab 6-8 Water Polo Academy is now accepting registrations. Designed for young athletes ages 6–8, this program builds aquatic confidence and team sport fundamentals.</p>
+            <a href="contact.html" class="card-link" id="blog-waterpolo-btn">Read More →</a>
+          </div>
+        </div>
 
       </div>
     </div>
@@ -151,53 +214,15 @@
     </div>
   </section>
 
-  
-  <section class="section section--gray">
-    <div class="container">
-      <div class="section-head section-head--center">
-        <span class="section-label fade-in">We're Open</span>
-        <h2 class="section-title section-title fade-in fade-in-delay-1">Hours</h2>
-      </div>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:2rem;" class="fade-in">
-        <div>
-          <h3 style="font-weight:700;color:var(--navy);margin-bottom:1rem;font-size:1.1rem;">🏛️ Club Hours</h3>
-          <table class="hours-table">
-            <thead><tr><th>Day</th><th>Open</th><th>Last Entry</th></tr></thead>
-            <tbody data-cms-list="settings" data-cms-property="club_hours">
-              <tr>
-                <td data-cms-bind="day"></td>
-                <td data-cms-bind="open"></td>
-                <td data-cms-bind="textContent:last"></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div>
-          <h3 style="font-weight:700;color:var(--navy);margin-bottom:1rem;font-size:1.1rem;">🎾 Court Hours</h3>
-          <table class="hours-table">
-            <thead><tr><th>Day</th><th>Open</th><th>Last Entry</th></tr></thead>
-            <tbody data-cms-list="settings" data-cms-property="court_hours">
-              <tr>
-                <td data-cms-bind="day"></td>
-                <td data-cms-bind="open"></td>
-                <td data-cms-bind="textContent:last"></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-about"><div class="footer-logo"><a href="index.html" class="logo"><div class="logo-icon">LC</div><div class="logo-text"><span class="text-teal" data-cms-file="settings" data-cms-id="site_title_part1">Los Cab</span><span class="text-navy" data-cms-file="settings" data-cms-id="site_title_part2">Sports Club</span></div></a></div><p>Southern California's premier multi-sport athletic club in Fountain Valley.</p><div class="footer-socials"><a href="#" class="footer-social-link" target="_blank" rel="noopener" data-cms-file="settings" data-cms-id="facebook_link">f</a><a href="#" class="footer-social-link" target="_blank" rel="noopener" data-cms-file="settings" data-cms-id="instagram_link">📷</a></div></div>
-        <div class="footer-col"><h4>Sports</h4><ul class="footer-links" data-cms-list="settings" data-cms-property="footer_sports_links"><li><a href="" data-cms-bind="href:url|textContent:label"></a></li></ul></div>
-        <div class="footer-col"><h4>Club</h4><ul class="footer-links" data-cms-list="settings" data-cms-property="footer_club_links"><li><a href="" data-cms-bind="href:url|textContent:label"></a></li></ul></div>
-        <div class="footer-col"><h4>Contact</h4><div class="footer-contact-items"><div class="footer-contact-item"><span class="icon">📍</span><span data-cms-file="settings" data-cms-id="footer_address">17272 Newhope St.<br>Fountain Valley, CA 92708</span></div><div class="footer-contact-item"><span class="icon">📞</span><a href="tel:+17145468560" data-cms-file="settings" data-cms-id="footer_phone">(714) 546-8560</a></div></div></div>
+        <div class="footer-about"><div class="footer-logo"><a href="index.html" class="logo"><div class="logo-icon">LC</div><div class="logo-text"><span class="text-teal">Los Cab</span><span class="text-navy">Sports Club</span></div></a></div><p>Southern California's premier multi-sport athletic club in Fountain Valley.</p><div class="footer-socials"><a href="https://www.facebook.com/loscab" class="footer-social-link" target="_blank" rel="noopener">f</a><a href="https://www.instagram.com/loscab" class="footer-social-link" target="_blank" rel="noopener">📷</a></div></div>
+        <div class="footer-col"><h4>Sports</h4><ul class="footer-links"><li><a href="tennis.html">Tennis</a></li><li><a href="pickleball.html">Pickleball</a></li><li><a href="fitness.html">Fitness</a></li><li><a href="sports.html">All Sports</a></li></ul></div>
+        <div class="footer-col"><h4>Club</h4><ul class="footer-links"><li><a href="membership.html">Membership</a></li><li><a href="services.html">Services</a></li><li><a href="events.html">Events</a></li><li><a href="blog.html">News</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h4>Contact</h4><div class="footer-contact-items"><div class="footer-contact-item"><span class="icon">📍</span><span>17272 Newhope St.<br>Fountain Valley, CA 92708</span></div><div class="footer-contact-item"><span class="icon">📞</span><a href="tel:+17145468560">(714) 546-8560</a></div></div></div>
       </div>
-      <div class="footer-bottom"><p data-cms-file="settings" data-cms-id="copyright_text">© 2026 Los Cab Sports Club. All Rights Reserved.</p><p>17272 Newhope St., Fountain Valley, CA 92708</p></div>
+      <div class="footer-bottom"><p>© 2026 Los Cab Sports Club. All Rights Reserved.</p><p>17272 Newhope St., Fountain Valley, CA 92708</p></div>
     </div>
   </footer>
   <script src="js/main.js"></script>

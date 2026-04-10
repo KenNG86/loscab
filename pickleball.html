@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title data-cms-file="pickleball" data-cms-id="seo_title">Pickleball | Los Cab Sports Club — 59 Lighted Courts in Fountain Valley</title>
-  <meta name="description" data-cms-file="pickleball" data-cms-id="seo_description" content="Play pickleball at Los Cab — 59 lighted courts (43 dedicated + 16 hybrid), clinics, leagues, and open play in Fountain Valley, CA. Join today.">
+  <title>Pickleball | Los Cab Sports Club — 59 Lighted Courts in Fountain Valley</title>
+  <meta name="description" content="Play pickleball at Los Cab — 59 lighted courts (43 dedicated + 16 hybrid), clinics, leagues, and open play in Fountain Valley, CA. Join today.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <style data-cms-file="pickleball" data-cms-id="hero_image" data-cms-type="bg-css">
+  <style>
     .page-hero { background: linear-gradient(135deg, #0D1B2A 0%, #006978 100%); }
     .page-hero-bg { background-image: url('https://images.unsplash.com/photo-1554068865-24cecd4e34b8?w=1800&q=80'); }
     .program-card {
@@ -44,14 +43,16 @@
           <span class="text-navy">Sports Club</span>
         </div>
       </a>
-      <ul class="nav-links" data-cms-list="settings" data-cms-property="nav_links">
+      <ul class="nav-links">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
         <li class="nav-item has-dropdown">
-          <a href="" class="nav-link" data-cms-bind="href:url|textContent:label"></a>
-          <ul class="dropdown" data-cms-list="" data-cms-property="dropdown">
-            <li><a href="" data-cms-bind="href:url|textContent:label"></a></li>
+          <a href="sports.html" class="nav-link">Sports ▾</a>
+          <ul class="dropdown" role="list">
+            <li><a href="tennis.html">Tennis</a></li>
+            <li><a href="pickleball.html">Pickleball</a></li>
+            <li><a href="fitness.html">Fitness</a></li>
+            <li><a href="sports.html">All Sports</a></li>
           </ul>
-        </li>
-      </ul>
         </li>
         <li class="nav-item"><a href="membership.html" class="nav-link">Membership</a></li>
         <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
@@ -91,8 +92,8 @@
           <a href="index.html">Home</a><span>›</span><span>Pickleball</span>
         </nav>
         <span class="section-label" style="color:var(--teal-light);">59 Lighted Courts</span>
-        <h1 data-cms-file="pickleball" data-cms-id="hero_title">Pickleball at Los Cab</h1>
-        <p data-cms-file="pickleball" data-cms-id="hero_subtitle">The largest pickleball facility in Orange County. 43 dedicated and 16 hybrid courts — all with new stadium lighting for evening play.</p>
+        <h1>Pickleball at Los Cab</h1>
+        <p>The largest pickleball facility in Orange County. 43 dedicated and 16 hybrid courts — all with new stadium lighting for evening play.</p>
       </div>
     </div>
   </header>
@@ -100,11 +101,26 @@
   <!-- Stats -->
   <section class="section section--gray">
     <div class="container">
-      <div class="stat-row fade-in" data-cms-list="pickleball" data-cms-property="stats">
+      <div class="stat-row fade-in">
         <div class="stat-box">
-          <div class="stat-number" data-count="59" data-cms-bind="number">0</div>
-          <div class="stat-label" data-cms-bind="label">Total Courts</div>
-          <div class="stat-sub" data-cms-bind="sub">All lighted</div>
+          <div class="stat-number" data-count="59">0</div>
+          <div class="stat-label">Total Courts</div>
+          <div class="stat-sub">All lighted</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number" data-count="43">0</div>
+          <div class="stat-label">Dedicated Pickleball</div>
+          <div class="stat-sub">Courts</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number" data-count="16">0</div>
+          <div class="stat-label">Hybrid Courts</div>
+          <div class="stat-sub">Tennis/Pickleball</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number" style="font-size:2rem;">All Day</div>
+          <div class="stat-label">Open Play</div>
+          <div class="stat-sub">7 Days a Week</div>
         </div>
       </div>
     </div>
@@ -118,15 +134,65 @@
         <h2 class="section-title fade-in fade-in-delay-1">Play at Every Level</h2>
         <p class="section-subtitle fade-in fade-in-delay-2">From complete beginners to competitive advanced players — we have a program designed for your game.</p>
       </div>
-      <div class="grid grid-3 fade-in fade-in-delay-2" data-cms-list="pickleball" data-cms-property="programs">
+      <div class="grid grid-3 fade-in fade-in-delay-2">
         <div class="program-card">
-          <div class="program-card-header" data-cms-bind="style:background:color">
-            <div class="level" data-cms-bind="level">Beginner</div>
-            <h3 data-cms-bind="title">Intro to Pickleball</h3>
+          <div class="program-card-header">
+            <div class="level">Beginner</div>
+            <h3>Intro to Pickleball</h3>
           </div>
           <div class="program-card-body">
-            <p style="color:var(--body-text);font-size:0.95rem;line-height:1.7;" data-cms-bind="desc">New to the sport? Our intro clinics teach you the basics — rules, scoring, and fundamental techniques in a friendly, welcoming environment.</p>
-            <a href="contact.html" class="card-link" id="pb-intro-btn" data-cms-bind="href:link">Register →</a>
+            <p style="color:var(--body-text);font-size:0.95rem;line-height:1.7;">New to the sport? Our intro clinics teach you the basics — rules, scoring, and fundamental techniques in a friendly, welcoming environment.</p>
+            <a href="contact.html" class="card-link" id="pb-intro-btn">Register →</a>
+          </div>
+        </div>
+        <div class="program-card">
+          <div class="program-card-header" style="background:var(--navy);">
+            <div class="level">Intermediate</div>
+            <h3>Skill Development Clinics</h3>
+          </div>
+          <div class="program-card-body">
+            <p style="color:var(--body-text);font-size:0.95rem;line-height:1.7;">Improve your dinking, third-shot drops, and court movement. Group clinics with certified pros designed to take your game to the next level.</p>
+            <a href="contact.html" class="card-link" id="pb-skill-btn">Register →</a>
+          </div>
+        </div>
+        <div class="program-card">
+          <div class="program-card-header" style="background:var(--gold);color:var(--navy);">
+            <div class="level" style="color:var(--navy);">Advanced</div>
+            <h3>Competitive Training</h3>
+          </div>
+          <div class="program-card-body">
+            <p style="color:var(--body-text);font-size:0.95rem;line-height:1.7;">Intensive training for 4.0+ players. Strategy, pattern plays, drilling, and tournament preparation with our top coaching staff.</p>
+            <a href="contact.html" class="card-link" id="pb-adv-btn">Register →</a>
+          </div>
+        </div>
+        <div class="program-card">
+          <div class="program-card-header" style="background:#1B4332;">
+            <div class="level">Junior Development</div>
+            <h3>Youth Pickleball Academy</h3>
+          </div>
+          <div class="program-card-body">
+            <p style="color:var(--body-text);font-size:0.95rem;line-height:1.7;">Structured youth programs designed to build confidence and skills in players ages 8–17. Fun, competitive, and educational.</p>
+            <a href="contact.html" class="card-link" id="pb-youth-btn">Register →</a>
+          </div>
+        </div>
+        <div class="program-card">
+          <div class="program-card-header" style="background:#5C35A0;">
+            <div class="level">Social</div>
+            <h3>Leagues & Ladders</h3>
+          </div>
+          <div class="program-card-body">
+            <p style="color:var(--body-text);font-size:0.95rem;line-height:1.7;">Join organized round-robin leagues and ladder competitions. Meet other players, track your progress, and compete regularly.</p>
+            <a href="contact.html" class="card-link" id="pb-leagues-btn">Learn More →</a>
+          </div>
+        </div>
+        <div class="program-card">
+          <div class="program-card-header" style="background:#C0392B;">
+            <div class="level">Community</div>
+            <h3>Open Play & Drop-in</h3>
+          </div>
+          <div class="program-card-body">
+            <p style="color:var(--body-text);font-size:0.95rem;line-height:1.7;">Jump in any time! Open play is available daily for members. Use Team Reach to coordinate games with other Los Cab players.</p>
+            <a href="contact.html" class="card-link" id="pb-open-btn">View Schedule →</a>
           </div>
         </div>
       </div>
@@ -140,12 +206,24 @@
         <div>
           <span class="section-label fade-in">World-Class Courts</span>
           <div class="section-divider"></div>
-          <h2 class="section-title fade-in fade-in-delay-1" data-cms-id="courts_title">The Premier Pickleball Facility in Orange County</h2>
-          <p class="section-subtitle fade-in fade-in-delay-2" data-cms-id="courts_subtitle">With 59 total courts — more than any other club in OC — Los Cab is the destination for serious pickleball players.</p>
-          <div class="features-list fade-in" data-cms-list="pickleball" data-cms-property="court_features">
+          <h2 class="section-title fade-in fade-in-delay-1">The Premier Pickleball Facility in Orange County</h2>
+          <p class="section-subtitle fade-in fade-in-delay-2">With 59 total courts — more than any other club in OC — Los Cab is the destination for serious pickleball players.</p>
+          <div class="features-list fade-in">
             <div class="feature-item">
               <div class="feature-dot"></div>
-              <div><strong data-cms-bind="title">New Stadium Lighting</strong><p data-cms-bind="text">All 59 courts feature brand-new lighting systems for perfect visibility during evening sessions.</p></div>
+              <div><strong>New Stadium Lighting</strong><p>All 59 courts feature brand-new lighting systems for perfect visibility during evening sessions.</p></div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-dot"></div>
+              <div><strong>Dedicated Pickleball Courts</strong><p>43 courts built exclusively for pickleball — optimal court dimensions, surfacing, and net heights.</p></div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-dot"></div>
+              <div><strong>Hybrid Courts</strong><p>16 additional courts convertible for both tennis and pickleball — maximizing your court availability.</p></div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-dot"></div>
+              <div><strong>Team Reach Integration</strong><p>Connect with other members via Team Reach to organize games, track scores, and join group sessions.</p></div>
             </div>
           </div>
         </div>
@@ -161,8 +239,8 @@
     <div class="container">
       <div class="highlight-box" style="text-align:center;padding:4rem 3rem;">
         <span class="section-label">Pickleball Membership</span>
-        <h2 class="section-title" style="margin-bottom:1rem;"><span data-cms-id="membership_price">$135</span> <span style="font-size:1.2rem;font-family:var(--font-sans);font-weight:400;color:var(--body-text);">/month</span></h2>
-        <p style="color:var(--body-text);max-width:480px;margin:0 auto 2rem;line-height:1.8;" data-cms-id="membership_details">$200 initiation fee. Includes unlimited court access, open play, discounted clinics, and all Sports Membership benefits.</p>
+        <h2 class="section-title" style="margin-bottom:1rem;">$135 <span style="font-size:1.2rem;font-family:var(--font-sans);font-weight:400;color:var(--body-text);">/month</span></h2>
+        <p style="color:var(--body-text);max-width:480px;margin:0 auto 2rem;line-height:1.8;">$200 initiation fee. Includes unlimited court access, open play, discounted clinics, and all Sports Membership benefits.</p>
         <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
           <a href="membership.html" class="btn btn-primary btn-lg" id="pb-membership-btn">Join Now</a>
           <a href="contact.html" class="btn btn-outline btn-lg" id="pb-contact-btn">Ask a Question</a>
@@ -185,44 +263,6 @@
   </section>
 
   <!-- Footer -->
-  
-  <section class="section section--gray">
-    <div class="container">
-      <div class="section-head section-head--center">
-        <span class="section-label fade-in">We're Open</span>
-        <h2 class="section-title section-title fade-in fade-in-delay-1">Hours</h2>
-      </div>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:2rem;" class="fade-in">
-        <div>
-          <h3 style="font-weight:700;color:var(--navy);margin-bottom:1rem;font-size:1.1rem;">🏛️ Club Hours</h3>
-          <table class="hours-table">
-            <thead><tr><th>Day</th><th>Open</th><th>Last Entry</th></tr></thead>
-            <tbody data-cms-list="settings" data-cms-property="club_hours">
-              <tr>
-                <td data-cms-bind="day"></td>
-                <td data-cms-bind="open"></td>
-                <td data-cms-bind="textContent:last"></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div>
-          <h3 style="font-weight:700;color:var(--navy);margin-bottom:1rem;font-size:1.1rem;">🎾 Court Hours</h3>
-          <table class="hours-table">
-            <thead><tr><th>Day</th><th>Open</th><th>Last Entry</th></tr></thead>
-            <tbody data-cms-list="settings" data-cms-property="court_hours">
-              <tr>
-                <td data-cms-bind="day"></td>
-                <td data-cms-bind="open"></td>
-                <td data-cms-bind="textContent:last"></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
@@ -237,19 +277,18 @@
 </div>
           <p>Southern California's premier multi-sport athletic club in Fountain Valley.</p>
           <div class="footer-socials">
-            <a href="#" class="footer-social-link" target="_blank" rel="noopener" data-cms-file="settings" data-cms-id="facebook_link">f</a>
-            <a href="#" class="footer-social-link" target="_blank" rel="noopener" data-cms-file="settings" data-cms-id="instagram_link">📷</a>
+            <a href="https://www.facebook.com/loscab" class="footer-social-link" target="_blank" rel="noopener">f</a>
+            <a href="https://www.instagram.com/loscab" class="footer-social-link" target="_blank" rel="noopener">📷</a>
           </div>
         </div>
-        <div class="footer-col"><h4>Sports</h4><ul class="footer-links" data-cms-list="settings" data-cms-property="footer_sports_links"><li><a href="" data-cms-bind="href:url|textContent:label"></a></li></ul></div>
-        <div class="footer-col"><h4>Club</h4><ul class="footer-links" data-cms-list="settings" data-cms-property="footer_club_links"><li><a href="" data-cms-bind="href:url|textContent:label"></a></li></ul></div>
-        <div class="footer-col"><h4>Contact</h4><div class="footer-contact-items"><div class="footer-contact-item"><span class="icon">📍</span><span data-cms-file="settings" data-cms-id="footer_address">17272 Newhope St.<br>Fountain Valley, CA 92708</span></div><div class="footer-contact-item"><span class="icon">📞</span><a href="tel:+17145468560" data-cms-file="settings" data-cms-id="footer_phone">(714) 546-8560</a></div></div></div>
+        <div class="footer-col"><h4>Sports</h4><ul class="footer-links"><li><a href="tennis.html">Tennis</a></li><li><a href="pickleball.html">Pickleball</a></li><li><a href="fitness.html">Fitness</a></li><li><a href="sports.html">All Sports</a></li></ul></div>
+        <div class="footer-col"><h4>Club</h4><ul class="footer-links"><li><a href="membership.html">Membership</a></li><li><a href="services.html">Services</a></li><li><a href="events.html">Events</a></li><li><a href="blog.html">News</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h4>Contact</h4><div class="footer-contact-items"><div class="footer-contact-item"><span class="icon">📍</span><span>17272 Newhope St.<br>Fountain Valley, CA 92708</span></div><div class="footer-contact-item"><span class="icon">📞</span><a href="tel:+17145468560">(714) 546-8560</a></div></div></div>
       </div>
-      <div class="footer-bottom"><p data-cms-file="settings" data-cms-id="copyright_text">© 2026 Los Cab Sports Club. All Rights Reserved.</p><p>17272 Newhope St., Fountain Valley, CA 92708</p></div>
+      <div class="footer-bottom"><p>© 2026 Los Cab Sports Club. All Rights Reserved.</p><p>17272 Newhope St., Fountain Valley, CA 92708</p></div>
     </div>
   </footer>
 
   <script src="js/main.js"></script>
-  <script src="js/cms-loader.js"></script>
 </body>
 </html>
