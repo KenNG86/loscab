@@ -34,7 +34,7 @@
   </style>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
-<body>
+<body data-cms-page="services">
 
   <nav class="navbar navbar--scrolled" id="navbar">
     <div class="nav-inner">
@@ -68,9 +68,9 @@
     <div class="container">
       <div class="page-hero-content">
         <nav class="breadcrumb"><a href="index.html">Home</a><span>›</span><span>Services</span></nav>
-        <span class="section-label" style="color:var(--teal-light);">Premium Club Services</span>
-        <h1>Club Services & Amenities</h1>
-        <p>Beyond sports — Los Cab offers a boutique spa, full-service café, event catering, and stunning event venues all on-site.</p>
+        <span data-cms="hero-label" class="section-label" style="color:var(--teal-light);">Premium Club Services</span>
+        <h1 data-cms="hero-title">Club Services & Amenities</h1>
+        <p data-cms="hero-desc">Beyond sports — Los Cab offers a boutique spa, full-service café, event catering, and stunning event venues all on-site.</p>
       </div>
     </div>
   </header>
@@ -79,10 +79,10 @@
   <section class="section section--gray">
     <div class="container">
       <div class="section-head section-head--center">
-        <span class="section-label fade-in">What We Offer</span>
-        <h2 class="section-title fade-in fade-in-delay-1">Everything You Need, All in One Place</h2>
+        <span class="section-label fade-in" data-cms="svc-label">What We Offer</span>
+        <h2 class="section-title fade-in fade-in-delay-1" data-cms="svc-title">Everything You Need, All in One Place</h2>
       </div>
-      <div class="grid grid-2 fade-in fade-in-delay-2">
+      <div class="grid grid-2 fade-in fade-in-delay-2" data-cms="services">
 
         <!-- Gem Day Spa -->
         <div class="card">
@@ -159,11 +159,11 @@
   <section class="section">
     <div class="container">
       <div class="section-head section-head--center">
-        <span class="section-label fade-in">Club Amenities</span>
-        <h2 class="section-title fade-in fade-in-delay-1">Premium Facility Amenities</h2>
-        <p class="section-subtitle fade-in fade-in-delay-2" style="margin:0 auto;">Included with every membership — because a great workout deserves great facilities.</p>
+        <span class="section-label fade-in" data-cms="amen-label">Club Amenities</span>
+        <h2 class="section-title fade-in fade-in-delay-1" data-cms="amen-title">Premium Facility Amenities</h2>
+        <p class="section-subtitle fade-in fade-in-delay-2" style="margin:0 auto;" data-cms="amen-subtitle">Included with every membership — because a great workout deserves great facilities.</p>
       </div>
-      <div class="grid grid-3 fade-in fade-in-delay-2">
+      <div class="grid grid-3 fade-in fade-in-delay-2" data-cms="amenities">
         <div class="icon-card"><div class="icon-wrap">🚿</div><h3 class="card-title">Premium Locker Rooms</h3><p class="card-text">Spacious, well-maintained locker rooms with premium shower facilities for all members — men's and women's.</p></div>
         <div class="icon-card"><div class="icon-wrap">🧖</div><h3 class="card-title">Steam & Sauna Rooms</h3><p class="card-text">Brand-new steam rooms and sauna rooms added in Winter 2026. Perfect for post-workout recovery.</p></div>
         <div class="icon-card"><div class="icon-wrap">♨️</div><h3 class="card-title">Co-Ed Jacuzzi</h3><p class="card-text">A relaxing co-ed jacuzzi available to all members. Great for unwinding after a game or workout.</p></div>
@@ -177,7 +177,7 @@
   <section class="cta-banner">
     <div class="container">
       <div class="cta-banner-inner">
-        <div><h2>Experience Los Cab Services.</h2><p>Book the spa, reserve the venue, or inquire about catering — our team is ready to help.</p></div>
+        <div><h2 data-cms="cta-title">Experience Los Cab Services.</h2><p data-cms="cta-text">Book the spa, reserve the venue, or inquire about catering — our team is ready to help.</p></div>
         <a href="contact.html" class="btn btn-primary btn-lg" id="services-cta-btn">Get in Touch</a>
       </div>
     </div>

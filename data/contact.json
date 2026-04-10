@@ -1,0 +1,31 @@
+{
+  "hero_image": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=1800&q=80",
+  "hero_label": "We'd Love to Hear From You",
+  "hero_title": "Contact Los Cab",
+  "hero_desc": "Have a question about membership, programs, or events? Our team is here to help. Call us, email us, or stop by in person.",
+  "form_label": "Send a Message",
+  "form_title": "How Can We Help?",
+  "club_name": "Los Cab Sports Club",
+  "club_tagline": "Open 7 days a week · Members & public welcome",
+  "address": "17272 Newhope St.",
+  "city": "Fountain Valley, CA 92708",
+  "phone": "(714) 546-8560",
+  "phone_sub": "Call or text us any time",
+  "email": "susan@loscab.com",
+  "email_role": "Director of Operations",
+  "hours_club_weekday": "Mon–Fri: 6:00 AM – 9:30 PM",
+  "hours_club_weekend": "Sat–Sun: 7:00 AM – 8:00 PM",
+  "hours_court_weekday": "Mon–Fri: 6:00 AM – 11:00 PM",
+  "hours_court_weekend": "Sat: 7AM–10PM · Sun: 7AM–8PM",
+  "staff": [
+    { "initials": "SC", "name": "Susan Castellanos", "role": "Director of Operations", "contact": "susan@loscab.com", "contact_type": "email" },
+    { "initials": "PP", "name": "Peggy Pocher", "role": "Fitness Director", "contact": "fitness@loscab.com", "contact_type": "email" },
+    { "initials": "MB", "name": "Mitch Bridge", "role": "Director of Pickleball", "contact": "pickleball@loscab.com", "contact_type": "email" },
+    { "initials": "MK", "name": "Mike Kane", "role": "Facilities Manager", "contact": "Ext. 208", "contact_type": "phone" },
+    { "initials": "SD", "name": "Sam Daye", "role": "Squash Professional", "contact": "Contact →", "contact_type": "link" },
+    { "initials": "MD", "name": "Michael Do", "role": "Badminton (July 2026)", "contact": "Contact →", "contact_type": "link" }
+  ],
+  "map_label": "Find Us",
+  "map_title": "We're Located in Fountain Valley, CA",
+  "map_subtitle": "17272 Newhope St., Fountain Valley, CA 92708 — easy freeway access off the 405."
+}

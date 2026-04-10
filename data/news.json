@@ -1,18 +1,75 @@
 {
+  "hero_image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1800&q=80",
+  "hero_label": "Club Updates",
+  "hero_title": "News & Updates",
+  "hero_desc": "Stay current with the latest happenings, program launches, facility improvements, and community highlights at Los Cab.",
+  "featured": {
+    "image": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=900&q=80",
+    "date": "March 2026 · Club News",
+    "category": "Winter 2026 Updates",
+    "title": "What's New at Los Cab — Winter 2026 Facility Upgrades",
+    "text": "We're excited to share several major upgrades to your Los Cab experience this winter. From brand-new steam and sauna rooms to a dedicated Pilates studio, we've invested in making your club even better.",
+    "bullets": [
+      "✦ New Steam & Sauna rooms in both locker rooms",
+      "✦ New Co-Ed Jacuzzi — now open!",
+      "✦ The \"Cool\" Pool — new specialty pool added",
+      "✦ New dedicated Pilates Room with reformers",
+      "✦ Personal Training program relaunched",
+      "✦ Sol Vida OC Café — now open (soft launch)"
+    ]
+  },
+  "articles_label": "Recent Posts",
+  "articles_title": "Latest News & Highlights",
   "articles": [
     {
-      "title": "Summer Tennis Tournament 2026",
-      "date": "2026-06-15",
-      "summary": "Join us for our annual summer tournament. All levels welcome!",
-      "image": "https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?w=800&q=80",
-      "link": "events.html"
+      "image": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?w=700&q=80",
+      "date": "February 2026",
+      "category": "Pickleball",
+      "title": "New Stadium Lighting Installed on All 59 Pickleball Courts",
+      "summary": "All 59 pickleball courts at Los Cab now feature brand-new stadium lighting systems, dramatically improving evening play visibility and extending your court time well into the night.",
+      "link": "contact.html"
     },
     {
-      "title": "New Pickleball Courts Now Open",
-      "date": "2026-04-01",
-      "summary": "We've added 4 new dedicated pickleball courts to our facility.",
-      "image": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?w=800&q=80",
-      "link": "pickleball.html"
+      "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=700&q=80",
+      "date": "January 2026",
+      "category": "Club News",
+      "title": "Sol Vida OC Café Is Now Open at Los Cab",
+      "summary": "We're thrilled to announce the soft opening of our on-site café, Sol Vida OC. Stop by before or after your workout for coffee, smoothies, fresh salads, and more.",
+      "link": "contact.html"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=700&q=80",
+      "date": "January 2026",
+      "category": "Fitness",
+      "title": "Personal Training Program Relaunches with New Trainers",
+      "summary": "Our fully relaunched personal training program pairs you with certified coaches for personalized fitness plans. One-on-one sessions now available to all members.",
+      "link": "contact.html"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=700&q=80",
+      "date": "December 2025",
+      "category": "Services",
+      "title": "Gem Day Spa Expands Service Menu for 2026",
+      "summary": "Our boutique on-site spa, Gem Day Spa, is expanding its menu of non-invasive facial and body treatments. New services are now available — book your appointment today.",
+      "link": "contact.html"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?w=700&q=80",
+      "date": "November 2025",
+      "category": "Tennis",
+      "title": "Junior Tennis Academy Sees Record Enrollment for Fall Season",
+      "summary": "Our Junior Tennis Academy welcomed its largest cohort ever this fall. With structured programs for all age groups, young players are developing exceptional skills and a love of the game.",
+      "link": "tennis.html"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1519315901367-f34ff9154487?w=700&q=80",
+      "date": "October 2025",
+      "category": "Swimming",
+      "title": "6-8 Water Polo Academy Now Enrolling",
+      "summary": "The Los Cab 6-8 Water Polo Academy is now accepting registrations. Designed for young athletes ages 6–8, this program builds aquatic confidence and team sport fundamentals.",
+      "link": "contact.html"
     }
-  ]
+  ],
+  "cta_title": "Stay in the Loop.",
+  "cta_text": "Members get first access to event announcements, new programs, and club updates."
 }

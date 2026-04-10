@@ -217,7 +217,7 @@
   </style>
 </head>
 
-<body class="has-hero">
+<body class="has-hero" data-cms-page="home">
 
   <!-- Navbar -->
   <nav class="navbar" id="navbar" aria-label="Main navigation">
@@ -279,8 +279,8 @@
     <div class="container" style="position:relative;z-index:2;width:100%;">
       <div class="hero-content">
         <div class="hero-label">Fountain Valley, CA</div>
-        <h1 class="hero-title fade-in" data-cms-file="home" data-cms-id="hero_title">Your Home <span>Away</span><br>From Home</h1>
-        <p class="hero-desc" data-cms-file="home" data-cms-id="hero_subtitle">Southern California's premier multi-sport athletic club — tennis, pickleball, fitness,
+        <h1 class="hero-title fade-in">Your Home <span>Away</span><br>From Home</h1>
+        <p class="hero-desc">Southern California's premier multi-sport athletic club — tennis, pickleball, fitness,
           swimming, and more. All under one roof.</p>
         <div class="hero-buttons">
           <a href="membership.html" class="btn btn-primary btn-lg" id="hero-join-btn">Explore Membership</a>
@@ -327,9 +327,9 @@
   <section class="section" id="sports">
     <div class="container">
       <div class="section-head">
-        <span class="section-label fade-in">Our Sports</span>
-        <h2 class="section-title fade-in fade-in-delay-1">Play What You Love.<br>All in One Place.</h2>
-        <p class="section-subtitle fade-in fade-in-delay-2">From competitive tennis to casual pickleball, intensive
+        <span class="section-label fade-in" data-cms="sports-label">Our Sports</span>
+        <h2 class="section-title fade-in fade-in-delay-1" data-cms="sports-title">Play What You Love.<br>All in One Place.</h2>
+        <p class="section-subtitle fade-in fade-in-delay-2" data-cms="sports-subtitle">From competitive tennis to casual pickleball, intensive
           fitness to serene swimming — Los Cab has every sport covered.</p>
       </div>
 
@@ -402,17 +402,17 @@
     <div class="container">
       <div class="features-split">
         <div class="features-img fade-in">
-          <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=900&q=80"
+          <img data-cms="fac-img" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=900&q=80"
             alt="Los Cab Sports Club facilities" loading="lazy">
         </div>
         <div class="fade-in fade-in-delay-1">
-          <span class="section-label">Happy, Healthy & Active</span>
+          <span class="section-label" data-cms="fac-label">Happy, Healthy & Active</span>
           <div class="section-divider"></div>
-          <h2 class="section-title">World-Class Facilities, Community Feel</h2>
-          <div class="section-subtitle" data-cms-file="home" data-cms-id="welcome_text">
+          <h2 class="section-title" data-cms="fac-title">World-Class Facilities, Community Feel</h2>
+          <div class="section-subtitle" data-cms="fac-text">
             <p>More than a gym — Los Cab is a community where athletes, families, and weekend warriors all feel at home.</p>
           </div>
-          <div class="features-list">
+          <div class="features-list" data-cms="fac-features">
             <div class="feature-item">
               <div class="feature-dot"></div>
               <div>
@@ -468,7 +468,7 @@
                 <th>Last Entry</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody data-cms="hours-club">
               <tr>
                 <td>Monday – Friday</td>
                 <td>6:00 AM – 9:30 PM</td>
@@ -492,7 +492,7 @@
                 <th>Last Entry</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody data-cms="hours-court">
               <tr>
                 <td>Monday – Friday</td>
                 <td>6:00 AM – 11:00 PM</td>
@@ -519,12 +519,12 @@
   <section class="section section--navy">
     <div class="container">
       <div class="section-head section-head--center">
-        <span class="section-label" style="color:var(--teal-light);">Membership Plans</span>
-        <h2 class="section-title section-title--white fade-in">Choose Your Membership</h2>
-        <p class="section-subtitle section-subtitle--white fade-in fade-in-delay-1" style="margin:0 auto;">Simple,
+        <span class="section-label" style="color:var(--teal-light);" data-cms="mem-label">Membership Plans</span>
+        <h2 class="section-title section-title--white fade-in" data-cms="mem-title">Choose Your Membership</h2>
+        <p class="section-subtitle section-subtitle--white fade-in fade-in-delay-1" style="margin:0 auto;" data-cms="mem-subtitle">Simple,
           transparent pricing. Join monthly — no long-term contracts required.</p>
       </div>
-      <div class="grid grid-3 fade-in fade-in-delay-2">
+      <div class="grid grid-3 fade-in fade-in-delay-2" data-cms="mem-plans">
         <div class="pricing-card">
           <div class="pricing-type">Individual</div>
           <div class="pricing-name">Sports Membership</div>
@@ -587,10 +587,10 @@
   <section class="section section--gray">
     <div class="container">
       <div class="section-head section-head--center">
-        <span class="section-label fade-in">Member Stories</span>
-        <h2 class="section-title fade-in fade-in-delay-1">What Our Members Say</h2>
+        <span class="section-label fade-in" data-cms="test-label">Member Stories</span>
+        <h2 class="section-title fade-in fade-in-delay-1" data-cms="test-title">What Our Members Say</h2>
       </div>
-      <div class="grid grid-3 fade-in fade-in-delay-2">
+      <div class="grid grid-3 fade-in fade-in-delay-2" data-cms="testimonials">
         <div class="testimonial-card">
           <div class="testimonial-stars">★★★★★</div>
           <p class="testimonial-text">"Los Cab has been our family's second home for years. The pickleball courts are
@@ -636,8 +636,8 @@
     <div class="container">
       <div class="cta-banner-inner">
         <div>
-          <h2>Ready to Join Los Cab?</h2>
-          <p>Become part of Fountain Valley's most vibrant athletic community. Flexible memberships available for
+          <h2 data-cms="cta-title">Ready to Join Los Cab?</h2>
+          <p data-cms="cta-text">Become part of Fountain Valley's most vibrant athletic community. Flexible memberships available for
             individuals and families.</p>
         </div>
         <div style="display:flex;gap:1rem;flex-wrap:wrap;flex-shrink:0;">
@@ -721,5 +721,3 @@
 </body>
 
 </html>
-<nav-link>
-  <<nav /nav-link>

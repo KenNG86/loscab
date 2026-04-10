@@ -48,7 +48,7 @@
     }
   </style>
 </head>
-<body>
+<body data-cms-page="news">
 
   <nav class="navbar navbar--scrolled" id="navbar">
     <div class="nav-inner">
@@ -82,9 +82,9 @@
     <div class="container">
       <div class="page-hero-content">
         <nav class="breadcrumb"><a href="index.html">Home</a><span>›</span><span>News</span></nav>
-        <span class="section-label" style="color:var(--teal-light);">Club Updates</span>
-        <h1>News & Updates</h1>
-        <p>Stay current with the latest happenings, program launches, facility improvements, and community highlights at Los Cab.</p>
+        <span data-cms="hero-label" class="section-label" style="color:var(--teal-light);">Club Updates</span>
+        <h1 data-cms="hero-title">News & Updates</h1>
+        <p data-cms="hero-desc">Stay current with the latest happenings, program launches, facility improvements, and community highlights at Los Cab.</p>
       </div>
     </div>
   </header>
@@ -121,7 +121,7 @@
         <span class="section-label fade-in">Recent Posts</span>
         <h2 class="section-title fade-in fade-in-delay-1">Latest News & Highlights</h2>
       </div>
-      <div class="grid grid-3 fade-in fade-in-delay-2" data-cms-list="news" data-cms-property="articles">
+      <div class="grid grid-3 fade-in fade-in-delay-2" data-cms="articles">
 
         <div class="blog-card">
           <div class="blog-card-img-wrap">
@@ -208,7 +208,7 @@
   <section class="cta-banner">
     <div class="container">
       <div class="cta-banner-inner">
-        <div><h2>Stay in the Loop.</h2><p>Members get first access to event announcements, new programs, and club updates.</p></div>
+        <div><h2 data-cms="cta-title">Stay in the Loop.</h2><p data-cms="cta-text">Members get first access to event announcements, new programs, and club updates.</p></div>
         <a href="membership.html" class="btn btn-primary btn-lg" id="blog-cta-btn">Become a Member</a>
       </div>
     </div>

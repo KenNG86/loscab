@@ -31,7 +31,7 @@
     .program-card .level { font-size: 0.8rem; opacity: 0.85; font-weight: 600; letter-spacing: 0.08em; text-transform:uppercase; }
   </style>
 </head>
-<body>
+<body data-cms-page="pickleball">
 
   <!-- Navbar -->
   <nav class="navbar navbar--scrolled" id="navbar" aria-label="Main navigation">
@@ -91,9 +91,9 @@
         <nav class="breadcrumb" aria-label="Breadcrumb">
           <a href="index.html">Home</a><span>›</span><span>Pickleball</span>
         </nav>
-        <span class="section-label" style="color:var(--teal-light);">59 Lighted Courts</span>
-        <h1>Pickleball at Los Cab</h1>
-        <p>The largest pickleball facility in Orange County. 43 dedicated and 16 hybrid courts — all with new stadium lighting for evening play.</p>
+        <span data-cms="hero-label" class="section-label" style="color:var(--teal-light);">59 Lighted Courts</span>
+        <h1 data-cms="hero-title">Pickleball at Los Cab</h1>
+        <p data-cms="hero-desc">The largest pickleball facility in Orange County. 43 dedicated and 16 hybrid courts — all with new stadium lighting for evening play.</p>
       </div>
     </div>
   </header>
@@ -130,11 +130,11 @@
   <section class="section">
     <div class="container">
       <div class="section-head">
-        <span class="section-label fade-in">Programs & Clinics</span>
-        <h2 class="section-title fade-in fade-in-delay-1">Play at Every Level</h2>
-        <p class="section-subtitle fade-in fade-in-delay-2">From complete beginners to competitive advanced players — we have a program designed for your game.</p>
+        <span data-cms="prog-label" class="section-label fade-in">Programs & Clinics</span>
+        <h2 data-cms="prog-title" class="section-title fade-in fade-in-delay-1">Play at Every Level</h2>
+        <p data-cms="prog-subtitle" class="section-subtitle fade-in fade-in-delay-2">From complete beginners to competitive advanced players — we have a program designed for your game.</p>
       </div>
-      <div class="grid grid-3 fade-in fade-in-delay-2">
+      <div class="grid grid-3 fade-in fade-in-delay-2"  data-cms="programs">
         <div class="program-card">
           <div class="program-card-header">
             <div class="level">Beginner</div>
@@ -204,11 +204,11 @@
     <div class="container">
       <div class="features-split">
         <div>
-          <span class="section-label fade-in">World-Class Courts</span>
+          <span data-cms="courts-label" class="section-label fade-in">World-Class Courts</span>
           <div class="section-divider"></div>
-          <h2 class="section-title fade-in fade-in-delay-1">The Premier Pickleball Facility in Orange County</h2>
-          <p class="section-subtitle fade-in fade-in-delay-2">With 59 total courts — more than any other club in OC — Los Cab is the destination for serious pickleball players.</p>
-          <div class="features-list fade-in">
+          <h2 data-cms="courts-title" class="section-title fade-in fade-in-delay-1">The Premier Pickleball Facility in Orange County</h2>
+          <p data-cms="courts-subtitle" class="section-subtitle fade-in fade-in-delay-2">With 59 total courts — more than any other club in OC — Los Cab is the destination for serious pickleball players.</p>
+          <div class="features-list fade-in" data-cms="courts-features">
             <div class="feature-item">
               <div class="feature-dot"></div>
               <div><strong>New Stadium Lighting</strong><p>All 59 courts feature brand-new lighting systems for perfect visibility during evening sessions.</p></div>
@@ -228,7 +228,7 @@
           </div>
         </div>
         <div class="features-img fade-in fade-in-delay-1">
-          <img src="https://images.unsplash.com/photo-1554068865-24cecd4e34b8?w=900&q=80" alt="Pickleball courts at Los Cab" loading="lazy">
+          <img data-cms="courts-img" src="https://images.unsplash.com/photo-1554068865-24cecd4e34b8?w=900&q=80" alt="Pickleball courts at Los Cab" loading="lazy">
         </div>
       </div>
     </div>
@@ -238,9 +238,9 @@
   <section class="section">
     <div class="container">
       <div class="highlight-box" style="text-align:center;padding:4rem 3rem;">
-        <span class="section-label">Pickleball Membership</span>
-        <h2 class="section-title" style="margin-bottom:1rem;">$135 <span style="font-size:1.2rem;font-family:var(--font-sans);font-weight:400;color:var(--body-text);">/month</span></h2>
-        <p style="color:var(--body-text);max-width:480px;margin:0 auto 2rem;line-height:1.8;">$200 initiation fee. Includes unlimited court access, open play, discounted clinics, and all Sports Membership benefits.</p>
+        <span data-cms="mem-label" class="section-label">Pickleball Membership</span>
+        <h2 class="section-title" data-cms="mem-price" style="margin-bottom:1rem;">$135 <span style="font-size:1.2rem;font-family:var(--font-sans);font-weight:400;color:var(--body-text);">/month</span></h2>
+        <p data-cms="mem-text" style="color:var(--body-text);max-width:480px;margin:0 auto 2rem;line-height:1.8;">$200 initiation fee. Includes unlimited court access, open play, discounted clinics, and all Sports Membership benefits.</p>
         <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
           <a href="membership.html" class="btn btn-primary btn-lg" id="pb-membership-btn">Join Now</a>
           <a href="contact.html" class="btn btn-outline btn-lg" id="pb-contact-btn">Ask a Question</a>
@@ -254,8 +254,8 @@
     <div class="container">
       <div class="cta-banner-inner">
         <div>
-          <h2>Ready to Hit the Courts?</h2>
-          <p>Join Los Cab's pickleball community — the largest in Orange County — and start playing today.</p>
+          <h2 data-cms="cta-title">Ready to Hit the Courts?</h2>
+          <p data-cms="cta-text">Join Los Cab's pickleball community — the largest in Orange County — and start playing today.</p>
         </div>
         <a href="membership.html" class="btn btn-primary btn-lg" id="pb-cta-btn">Become a Member</a>
       </div>
@@ -290,5 +290,6 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/cms-loader.js"></script>
 </body>
 </html>

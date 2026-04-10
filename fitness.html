@@ -23,7 +23,7 @@
   </style>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
-<body>
+<body data-cms-page="fitness">
 
   <nav class="navbar navbar--scrolled" id="navbar">
     <div class="nav-inner">
@@ -57,9 +57,9 @@
     <div class="container">
       <div class="page-hero-content">
         <nav class="breadcrumb"><a href="index.html">Home</a><span>›</span><span>Fitness</span></nav>
-        <span class="section-label" style="color:var(--teal-light);">Multi-Level Gym</span>
-        <h1>Fitness & Group Classes</h1>
-        <p>A full-featured gym with cardio, free weights, resistance machines, and an expansive group fitness studio for yoga, Pilates, HIIT, and more.</p>
+        <span data-cms="hero-label" class="section-label" style="color:var(--teal-light);">Multi-Level Gym</span>
+        <h1 data-cms="hero-title">Fitness & Group Classes</h1>
+        <p data-cms="hero-desc">A full-featured gym with cardio, free weights, resistance machines, and an expansive group fitness studio for yoga, Pilates, HIIT, and more.</p>
       </div>
     </div>
   </header>
@@ -69,14 +69,14 @@
     <div class="container">
       <div class="features-split">
         <div class="features-img fade-in">
-          <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=900&q=80" alt="Los Cab fitness center" loading="lazy">
+          <img data-cms="gym-img" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=900&q=80" alt="Los Cab fitness center" loading="lazy">
         </div>
         <div class="fade-in fade-in-delay-1">
-          <span class="section-label">The Gym</span>
+          <span data-cms="gym-label" class="section-label">The Gym</span>
           <div class="section-divider"></div>
-          <h2 class="section-title">A Gym Built for Real Results</h2>
-          <p class="section-subtitle">Los Cab's multi-level fitness center is equipped with everything you need — from cardio machines to free weights — in a spacious, well-maintained environment.</p>
-          <div class="features-list">
+          <h2 data-cms="gym-title" class="section-title">A Gym Built for Real Results</h2>
+          <p data-cms="gym-subtitle" class="section-subtitle">Los Cab's multi-level fitness center is equipped with everything you need — from cardio machines to free weights — in a spacious, well-maintained environment.</p>
+          <div class="features-list" data-cms="gym-features">
             <div class="feature-item"><div class="feature-dot"></div><div><strong>Cardio Floor</strong><p>Treadmills, ellipticals, bikes, rowing machines, and stair climbers for every cardio preference.</p></div></div>
             <div class="feature-item"><div class="feature-dot"></div><div><strong>Free Weights & Resistance Machines</strong><p>A full range of dumbbells, barbells, cable machines, benches, and resistance equipment for strength training.</p></div></div>
             <div class="feature-item"><div class="feature-dot"></div><div><strong>Dedicated Group Fitness Studio</strong><p>A spacious studio for yoga, Pilates, Barre, TRX, and all group classes — with specialized flooring and mirrors.</p></div></div>
@@ -92,13 +92,13 @@
   <section class="section" id="classes">
     <div class="container">
       <div class="section-head section-head--center">
-        <span class="section-label fade-in">Group Fitness</span>
-        <h2 class="section-title fade-in fade-in-delay-1">Group Classes Included with Membership</h2>
-        <p class="section-subtitle fade-in fade-in-delay-2" style="margin:0 auto;">Over a dozen classes offered weekly — included with every Sports, Pickleball, and Tennis membership.</p>
+        <span data-cms="classes-label" class="section-label fade-in">Group Fitness</span>
+        <h2 data-cms="classes-title" class="section-title fade-in fade-in-delay-1">Group Classes Included with Membership</h2>
+        <p data-cms="classes-subtitle" class="section-subtitle fade-in fade-in-delay-2" style="margin:0 auto;">Over a dozen classes offered weekly — included with every Sports, Pickleball, and Tennis membership.</p>
       </div>
 
       <h3 style="font-weight:700;color:var(--navy);margin-bottom:1.5rem;margin-top:2rem;" class="fade-in">🏃 Cardio & High-Intensity</h3>
-      <div class="class-grid fade-in">
+      <div class="class-grid fade-in" data-cms="classes-cardio">
         <div class="class-item"><div class="class-name">Cardio/Core</div><div class="class-badge badge-cardio">Cardio</div><p class="card-text" style="margin-top:0.5rem;font-size:0.9rem;">High-energy cardio combined with core strengthening for a total-body workout.</p></div>
         <div class="class-item"><div class="class-name">HIIT</div><div class="class-badge badge-cardio">High Intensity</div><p class="card-text" style="margin-top:0.5rem;font-size:0.9rem;">High-Intensity Interval Training — short bursts of intense work followed by recovery.</p></div>
         <div class="class-item"><div class="class-name">Cycling</div><div class="class-badge badge-cardio">Indoor Cycling</div><p class="card-text" style="margin-top:0.5rem;font-size:0.9rem;">Instructor-led indoor cycling classes for all levels. Great cardio workout.</p></div>
@@ -106,7 +106,7 @@
       </div>
 
       <h3 style="font-weight:700;color:var(--navy);margin-bottom:1.5rem;margin-top:3rem;" class="fade-in">🧘 Mind & Body</h3>
-      <div class="class-grid fade-in">
+      <div class="class-grid fade-in" data-cms="classes-mind">
         <div class="class-item"><div class="class-name">Yoga</div><div class="class-badge badge-mind">Mind & Body</div><p class="card-text" style="margin-top:0.5rem;font-size:0.9rem;">Multiple yoga styles from restorative flow to power yoga. All levels welcome.</p></div>
         <div class="class-item"><div class="class-name">Pilates Mat</div><div class="class-badge badge-mind">Core Training</div><p class="card-text" style="margin-top:0.5rem;font-size:0.9rem;">Classical and contemporary Pilates mat work for core strength and posture.</p></div>
         <div class="class-item"><div class="class-name">Barre</div><div class="class-badge badge-mind">Ballet-Inspired</div><p class="card-text" style="margin-top:0.5rem;font-size:0.9rem;">Ballet-inspired class targeting legs, glutes, and core for lean muscle development.</p></div>
@@ -115,7 +115,7 @@
       </div>
 
       <h3 style="font-weight:700;color:var(--navy);margin-bottom:1.5rem;margin-top:3rem;" class="fade-in">💃 Dance Fitness</h3>
-      <div class="class-grid fade-in">
+      <div class="class-grid fade-in" data-cms="classes-dance">
         <div class="class-item"><div class="class-name">Fitdanz</div><div class="class-badge badge-dance">Dance</div><p class="card-text" style="margin-top:0.5rem;font-size:0.9rem;">High-energy dance fitness class with Latin, pop, and world music rhythms. Fun for all!</p></div>
         <div class="class-item"><div class="class-name">Line Dancing</div><div class="class-badge badge-dance">Social Dance</div><p class="card-text" style="margin-top:0.5rem;font-size:0.9rem;">Classic and contemporary line dancing — a fun social activity that's also great exercise.</p></div>
       </div>
@@ -127,14 +127,14 @@
     <div class="container">
       <div class="features-split reverse">
         <div class="features-img fade-in">
-          <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=900&q=80" alt="Personal training at Los Cab" loading="lazy">
+          <img data-cms="dir-img" src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=900&q=80" alt="Personal training at Los Cab" loading="lazy">
         </div>
         <div class="fade-in fade-in-delay-1">
-          <span class="section-label">Fitness Director</span>
+          <span data-cms="dir-label" class="section-label">Fitness Director</span>
           <div class="section-divider"></div>
-          <h2 class="section-title">Led by Peggy Pocher</h2>
+          <h2 data-cms="dir-title" class="section-title">Led by Peggy Pocher</h2>
           <p style="color:var(--body-text);line-height:1.8;margin-bottom:1.5rem;">Our Fitness Director Peggy Pocher oversees all group fitness programming, personal training, and gym operations. With years of experience in sports club management, she ensures every member gets the most from their fitness journey.</p>
-          <p style="color:var(--body-text);line-height:1.8;margin-bottom:2rem;">Contact Peggy and her team at <a href="mailto:fitness@loscab.com" style="color:var(--teal);font-weight:600;">fitness@loscab.com</a></p>
+          <p style="color:var(--body-text);line-height:1.8;margin-bottom:2rem;">Contact Peggy and her team at <a href="mailto:fitness@loscab.com" data-cms="dir-email" style="color:var(--teal);font-weight:600;">fitness@loscab.com</a></p>
           <a href="contact.html" class="btn btn-outline" id="fitness-contact-btn">Contact Fitness Team</a>
         </div>
       </div>
@@ -145,7 +145,7 @@
   <section class="cta-banner">
     <div class="container">
       <div class="cta-banner-inner">
-        <div><h2>Start Your Fitness Journey.</h2><p>Fitness classes included with all Los Cab memberships. No extra fees for cardio, Yoga, Pilates, HIIT, and more.</p></div>
+        <div><h2 data-cms="cta-title">Start Your Fitness Journey.</h2><p data-cms="cta-text">Fitness classes included with all Los Cab memberships. No extra fees for cardio, Yoga, Pilates, HIIT, and more.</p></div>
         <a href="membership.html" class="btn btn-primary btn-lg" id="fitness-cta-btn">Join Today</a>
       </div>
     </div>

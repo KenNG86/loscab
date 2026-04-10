@@ -50,7 +50,7 @@
   </style>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
-<body>
+<body data-cms-page="events">
 
   <nav class="navbar navbar--scrolled" id="navbar">
     <div class="nav-inner">
@@ -84,9 +84,9 @@
     <div class="container">
       <div class="page-hero-content">
         <nav class="breadcrumb"><a href="index.html">Home</a><span>›</span><span>Events</span></nav>
-        <span class="section-label" style="color:var(--teal-light);">What's Happening</span>
-        <h1>Events at Los Cab</h1>
-        <p>Tournaments, clinics, fitness challenges, socials, and special events — there's always something exciting at Los Cab.</p>
+        <span data-cms="hero-label" class="section-label" style="color:var(--teal-light);">What's Happening</span>
+        <h1 data-cms="hero-title">Events at Los Cab</h1>
+        <p data-cms="hero-desc">Tournaments, clinics, fitness challenges, socials, and special events — there's always something exciting at Los Cab.</p>
       </div>
     </div>
   </header>
@@ -95,10 +95,10 @@
   <section class="section section--gray">
     <div class="container">
       <div class="section-head">
-        <span class="section-label fade-in">Upcoming Events</span>
-        <h2 class="section-title fade-in fade-in-delay-1">April – July 2026</h2>
+        <span class="section-label fade-in" data-cms="events-label">Upcoming Events</span>
+        <h2 class="section-title fade-in fade-in-delay-1" data-cms="events-period">April – July 2026</h2>
       </div>
-      <div style="display:flex;flex-direction:column;gap:1.25rem;" class="fade-in fade-in-delay-2">
+      <div style="display:flex;flex-direction:column;gap:1.25rem;" class="fade-in fade-in-delay-2" data-cms="events">
 
         <div class="event-card">
           <div class="event-date-block" style="background:var(--teal);">
@@ -223,14 +223,14 @@
     <div class="container">
       <div class="features-split">
         <div class="features-img fade-in">
-          <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=900&q=80" alt="Timeless Venues at Los Cab" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=900&q=80" alt="Timeless Venues at Los Cab" loading="lazy" data-cms="venue-img">
         </div>
         <div class="fade-in fade-in-delay-1">
-          <span class="section-label">Host Your Event</span>
+          <span class="section-label" data-cms="venue-label">Host Your Event</span>
           <div class="section-divider"></div>
-          <h2 class="section-title">Book Timeless Venues for Your Next Event</h2>
-          <p style="color:var(--body-text);line-height:1.8;margin-bottom:1.5rem;">Los Cab's 4,000 sq. ft. event space is available for private bookings — from corporate meetings and conferences to weddings, receptions, and birthday celebrations.</p>
-          <div class="features-list">
+          <h2 class="section-title" data-cms="venue-title">Book Timeless Venues for Your Next Event</h2>
+          <p style="color:var(--body-text);line-height:1.8;margin-bottom:1.5rem;" data-cms="venue-text">Los Cab's 4,000 sq. ft. event space is available for private bookings — from corporate meetings and conferences to weddings, receptions, and birthday celebrations.</p>
+          <div class="features-list" data-cms="venue-features">
             <div class="feature-item"><div class="feature-dot"></div><div><strong>4,000 Sq. Ft. Versatile Space</strong><p>Configurable for any event size — roundtables, theatre-style, cocktail, or banquet setup.</p></div></div>
             <div class="feature-item"><div class="feature-dot"></div><div><strong>Teak Catering On-Site</strong><p>Full catering services available through our in-house team led by Chef Pierre.</p></div></div>
             <div class="feature-item"><div class="feature-dot"></div><div><strong>Beautiful Courtyard Setting</strong><p>Access to the tennis courtyard with cabanas as an outdoor extension of your event space.</p></div></div>
@@ -244,7 +244,7 @@
   <section class="cta-banner">
     <div class="container">
       <div class="cta-banner-inner">
-        <div><h2>Don't Miss What's Coming.</h2><p>Stay updated on all Los Cab events — join as a member and get first access to registrations.</p></div>
+        <div><h2 data-cms="cta-title">Don't Miss What's Coming.</h2><p data-cms="cta-text">Stay updated on all Los Cab events — join as a member and get first access to registrations.</p></div>
         <div style="display:flex;gap:1rem;flex-wrap:wrap;">
           <a href="membership.html" class="btn btn-primary btn-lg" id="events-join-btn">Join Today</a>
           <a href="contact.html" class="btn btn-secondary btn-lg" id="events-contact-btn">Contact Us</a>

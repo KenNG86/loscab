@@ -25,7 +25,7 @@
     .faq-item.open .faq-arrow { transform: rotate(180deg); }
   </style>
 </head>
-<body>
+<body data-cms-page="membership">
 
   <nav class="navbar navbar--scrolled" id="navbar">
     <div class="nav-inner">
@@ -59,9 +59,9 @@
     <div class="container">
       <div class="page-hero-content">
         <nav class="breadcrumb"><a href="index.html">Home</a><span>›</span><span>Membership</span></nav>
-        <span class="section-label" style="color:var(--teal-light);">Join Us</span>
-        <h1>Membership at Los Cab</h1>
-        <p>Simple, transparent pricing — no hidden fees. Choose the plan that fits your sport and budget. Monthly billing available.</p>
+        <span data-cms="hero-label" class="section-label" style="color:var(--teal-light);">Join Us</span>
+        <h1 data-cms="hero-title">Membership at Los Cab</h1>
+        <p data-cms="hero-desc">Simple, transparent pricing — no hidden fees. Choose the plan that fits your sport and budget. Monthly billing available.</p>
       </div>
     </div>
   </header>
@@ -70,10 +70,10 @@
   <section class="section section--gray">
     <div class="container">
       <div class="section-head section-head--center">
-        <span class="section-label fade-in">All Plans Include</span>
-        <h2 class="section-title fade-in fade-in-delay-1">Every Membership Includes</h2>
+        <span class="section-label fade-in" data-cms="inc-label">All Plans Include</span>
+        <h2 class="section-title fade-in fade-in-delay-1" data-cms="inc-title">Every Membership Includes</h2>
       </div>
-      <div class="grid grid-4 fade-in fade-in-delay-2">
+      <div class="grid grid-4 fade-in fade-in-delay-2" data-cms="included">
         <div class="icon-card"><div class="icon-wrap">💪</div><h3 class="card-title">Gym Access</h3><p class="card-text">Full access to our multi-level fitness center — cardio, free weights, and resistance machines.</p></div>
         <div class="icon-card"><div class="icon-wrap">🏊</div><h3 class="card-title">Pool Access</h3><p class="card-text">Use of the heated 50-meter Olympic pool at any time during facility hours.</p></div>
         <div class="icon-card"><div class="icon-wrap">🧘</div><h3 class="card-title">Group Classes</h3><p class="card-text">Unlimited group fitness classes — yoga, Pilates, HIIT, Barre, cycling, Fitdanz, and more.</p></div>
@@ -86,12 +86,12 @@
   <section class="section" id="plans">
     <div class="container">
       <div class="section-head section-head--center">
-        <span class="section-label fade-in">Individual Plans</span>
-        <h2 class="section-title fade-in fade-in-delay-1">Choose Your Membership</h2>
-        <p class="section-subtitle fade-in fade-in-delay-2" style="margin:0 auto;">All plans are billed monthly. Sign-up processed through Club Automation.</p>
+        <span class="section-label fade-in" data-cms="plans-label">Individual Plans</span>
+        <h2 class="section-title fade-in fade-in-delay-1" data-cms="plans-title">Choose Your Membership</h2>
+        <p class="section-subtitle fade-in fade-in-delay-2" style="margin:0 auto;" data-cms="plans-subtitle">All plans are billed monthly. Sign-up processed through Club Automation.</p>
       </div>
 
-      <div class="grid grid-3 fade-in fade-in-delay-2">
+      <div class="grid grid-3 fade-in fade-in-delay-2" data-cms="plans">
         <!-- Sports -->
         <div class="pricing-card">
           <div class="pricing-type">Individual Membership</div>
@@ -148,7 +148,7 @@
       </div>
 
       <!-- Badminton note -->
-      <div class="highlight-box" style="margin-top:2rem;text-align:center;">
+      <div class="highlight-box" style="margin-top:2rem;text-align:center;" data-cms="badminton-note">
         <p style="color:var(--body-text);font-size:0.95rem;">🏸 <strong>Badminton Program — Relaunching July 2026.</strong> Contact us to get on the interest list and be notified when the program opens.</p>
         <a href="contact.html" class="btn btn-outline" style="margin-top:1rem;" id="mem-badminton-btn">Notify Me</a>
       </div>
@@ -160,11 +160,11 @@
     <div class="container">
       <div class="features-split">
         <div class="fade-in">
-          <span class="section-label" style="color:var(--teal-light);">Family Plans</span>
+          <span class="section-label" style="color:var(--teal-light);" data-cms="fam-label">Family Plans</span>
           <div class="section-divider"></div>
-          <h2 class="section-title section-title--white">Bring the Whole Family</h2>
-          <p class="section-subtitle section-subtitle--white" style="margin-bottom:2rem;">Los Cab offers family membership options so every member of your household can enjoy all club amenities at a discounted rate.</p>
-          <div class="features-list">
+          <h2 class="section-title section-title--white" data-cms="fam-title">Bring the Whole Family</h2>
+          <p class="section-subtitle section-subtitle--white" style="margin-bottom:2rem;" data-cms="fam-subtitle">Los Cab offers family membership options so every member of your household can enjoy all club amenities at a discounted rate.</p>
+          <div class="features-list" data-cms="fam-features">
             <div class="feature-item"><div class="feature-dot"></div><div><strong style="color:white;">Family Memberships Available</strong><p style="color:rgba(255,255,255,0.7);">Add spouse, partner, and children to your membership at reduced monthly rates.</p></div></div>
             <div class="feature-item"><div class="feature-dot"></div><div><strong style="color:white;">Junior Programs Included</strong><p style="color:rgba(255,255,255,0.7);">Kids gain access to Junior Tennis Academy, Youth Pickleball, Swim School, and Water Polo programs.</p></div></div>
             <div class="feature-item"><div class="feature-dot"></div><div><strong style="color:white;">Flexible Add-Ons</strong><p style="color:rgba(255,255,255,0.7);">Mix and match membership types for different family members based on their preferred sports.</p></div></div>
@@ -172,7 +172,7 @@
           <a href="contact.html" class="btn btn-gold btn-lg" style="margin-top:2rem;" id="mem-family-btn">Inquire About Family Plans</a>
         </div>
         <div class="features-img fade-in fade-in-delay-1">
-          <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=900&q=80" alt="Family enjoying sports at Los Cab" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=900&q=80" alt="Family enjoying sports at Los Cab" loading="lazy" data-cms="fam-img">
         </div>
       </div>
     </div>
@@ -185,7 +185,7 @@
         <span class="section-label fade-in">FAQ</span>
         <h2 class="section-title fade-in fade-in-delay-1">Common Questions</h2>
       </div>
-      <div class="fade-in">
+      <div class="fade-in" data-cms="faqs">
         <div class="faq-item">
           <div class="faq-question" role="button" tabindex="0" onclick="toggleFaq(this)">How do I sign up? <span class="faq-arrow">▾</span></div>
           <div class="faq-answer">Memberships are processed through Club Automation, our online membership management system. You can also visit us in person at 17272 Newhope St., Fountain Valley or call (714) 546-8560.</div>
@@ -217,7 +217,7 @@
   <section class="cta-banner">
     <div class="container">
       <div class="cta-banner-inner">
-        <div><h2>Ready to Start?</h2><p>Contact us today and our membership team will help you find the perfect plan.</p></div>
+        <div><h2 data-cms="cta-title">Ready to Start?</h2><p data-cms="cta-text">Contact us today and our membership team will help you find the perfect plan.</p></div>
         <div style="display:flex;gap:1rem;flex-wrap:wrap;">
           <a href="contact.html" class="btn btn-primary btn-lg" id="mem-contact-cta">Contact Us</a>
           <a href="tel:+17145468560" class="btn btn-secondary btn-lg" id="mem-call-cta">Call (714) 546-8560</a>

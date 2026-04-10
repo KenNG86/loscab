@@ -1,5 +1,158 @@
 {
-  "hero_title": "Your Premier Sports & Fitness Destination",
-  "hero_subtitle": "Experience the best in Tennis, Pickleball, Fitness, and Aquatics at Southern California's favorite sports club.",
-  "welcome_text": "### Welcome to Los Cab Sports Club\n\nExperience a community where excellence meets activity. From our 17 premier tennis courts to our state-of-the-art fitness center, every detail is designed for your performance and enjoyment."
+  "hero_title": "Your Home <span>Away</span><br>From Home",
+  "hero_subtitle": "Southern California's premier multi-sport athletic club — tennis, pickleball, fitness, swimming, and more. All under one roof.",
+  "hero_label": "Fountain Valley, CA",
+  "hero_image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1800&q=80",
+  "hero_stats": [
+    { "number": 59, "label": "Pickleball Courts" },
+    { "number": 17, "label": "Tennis Courts" },
+    { "number": 50, "label": "Meter Pool" },
+    { "number": 30, "label": "+ Years of Excellence" }
+  ],
+  "amenities": [
+    { "icon": "🏊", "label": "Olympic Pool" },
+    { "icon": "💪", "label": "Multi-level Gym" },
+    { "icon": "🧘", "label": "Yoga & Pilates" },
+    { "icon": "☕", "label": "Sol Vida Café" },
+    { "icon": "💆", "label": "Gem Day Spa" },
+    { "icon": "🎉", "label": "Event Venues" }
+  ],
+  "sports_section_label": "Our Sports",
+  "sports_section_title": "Play What You Love.<br>All in One Place.",
+  "sports_section_subtitle": "From competitive tennis to casual pickleball, intensive fitness to serene swimming — Los Cab has every sport covered.",
+  "sports_tiles": [
+    {
+      "tag": "59 Courts",
+      "title": "Pickleball",
+      "desc": "43 dedicated + 16 hybrid lighted courts. Clinics, leagues & more.",
+      "image": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?w=800&q=80",
+      "link": "pickleball.html",
+      "arrow": "Explore →"
+    },
+    {
+      "tag": "17 Courts",
+      "title": "Tennis",
+      "desc": "Junior academies, adult programs & competitive leagues.",
+      "image": "https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?w=800&q=80",
+      "link": "tennis.html",
+      "arrow": "Explore →"
+    },
+    {
+      "tag": "Full Gym",
+      "title": "Fitness",
+      "desc": "Cardio, weights, group classes, yoga, Pilates, HIIT & Barre.",
+      "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&q=80",
+      "link": "fitness.html",
+      "arrow": "Explore →"
+    },
+    {
+      "tag": "50M Pool",
+      "title": "Swimming",
+      "desc": "Olympic heated pool, aqua fitness & Nova Swim School.",
+      "image": "https://images.unsplash.com/photo-1560090995-01632a28895b?w=800&q=80",
+      "link": "sports.html#swimming",
+      "arrow": "Explore →"
+    },
+    {
+      "tag": "+ More",
+      "title": "All Sports",
+      "desc": "Basketball, volleyball, handball, squash, racquetball & badminton.",
+      "image": "https://images.unsplash.com/photo-1504450758481-7338eba7524a?w=800&q=80",
+      "link": "sports.html",
+      "arrow": "View All →"
+    }
+  ],
+  "facilities_label": "Happy, Healthy & Active",
+  "facilities_title": "World-Class Facilities, Community Feel",
+  "facilities_text": "<p>More than a gym — Los Cab is a community where athletes, families, and weekend warriors all feel at home.</p>",
+  "facilities_image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=900&q=80",
+  "facilities_features": [
+    {
+      "title": "The Pool",
+      "desc": "Olympic-size 50-meter heated pool. Perfect for lap swimming, cross-training, swim lessons, or a refreshing dip."
+    },
+    {
+      "title": "Premium Locker Rooms",
+      "desc": "Each locker room is equipped with spacious showers, steam & sauna rooms, and a co-ed jacuzzi."
+    },
+    {
+      "title": "Cabanas & Lounge",
+      "desc": "Semi-private cabanas with showers, lockers, fridge, and TV nestled in the tennis courtyard."
+    },
+    {
+      "title": "Sol Vida Café",
+      "desc": "Full-service café offering coffee, smoothies, salads, sandwiches, bagels, and more."
+    }
+  ],
+  "hours_club": [
+    { "day": "Monday – Friday", "open": "6:00 AM – 9:30 PM", "last_entry": "9:00 PM" },
+    { "day": "Saturday – Sunday", "open": "7:00 AM – 8:00 PM", "last_entry": "7:40 PM" }
+  ],
+  "hours_court": [
+    { "day": "Monday – Friday", "open": "6:00 AM – 11:00 PM", "last_entry": "9:00 PM" },
+    { "day": "Saturday", "open": "7:00 AM – 10:00 PM", "last_entry": "7:40 PM" },
+    { "day": "Sunday", "open": "7:00 AM – 8:00 PM", "last_entry": "7:40 PM" }
+  ],
+  "membership_label": "Membership Plans",
+  "membership_title": "Choose Your Membership",
+  "membership_subtitle": "Simple, transparent pricing. Join monthly — no long-term contracts required.",
+  "membership_plans": [
+    {
+      "type": "Individual",
+      "name": "Sports Membership",
+      "price": "$115",
+      "period": "/month",
+      "initiation": "+ $150 Initiation Fee",
+      "features": ["Gym & Fitness access", "Swimming pool", "Basketball & volleyball", "Handball, squash", "Group fitness classes"],
+      "btn_text": "Learn More",
+      "btn_style": "outline",
+      "featured": false
+    },
+    {
+      "type": "Individual",
+      "name": "Pickleball Membership",
+      "price": "$135",
+      "period": "/month",
+      "initiation": "+ $200 Initiation Fee",
+      "features": ["All Sports benefits", "59 pickleball courts", "Clinics & leagues", "Team Reach access", "Open play sessions"],
+      "btn_text": "Join Now",
+      "btn_style": "primary",
+      "featured": true
+    },
+    {
+      "type": "Individual",
+      "name": "Tennis Membership",
+      "price": "$155",
+      "period": "/month",
+      "initiation": "+ $500 Initiation Fee",
+      "features": ["All Sports + Pickleball benefits", "17 tennis courts", "Junior academies", "After-school programs", "Priority court booking"],
+      "btn_text": "Learn More",
+      "btn_style": "outline",
+      "featured": false
+    }
+  ],
+  "testimonials_label": "Member Stories",
+  "testimonials_title": "What Our Members Say",
+  "testimonials": [
+    {
+      "text": "Los Cab has been our family's second home for years. The pickleball courts are incredible, and the staff truly cares about the community here.",
+      "name": "Maria R.",
+      "role": "Pickleball Member",
+      "initials": "MR"
+    },
+    {
+      "text": "The tennis program here is top-notch. My kids have improved so much since joining the junior academy. Can't recommend it enough!",
+      "name": "Jason K.",
+      "role": "Tennis Member",
+      "initials": "JK"
+    },
+    {
+      "text": "The gym and group fitness classes are world-class. I've tried many clubs in Orange County and nothing compares to the value and quality at Los Cab.",
+      "name": "Amanda L.",
+      "role": "Sports Member",
+      "initials": "AL"
+    }
+  ],
+  "cta_title": "Ready to Join Los Cab?",
+  "cta_text": "Become part of Fountain Valley's most vibrant athletic community. Flexible memberships available for individuals and families."
 }

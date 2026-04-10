@@ -1,0 +1,76 @@
+{
+  "hero_image": "https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?w=1800&q=80",
+  "hero_label": "17 Courts",
+  "hero_title": "Tennis at Los Cab",
+  "hero_desc": "From junior academies to competitive adult leagues — Los Cab offers a complete tennis experience for every age and level.",
+  "stats": [
+    { "number": 17, "label": "Tennis Courts", "sub": "" },
+    { "text": "Junior", "label": "Academy", "sub": "After-school programs" },
+    { "text": "Adult", "label": "Programs", "sub": "All skill levels" },
+    { "text": "Year", "label": "Round", "sub": "Leagues & clinics" }
+  ],
+  "programs_label": "Programs",
+  "programs_title": "Tennis for All Ages & Levels",
+  "programs_subtitle": "Whether you're picking up a racquet for the first time or training competitively, our expert coaches have a program for you.",
+  "programs": [
+    {
+      "icon": "🎾",
+      "title": "Junior Tennis Academy",
+      "text": "A structured development pathway for young players. Age-appropriate training covering technique, match play, sportsmanship, and competitive tournament preparation.",
+      "link": "contact.html",
+      "link_text": "Learn More →"
+    },
+    {
+      "icon": "🏫",
+      "title": "After School Academy",
+      "text": "Afternoon programs that blend tennis instruction with fun activity after a school day. Designed to keep kids active, engaged, and developing their game.",
+      "link": "contact.html",
+      "link_text": "Learn More →"
+    },
+    {
+      "icon": "🧑",
+      "title": "Adult Beginner & Intermediate",
+      "text": "New to tennis or want to build a stronger foundation? Group clinics and private lessons are available for adult beginners through intermediate players.",
+      "link": "contact.html",
+      "link_text": "Learn More →"
+    },
+    {
+      "icon": "🏆",
+      "title": "Competitive Leagues & Drilling",
+      "text": "Year-round league play, round-robins, and advanced drilling clinics for competitive adults. Challenge your game and meet other serious players.",
+      "link": "contact.html",
+      "link_text": "Learn More →"
+    },
+    {
+      "icon": "👤",
+      "title": "Private Lessons",
+      "text": "One-on-one sessions with our certified teaching professionals. Personalized attention accelerates improvement at any age or level.",
+      "link": "contact.html",
+      "link_text": "Book a Lesson →"
+    },
+    {
+      "icon": "🔄",
+      "title": "Open Court Play",
+      "text": "Members can reserve courts online and enjoy open play throughout the day and evening. 17 courts mean you'll almost always find availability.",
+      "link": "contact.html",
+      "link_text": "View Schedule →"
+    }
+  ],
+  "courts_label": "The Courts",
+  "courts_title": "17 Courts Built for Serious Play",
+  "courts_subtitle": "Our tennis facility features premium court surfaces, lighting for evening play, and a welcoming atmosphere for players of every level.",
+  "courts_image": "https://images.unsplash.com/photo-1562552052-d35a5c1f7aff?w=900&q=80",
+  "courts_features": [
+    { "title": "17 Total Courts", "desc": "Multiple court surfaces with excellent drainage and maintenance, ensuring great play conditions year-round." },
+    { "title": "Night Lighting", "desc": "Illuminated courts mean you can play before work, after work, or on weekends after sunset." },
+    { "title": "Pro Shop", "desc": "On-site pro shop for racquet stringing, equipment, and accessories." },
+    { "title": "Cabana Access", "desc": "Private courtyard cabanas available to tennis members for a premium relaxation after play." }
+  ],
+  "membership_label": "Tennis Membership",
+  "membership_price": "$155",
+  "membership_period": "/month",
+  "membership_details": "$500 Initiation Fee · Includes all Pickleball & Sports benefits",
+  "membership_text": "Full access to all 17 tennis courts, junior academies, adult programs, and every other club amenity.",
+  "cta_title": "Serve Up Something Great.",
+  "cta_text": "Join Los Cab today and access 17 premier tennis courts plus all club amenities."
+}

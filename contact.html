@@ -85,7 +85,7 @@
   </style>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
-<body>
+<body data-cms-page="contact">
 
   <nav class="navbar navbar--scrolled" id="navbar">
     <div class="nav-inner">
@@ -119,9 +119,9 @@
     <div class="container">
       <div class="page-hero-content">
         <nav class="breadcrumb"><a href="index.html">Home</a><span>›</span><span>Contact</span></nav>
-        <span class="section-label" style="color:var(--teal-light);">We'd Love to Hear From You</span>
-        <h1>Contact Los Cab</h1>
-        <p>Have a question about membership, programs, or events? Our team is here to help. Call us, email us, or stop by in person.</p>
+        <span data-cms="hero-label" class="section-label" style="color:var(--teal-light);">We'd Love to Hear From You</span>
+        <h1 data-cms="hero-title">Contact Los Cab</h1>
+        <p data-cms="hero-desc">Have a question about membership, programs, or events? Our team is here to help. Call us, email us, or stop by in person.</p>
       </div>
     </div>
   </header>
@@ -134,7 +134,7 @@
         <!-- Form -->
         <div>
           <span class="section-label fade-in">Send a Message</span>
-          <h2 class="section-title fade-in fade-in-delay-1" style="margin-bottom:2rem;">How Can We Help?</h2>
+          <h2 class="section-title fade-in fade-in-delay-1" style="margin-bottom:2rem;" data-cms="form-title">How Can We Help?</h2>
           <form class="contact-form fade-in fade-in-delay-2" id="contact-form" novalidate>
             <div class="form-row">
               <div class="form-group">
@@ -190,7 +190,7 @@
                 <div class="contact-detail-icon">📍</div>
                 <div>
                   <div class="contact-detail-label">Address</div>
-                  <div class="contact-detail-value">17272 Newhope St.</div>
+                  <div class="contact-detail-value" data-cms="addr-val">17272 Newhope St.</div>
                   <div class="contact-detail-sub">Fountain Valley, CA 92708</div>
                 </div>
               </div>
@@ -198,7 +198,7 @@
                 <div class="contact-detail-icon">📞</div>
                 <div>
                   <div class="contact-detail-label">Phone</div>
-                  <div class="contact-detail-value"><a href="tel:+17145468560">(714) 546-8560</a></div>
+                  <div class="contact-detail-value"><a href="tel:+17145468560" data-cms="phone-val">(714) 546-8560</a></div>
                   <div class="contact-detail-sub">Call or text us any time</div>
                 </div>
               </div>
@@ -206,7 +206,7 @@
                 <div class="contact-detail-icon">✉️</div>
                 <div>
                   <div class="contact-detail-label">General Email</div>
-                  <div class="contact-detail-value"><a href="mailto:susan@loscab.com">susan@loscab.com</a></div>
+                  <div class="contact-detail-value"><a href="mailto:susan@loscab.com" data-cms="email-val">susan@loscab.com</a></div>
                   <div class="contact-detail-sub">Director of Operations</div>
                 </div>
               </div>
@@ -232,7 +232,7 @@
           <!-- Key Contacts -->
           <div style="margin-top:2rem;">
             <h3 style="font-weight:700;color:var(--navy);margin-bottom:1rem;">Key Contacts</h3>
-            <div class="staff-mini-grid">
+            <div class="staff-mini-grid" data-cms="staff">
               <div class="staff-mini">
                 <div class="staff-avatar">SC</div>
                 <div><div class="staff-name">Susan Castellanos</div><div class="staff-role">Director of Operations</div></div>

@@ -1,0 +1,72 @@
+{
+  "hero_image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1800&q=80",
+  "hero_label": "Join Us",
+  "hero_title": "Membership at Los Cab",
+  "hero_desc": "Simple, transparent pricing — no hidden fees. Choose the plan that fits your sport and budget. Monthly billing available.",
+  "included_label": "All Plans Include",
+  "included_title": "Every Membership Includes",
+  "included_items": [
+    { "icon": "💪", "title": "Gym Access", "text": "Full access to our multi-level fitness center — cardio, free weights, and resistance machines." },
+    { "icon": "🏊", "title": "Pool Access", "text": "Use of the heated 50-meter Olympic pool at any time during facility hours." },
+    { "icon": "🧘", "title": "Group Classes", "text": "Unlimited group fitness classes — yoga, Pilates, HIIT, Barre, cycling, Fitdanz, and more." },
+    { "icon": "🚿", "title": "Locker Rooms", "text": "Full locker room access with showers, steam rooms, saunas, and the co-ed jacuzzi." }
+  ],
+  "plans_label": "Individual Plans",
+  "plans_title": "Choose Your Membership",
+  "plans_subtitle": "All plans are billed monthly. Sign-up processed through Club Automation.",
+  "plans": [
+    {
+      "type": "Individual Membership",
+      "name": "Sports Membership",
+      "price": "$115",
+      "period": "/month",
+      "initiation": "One-time $150 Initiation Fee",
+      "features": ["Multi-level gym & cardio floor", "Olympic 50m heated pool", "All group fitness classes", "Basketball & indoor volleyball", "Handball (8 courts)", "Squash & racquetball (7 courts)", "Locker rooms, steam & sauna"],
+      "btn_text": "Get Started",
+      "btn_style": "outline",
+      "featured": false
+    },
+    {
+      "type": "Individual Membership",
+      "name": "Pickleball Membership",
+      "price": "$135",
+      "period": "/month",
+      "initiation": "One-time $200 Initiation Fee",
+      "features": ["Everything in Sports", "59 pickleball courts (43 dedicated)", "Open play — unlimited access", "Discounted clinics & programs", "League & ladder participation", "Team Reach group access", "Stadium-lit evening courts"],
+      "btn_text": "Join Now — Best Value",
+      "btn_style": "primary",
+      "featured": true
+    },
+    {
+      "type": "Individual Membership",
+      "name": "Tennis Membership",
+      "price": "$155",
+      "period": "/month",
+      "initiation": "One-time $500 Initiation Fee",
+      "features": ["Everything in Pickleball", "17 tennis courts — full access", "Junior Tennis Academy", "After-school programs", "Adult clinics & drilling", "Priority court reservations", "Cabana access (courtyard)"],
+      "btn_text": "Get Started",
+      "btn_style": "outline",
+      "featured": false
+    }
+  ],
+  "badminton_note": "🏸 <strong>Badminton Program — Relaunching July 2026.</strong> Contact us to get on the interest list and be notified when the program opens.",
+  "family_label": "Family Plans",
+  "family_title": "Bring the Whole Family",
+  "family_subtitle": "Los Cab offers family membership options so every member of your household can enjoy all club amenities at a discounted rate.",
+  "family_image": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=900&q=80",
+  "family_features": [
+    { "title": "Family Memberships Available", "desc": "Add spouse, partner, and children to your membership at reduced monthly rates." },
+    { "title": "Junior Programs Included", "desc": "Kids gain access to Junior Tennis Academy, Youth Pickleball, Swim School, and Water Polo programs." },
+    { "title": "Flexible Add-Ons", "desc": "Mix and match membership types for different family members based on their preferred sports." }
+  ],
+  "faqs": [
+    { "question": "How do I sign up?", "answer": "Memberships are processed through Club Automation, our online membership management system. You can also visit us in person at 17272 Newhope St., Fountain Valley or call (714) 546-8560." },
+    { "question": "Are there long-term contracts?", "answer": "All memberships are billed monthly. There are no long-term contract requirements. An initiation fee applies when you first join. Contact us for cancellation terms." },
+    { "question": "Can I try the club before joining?", "answer": "Yes! Contact us at (714) 546-8560 or visit the club to arrange a tour and trial visit. Our membership team will walk you through all the facilities and programs available." },
+    { "question": "Are group fitness classes included?", "answer": "Yes — all group fitness classes (yoga, Pilates, HIIT, Barre, cycling, Fitdanz, line dancing, and more) are included with every Sports, Pickleball, and Tennis membership at no extra charge." },
+    { "question": "Is personal training extra?", "answer": "Personal training sessions with our certified trainers are available for an additional fee beyond your monthly membership. Contact the fitness team at fitness@loscab.com to schedule a session." },
+    { "question": "Can children join?", "answer": "Absolutely. We offer junior programs for tennis, pickleball, swimming (Nova Swim School), water polo, and more. Family add-on rates allow you to include dependents on your primary membership." }
+  ],
+  "cta_title": "Ready to Start?",
+  "cta_text": "Contact us today and our membership team will help you find the perfect plan."
+}

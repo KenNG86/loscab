@@ -1,0 +1,44 @@
+{
+  "hero_image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1800&q=80",
+  "hero_label": "Multi-Level Gym",
+  "hero_title": "Fitness & Group Classes",
+  "hero_desc": "A full-featured gym with cardio, free weights, resistance machines, and an expansive group fitness studio for yoga, Pilates, HIIT, and more.",
+  "gym_label": "The Gym",
+  "gym_title": "A Gym Built for Real Results",
+  "gym_subtitle": "Los Cab's multi-level fitness center is equipped with everything you need — from cardio machines to free weights — in a spacious, well-maintained environment.",
+  "gym_image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=900&q=80",
+  "gym_features": [
+    { "title": "Cardio Floor", "desc": "Treadmills, ellipticals, bikes, rowing machines, and stair climbers for every cardio preference." },
+    { "title": "Free Weights & Resistance Machines", "desc": "A full range of dumbbells, barbells, cable machines, benches, and resistance equipment for strength training." },
+    { "title": "Dedicated Group Fitness Studio", "desc": "A spacious studio for yoga, Pilates, Barre, TRX, and all group classes — with specialized flooring and mirrors." },
+    { "title": "New Pilates Room", "desc": "A brand-new dedicated Pilates room added in Winter 2026 — featuring reformers and specialized Pilates equipment." },
+    { "title": "Personal Training", "desc": "Relaunched personal training program with certified trainers. One-on-one sessions available for all fitness levels." }
+  ],
+  "classes_label": "Group Fitness",
+  "classes_title": "Group Classes Included with Membership",
+  "classes_subtitle": "Over a dozen classes offered weekly — included with every Sports, Pickleball, and Tennis membership.",
+  "classes_cardio": [
+    { "name": "Cardio/Core", "badge": "Cardio", "badge_type": "cardio", "desc": "High-energy cardio combined with core strengthening for a total-body workout." },
+    { "name": "HIIT", "badge": "High Intensity", "badge_type": "cardio", "desc": "High-Intensity Interval Training — short bursts of intense work followed by recovery." },
+    { "name": "Cycling", "badge": "Indoor Cycling", "badge_type": "cardio", "desc": "Instructor-led indoor cycling classes for all levels. Great cardio workout." },
+    { "name": "Bodyworks", "badge": "Strength", "badge_type": "strength", "desc": "Full-body strength and conditioning using bodyweight and light equipment." }
+  ],
+  "classes_mind": [
+    { "name": "Yoga", "badge": "Mind & Body", "badge_type": "mind", "desc": "Multiple yoga styles from restorative flow to power yoga. All levels welcome." },
+    { "name": "Pilates Mat", "badge": "Core Training", "badge_type": "mind", "desc": "Classical and contemporary Pilates mat work for core strength and posture." },
+    { "name": "Barre", "badge": "Ballet-Inspired", "badge_type": "mind", "desc": "Ballet-inspired class targeting legs, glutes, and core for lean muscle development." },
+    { "name": "TRX", "badge": "Suspension", "badge_type": "strength", "desc": "Suspension training using your bodyweight for full-body functional fitness." },
+    { "name": "Balance", "badge": "Stability", "badge_type": "mind", "desc": "Focus on core stability, proprioception, and balance for all fitness levels." }
+  ],
+  "classes_dance": [
+    { "name": "Fitdanz", "badge": "Dance", "badge_type": "dance", "desc": "High-energy dance fitness class with Latin, pop, and world music rhythms. Fun for all!" },
+    { "name": "Line Dancing", "badge": "Social Dance", "badge_type": "dance", "desc": "Classic and contemporary line dancing — a fun social activity that's also great exercise." }
+  ],
+  "director_label": "Fitness Director",
+  "director_title": "Led by Peggy Pocher",
+  "director_text": "Our Fitness Director Peggy Pocher oversees all group fitness programming, personal training, and gym operations. With years of experience in sports club management, she ensures every member gets the most from their fitness journey.",
+  "director_email": "fitness@loscab.com",
+  "director_image": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=900&q=80",
+  "cta_title": "Start Your Fitness Journey.",
+  "cta_text": "Fitness classes included with all Los Cab memberships. No extra fees for cardio, Yoga, Pilates, HIIT, and more."
+}

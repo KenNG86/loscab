@@ -1,0 +1,63 @@
+{
+  "hero_image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1800&q=80",
+  "hero_label": "Premium Club Services",
+  "hero_title": "Club Services & Amenities",
+  "hero_desc": "Beyond sports — Los Cab offers a boutique spa, full-service café, event catering, and stunning event venues all on-site.",
+  "services_label": "What We Offer",
+  "services_title": "Everything You Need, All in One Place",
+  "services": [
+    {
+      "tag": "Wellness",
+      "title": "Gem Day Spa",
+      "text": "Our boutique on-site spa offers a curated menu of non-invasive facial and body procedures in an elegant, relaxing environment. From rejuvenating facials to body treatments — Gem Day Spa is your escape after a great workout.",
+      "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&q=80",
+      "bullets": ["✦ Non-invasive facial treatments", "✦ Body procedures & skin care", "✦ Relaxing spa atmosphere", "✦ Member discounts available"],
+      "link": "contact.html",
+      "link_text": "Book an Appointment →",
+      "note": ""
+    },
+    {
+      "tag": "Dining",
+      "title": "Sol Vida OC — Los Cab Café",
+      "text": "Our on-site café \"Sol Vida OC\" is now open for a soft opening. Grab a coffee, smoothie, salad, sandwich, bagel, or snack before or after your workout. Fresh, delicious fuel to power your day.",
+      "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80",
+      "bullets": ["☕ Coffee & specialty drinks", "🥤 Smoothies & protein shakes", "🥗 Salads, sandwiches & bagels", "🍪 Snacks & baked goods"],
+      "link": "",
+      "link_text": "",
+      "note": "🎉 NOW OPEN — Soft Opening Phase"
+    },
+    {
+      "tag": "Catering",
+      "title": "Teak Catering",
+      "text": "Full-service event catering led by Chef Pierre. Whether you're hosting a corporate event, wedding reception, club tournament, or private party — Teak Catering delivers exceptional culinary experiences.",
+      "image": "https://images.unsplash.com/photo-1555244162-803834f70033?w=800&q=80",
+      "bullets": ["🍽️ Full event catering services", "👨‍🍳 Led by Chef Pierre", "🎉 Corporate & private events", "🏆 Sports tournaments & banquets"],
+      "link": "contact.html",
+      "link_text": "Request a Quote →",
+      "note": ""
+    },
+    {
+      "tag": "Events",
+      "title": "Timeless Venues",
+      "text": "Our 4,000 sq. ft. versatile event space \"Timeless Venues\" is perfect for weddings, corporate meetings, galas, tournaments, and private celebrations. A stunning backdrop for any occasion.",
+      "image": "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&q=80",
+      "bullets": ["🏛️ 4,000 sq ft event space", "💍 Weddings & receptions", "🏢 Corporate meetings & conferences", "🎊 Galas, parties & celebrations"],
+      "link": "contact.html",
+      "link_text": "Inquire About Availability →",
+      "note": ""
+    }
+  ],
+  "amenities_label": "Club Amenities",
+  "amenities_title": "Premium Facility Amenities",
+  "amenities_subtitle": "Included with every membership — because a great workout deserves great facilities.",
+  "amenities": [
+    { "icon": "🚿", "title": "Premium Locker Rooms", "text": "Spacious, well-maintained locker rooms with premium shower facilities for all members — men's and women's." },
+    { "icon": "🧖", "title": "Steam & Sauna Rooms", "text": "Brand-new steam rooms and sauna rooms added in Winter 2026. Perfect for post-workout recovery." },
+    { "icon": "♨️", "title": "Co-Ed Jacuzzi", "text": "A relaxing co-ed jacuzzi available to all members. Great for unwinding after a game or workout." },
+    { "icon": "🏖️", "title": "Cabanas", "text": "Semi-private courtyard cabanas with showers, lockers, fridge, and TV. Located in the tennis courtyard." },
+    { "icon": "📍", "title": "Lockers", "text": "Monthly locker rentals available in both the men's and women's locker rooms. Stop by the front desk to inquire." },
+    { "icon": "📷", "title": "Live Webcams", "text": "Live webcam feeds of the Pickleball Stadium, Tennis Center, Gym, and facility entrances — viewable anytime." }
+  ],
+  "cta_title": "Experience Los Cab Services.",
+  "cta_text": "Book the spa, reserve the venue, or inquire about catering — our team is ready to help."
+}

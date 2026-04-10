@@ -1,0 +1,82 @@
+{
+  "hero_image": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?w=1800&q=80",
+  "hero_label": "59 Lighted Courts",
+  "hero_title": "Pickleball at Los Cab",
+  "hero_desc": "The largest pickleball facility in Orange County. 43 dedicated and 16 hybrid courts — all with new stadium lighting for evening play.",
+  "stats": [
+    { "number": 59, "label": "Total Courts", "sub": "All lighted" },
+    { "number": 43, "label": "Dedicated Pickleball", "sub": "Courts" },
+    { "number": 16, "label": "Hybrid Courts", "sub": "Tennis/Pickleball" },
+    { "text": "All Day", "label": "Open Play", "sub": "7 Days a Week" }
+  ],
+  "programs_label": "Programs & Clinics",
+  "programs_title": "Play at Every Level",
+  "programs_subtitle": "From complete beginners to competitive advanced players — we have a program designed for your game.",
+  "programs": [
+    {
+      "level": "Beginner",
+      "title": "Intro to Pickleball",
+      "text": "New to the sport? Our intro clinics teach you the basics — rules, scoring, and fundamental techniques in a friendly, welcoming environment.",
+      "color": "var(--teal)",
+      "link": "contact.html",
+      "link_text": "Register →"
+    },
+    {
+      "level": "Intermediate",
+      "title": "Skill Development Clinics",
+      "text": "Improve your dinking, third-shot drops, and court movement. Group clinics with certified pros designed to take your game to the next level.",
+      "color": "var(--navy)",
+      "link": "contact.html",
+      "link_text": "Register →"
+    },
+    {
+      "level": "Advanced",
+      "title": "Competitive Training",
+      "text": "Intensive training for 4.0+ players. Strategy, pattern plays, drilling, and tournament preparation with our top coaching staff.",
+      "color": "var(--gold)",
+      "text_color": "var(--navy)",
+      "link": "contact.html",
+      "link_text": "Register →"
+    },
+    {
+      "level": "Junior Development",
+      "title": "Youth Pickleball Academy",
+      "text": "Structured youth programs designed to build confidence and skills in players ages 8–17. Fun, competitive, and educational.",
+      "color": "#1B4332",
+      "link": "contact.html",
+      "link_text": "Register →"
+    },
+    {
+      "level": "Social",
+      "title": "Leagues & Ladders",
+      "text": "Join organized round-robin leagues and ladder competitions. Meet other players, track your progress, and compete regularly.",
+      "color": "#5C35A0",
+      "link": "contact.html",
+      "link_text": "Learn More →"
+    },
+    {
+      "level": "Community",
+      "title": "Open Play & Drop-in",
+      "text": "Jump in any time! Open play is available daily for members. Use Team Reach to coordinate games with other Los Cab players.",
+      "color": "#C0392B",
+      "link": "contact.html",
+      "link_text": "View Schedule →"
+    }
+  ],
+  "courts_label": "World-Class Courts",
+  "courts_title": "The Premier Pickleball Facility in Orange County",
+  "courts_subtitle": "With 59 total courts — more than any other club in OC — Los Cab is the destination for serious pickleball players.",
+  "courts_image": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?w=900&q=80",
+  "courts_features": [
+    { "title": "New Stadium Lighting", "desc": "All 59 courts feature brand-new lighting systems for perfect visibility during evening sessions." },
+    { "title": "Dedicated Pickleball Courts", "desc": "43 courts built exclusively for pickleball — optimal court dimensions, surfacing, and net heights." },
+    { "title": "Hybrid Courts", "desc": "16 additional courts convertible for both tennis and pickleball — maximizing your court availability." },
+    { "title": "Team Reach Integration", "desc": "Connect with other members via Team Reach to organize games, track scores, and join group sessions." }
+  ],
+  "membership_label": "Pickleball Membership",
+  "membership_price": "$135",
+  "membership_period": "/month",
+  "membership_text": "$200 initiation fee. Includes unlimited court access, open play, discounted clinics, and all Sports Membership benefits.",
+  "cta_title": "Ready to Hit the Courts?",
+  "cta_text": "Join Los Cab's pickleball community — the largest in Orange County — and start playing today."
+}

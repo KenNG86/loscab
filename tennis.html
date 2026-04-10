@@ -14,7 +14,7 @@
   </style>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
-<body>
+<body data-cms-page="tennis">
 
   <nav class="navbar navbar--scrolled" id="navbar">
     <div class="nav-inner">
@@ -48,9 +48,9 @@
     <div class="container">
       <div class="page-hero-content">
         <nav class="breadcrumb"><a href="index.html">Home</a><span>›</span><span>Tennis</span></nav>
-        <span class="section-label" style="color:var(--teal-light);">17 Courts</span>
-        <h1>Tennis at Los Cab</h1>
-        <p>From junior academies to competitive adult leagues — Los Cab offers a complete tennis experience for every age and level.</p>
+        <span class="section-label" style="color:var(--teal-light);" data-cms="hero-label">17 Courts</span>
+        <h1 data-cms="hero-title">Tennis at Los Cab</h1>
+        <p data-cms="hero-desc">From junior academies to competitive adult leagues — Los Cab offers a complete tennis experience for every age and level.</p>
       </div>
     </div>
   </header>
@@ -58,7 +58,7 @@
   <!-- Stats -->
   <section class="section section--gray">
     <div class="container">
-      <div class="stat-row fade-in">
+      <div class="stat-row fade-in" data-cms="stats">
         <div class="stat-box"><div class="stat-number" data-count="17">0</div><div class="stat-label">Tennis Courts</div></div>
         <div class="stat-box"><div class="stat-number" style="font-size:1.8rem;line-height:1.2;">Junior</div><div class="stat-label">Academy</div><div class="stat-sub">After-school programs</div></div>
         <div class="stat-box"><div class="stat-number" style="font-size:1.8rem;line-height:1.2;">Adult</div><div class="stat-label">Programs</div><div class="stat-sub">All skill levels</div></div>
@@ -71,11 +71,11 @@
   <section class="section">
     <div class="container">
       <div class="section-head">
-        <span class="section-label fade-in">Programs</span>
-        <h2 class="section-title fade-in fade-in-delay-1">Tennis for All Ages & Levels</h2>
-        <p class="section-subtitle fade-in fade-in-delay-2">Whether you're picking up a racquet for the first time or training competitively, our expert coaches have a program for you.</p>
+        <span class="section-label fade-in" data-cms="prog-label">Programs</span>
+        <h2 class="section-title fade-in fade-in-delay-1" data-cms="prog-title">Tennis for All Ages & Levels</h2>
+        <p class="section-subtitle fade-in fade-in-delay-2" data-cms="prog-subtitle">Whether you're picking up a racquet for the first time or training competitively, our expert coaches have a program for you.</p>
       </div>
-      <div class="grid grid-2 fade-in fade-in-delay-2">
+      <div class="grid grid-2 fade-in fade-in-delay-2" data-cms="programs">
         <div class="icon-card">
           <div class="icon-wrap">🎾</div>
           <h3 class="card-title">Junior Tennis Academy</h3>
@@ -121,14 +121,14 @@
     <div class="container">
       <div class="features-split">
         <div class="features-img fade-in">
-          <img src="https://images.unsplash.com/photo-1562552052-d35a5c1f7aff?w=900&q=80" alt="Tennis instruction at Los Cab" loading="lazy">
+          <img data-cms="courts-img" src="https://images.unsplash.com/photo-1562552052-d35a5c1f7aff?w=900&q=80" alt="Tennis instruction at Los Cab" loading="lazy">
         </div>
         <div class="fade-in fade-in-delay-1">
-          <span class="section-label">The Courts</span>
+          <span class="section-label" data-cms="courts-label">The Courts</span>
           <div class="section-divider"></div>
-          <h2 class="section-title">17 Courts Built for Serious Play</h2>
-          <p class="section-subtitle">Our tennis facility features premium court surfaces, lighting for evening play, and a welcoming atmosphere for players of every level.</p>
-          <div class="features-list">
+          <h2 class="section-title" data-cms="courts-title">17 Courts Built for Serious Play</h2>
+          <p class="section-subtitle" data-cms="courts-subtitle">Our tennis facility features premium court surfaces, lighting for evening play, and a welcoming atmosphere for players of every level.</p>
+          <div class="features-list" data-cms="courts-features">
             <div class="feature-item"><div class="feature-dot"></div><div><strong>17 Total Courts</strong><p>Multiple court surfaces with excellent drainage and maintenance, ensuring great play conditions year-round.</p></div></div>
             <div class="feature-item"><div class="feature-dot"></div><div><strong>Night Lighting</strong><p>Illuminated courts mean you can play before work, after work, or on weekends after sunset.</p></div></div>
             <div class="feature-item"><div class="feature-dot"></div><div><strong>Pro Shop</strong><p>On-site pro shop for racquet stringing, equipment, and accessories.</p></div></div>
@@ -144,10 +144,10 @@
   <section class="section">
     <div class="container">
       <div class="highlight-box" style="text-align:center;padding:4rem 3rem;">
-        <span class="section-label">Tennis Membership</span>
-        <h2 class="section-title" style="margin-bottom:0.5rem;">$155 <span style="font-size:1.2rem;font-family:var(--font-sans);font-weight:400;color:var(--body-text);">/month</span></h2>
-        <p style="color:var(--body-text);margin-bottom:0.5rem;">$500 Initiation Fee · Includes all Pickleball & Sports benefits</p>
-        <p style="color:var(--body-text);max-width:480px;margin:0 auto 2rem;line-height:1.8;">Full access to all 17 tennis courts, junior academies, adult programs, and every other club amenity.</p>
+        <span class="section-label" data-cms="mem-label">Tennis Membership</span>
+        <h2 class="section-title" style="margin-bottom:0.5rem;" data-cms="mem-price">$155 <span style="font-size:1.2rem;font-family:var(--font-sans);font-weight:400;color:var(--body-text);">/month</span></h2>
+        <p style="color:var(--body-text);margin-bottom:0.5rem;" data-cms="mem-details">$500 Initiation Fee · Includes all Pickleball & Sports benefits</p>
+        <p style="color:var(--body-text);max-width:480px;margin:0 auto 2rem;line-height:1.8;" data-cms="mem-text">Full access to all 17 tennis courts, junior academies, adult programs, and every other club amenity.</p>
         <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
           <a href="membership.html" class="btn btn-primary btn-lg" id="tennis-join-btn">Join Now</a>
           <a href="contact.html" class="btn btn-outline btn-lg" id="tennis-ask-btn">Ask a Question</a>
@@ -160,7 +160,7 @@
   <section class="cta-banner">
     <div class="container">
       <div class="cta-banner-inner">
-        <div><h2>Serve Up Something Great.</h2><p>Join Los Cab today and access 17 premier tennis courts plus all club amenities.</p></div>
+        <div><h2 data-cms="cta-title">Serve Up Something Great.</h2><p data-cms="cta-text">Join Los Cab today and access 17 premier tennis courts plus all club amenities.</p></div>
         <a href="membership.html" class="btn btn-primary btn-lg" id="tennis-cta-btn">Become a Member</a>
       </div>
     </div>

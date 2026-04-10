@@ -1,0 +1,78 @@
+{
+  "hero_image": "https://images.unsplash.com/photo-1546519638778-9ee6ebca99bd?w=1800&q=80",
+  "hero_label": "8 Sports & More",
+  "hero_title": "All Sports at Los Cab",
+  "hero_desc": "One membership — unlimited sport options. Explore every sport and activity we offer at Los Cab Sports Club.",
+  "stats": [
+    { "number": 59, "label": "Pickleball Courts" },
+    { "number": 17, "label": "Tennis Courts" },
+    { "number": 8, "label": "Handball Courts" },
+    { "number": 7, "label": "Racquetball Courts" }
+  ],
+  "swimming_label": "Aquatic Center",
+  "swimming_title": "Swimming",
+  "swimming_text": "Our heated 50-meter Olympic-size pool is among the finest in Orange County. Ideal for lap swimming, cross-training, lessons, or a refreshing workout in the sun.",
+  "swimming_image": "https://images.unsplash.com/photo-1519315901367-f34ff9154487?w=900&q=80",
+  "swimming_features": [
+    { "title": "50-Meter Olympic Pool", "desc": "Heated year-round for comfortable swimming in any season." },
+    { "title": "Nova Swim School", "desc": "Professional swim lessons for children and adults at all skill levels." },
+    { "title": "Aqua Fitness Classes", "desc": "Low-impact water-based fitness classes included with membership." },
+    { "title": "6-8 Water Polo Academy", "desc": "Structured youth water polo development for players ages 6–8." },
+    { "title": "Wading & Specialty Pools", "desc": "Separate pools for younger swimmers and specialized aquatic activities." }
+  ],
+  "basketball_label": "Indoor Court",
+  "basketball_title": "Basketball",
+  "basketball_text": "Los Cab features a full-size indoor basketball court that converts to two half-courts. Open gym is available daily, with organized programs led by Coach Beez.",
+  "basketball_image": "https://images.unsplash.com/photo-1546519638778-9ee6ebca99bd?w=900&q=80",
+  "basketball_features": [
+    { "title": "Full-Size Indoor Court", "desc": "Converts to 2 half-courts for simultaneous games. Climate-controlled facility." },
+    { "title": "Daily Open Gym", "desc": "Open gym available each morning and evening. Note: closed Mon–Fri 3–9 PM for volleyball." },
+    { "title": "Coached by Coach Beez", "desc": "Organized basketball programs, drills, and skills sessions with experienced coaching." }
+  ],
+  "volleyball_label": "Indoor & Outdoor",
+  "volleyball_title": "Volleyball",
+  "volleyball_text": "Los Cab is home to United Volleyball Club and offers both indoor and outdoor play. The indoor basketball court is converted for volleyball Mon–Fri evenings.",
+  "volleyball_image": "https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?w=900&q=80",
+  "volleyball_features": [
+    { "title": "United Volleyball Club", "desc": "Home club to United Volleyball — organized competitive volleyball programming." },
+    { "title": "Indoor Volleyball", "desc": "Mon–Fri 3–9 PM on the converted basketball/volleyball court." },
+    { "title": "Outdoor Play", "desc": "Outdoor volleyball courts available for open play and organized events." }
+  ],
+  "court_sports_label": "Court Sports",
+  "court_sports_title": "Handball, Squash, Racquetball & Badminton",
+  "court_sports_subtitle": "Los Cab offers one of the most complete court sport offerings on the West Coast.",
+  "court_sports": [
+    {
+      "icon": "🤜",
+      "title": "Handball — 8 Courts",
+      "text": "Los Cab features 8 handball courts with both concrete and glass walls — one of the premier handball facilities in Southern California. We regularly host national-level handball tournaments.",
+      "link": "contact.html",
+      "link_text": "Learn More →"
+    },
+    {
+      "icon": "🏸",
+      "title": "Squash",
+      "text": "High-intensity squash play available at Los Cab. Orientation lessons available from our squash professional Sam Daye — perfect for newcomers and experienced players alike.",
+      "contact": "Contact: Sam Daye",
+      "link": "contact.html",
+      "link_text": "Learn More →"
+    },
+    {
+      "icon": "🎾",
+      "title": "Racquetball — 7 Courts",
+      "text": "Seven glass-back walled racquetball courts provide excellent visibility and play. Open play available throughout the day for all skill levels.",
+      "link": "contact.html",
+      "link_text": "Learn More →"
+    },
+    {
+      "icon": "🏸",
+      "title": "Badminton — Relaunching July 2026",
+      "text": "The Los Cab badminton program is relaunching in July 2026 under the direction of Michael Do. Stay tuned for clinic schedules, leagues, and open play sessions.",
+      "note": "📅 Coming July 2026",
+      "link": "contact.html",
+      "link_text": "Get Notified →"
+    }
+  ],
+  "cta_title": "One Club. Every Sport.",
+  "cta_text": "A single Los Cab Sports Membership gives you access to all these sports and more — plus the gym, pool, and group classes."
+}
